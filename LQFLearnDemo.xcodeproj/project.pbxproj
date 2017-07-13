@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB5D651B1F17176200FEC2BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D651A1F17176200FEC2BA /* main.m */; };
+		DB5D651E1F17176200FEC2BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D651D1F17176200FEC2BA /* AppDelegate.m */; };
+		DB5D65211F17176200FEC2BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D65201F17176200FEC2BA /* ViewController.m */; };
+		DB5D65241F17176200FEC2BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5D65221F17176200FEC2BA /* Main.storyboard */; };
+		DB5D65271F17176200FEC2BA /* LQFLearnDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB5D65251F17176200FEC2BA /* LQFLearnDemo.xcdatamodeld */; };
+		DB5D65291F17176200FEC2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5D65281F17176200FEC2BA /* Assets.xcassets */; };
+		DB5D652C1F17176200FEC2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5D652A1F17176200FEC2BA /* LaunchScreen.storyboard */; };
+		DB5D65371F17176200FEC2BA /* LQFLearnDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D65361F17176200FEC2BA /* LQFLearnDemoTests.m */; };
+		DB5D65421F17176200FEC2BA /* LQFLearnDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D65411F17176200FEC2BA /* LQFLearnDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB5D65331F17176200FEC2BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB5D650E1F17176200FEC2BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB5D65151F17176200FEC2BA;
+			remoteInfo = LQFLearnDemo;
+		};
+		DB5D653E1F17176200FEC2BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB5D650E1F17176200FEC2BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB5D65151F17176200FEC2BA;
+			remoteInfo = LQFLearnDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB5D65161F17176200FEC2BA /* LQFLearnDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQFLearnDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB5D651A1F17176200FEC2BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB5D651C1F17176200FEC2BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB5D651D1F17176200FEC2BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB5D651F1F17176200FEC2BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DB5D65201F17176200FEC2BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DB5D65231F17176200FEC2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB5D65261F17176200FEC2BA /* LQFLearnDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LQFLearnDemo.xcdatamodel; sourceTree = "<group>"; };
+		DB5D65281F17176200FEC2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB5D652B1F17176200FEC2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB5D652D1F17176200FEC2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB5D65321F17176200FEC2BA /* LQFLearnDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LQFLearnDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB5D65361F17176200FEC2BA /* LQFLearnDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQFLearnDemoTests.m; sourceTree = "<group>"; };
+		DB5D65381F17176200FEC2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB5D653D1F17176200FEC2BA /* LQFLearnDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LQFLearnDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB5D65411F17176200FEC2BA /* LQFLearnDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQFLearnDemoUITests.m; sourceTree = "<group>"; };
+		DB5D65431F17176200FEC2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB5D65131F17176200FEC2BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5D652F1F17176200FEC2BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5D653A1F17176200FEC2BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB5D650D1F17176200FEC2BA = {
+			isa = PBXGroup;
+			children = (
+				DB5D65181F17176200FEC2BA /* LQFLearnDemo */,
+				DB5D65351F17176200FEC2BA /* LQFLearnDemoTests */,
+				DB5D65401F17176200FEC2BA /* LQFLearnDemoUITests */,
+				DB5D65171F17176200FEC2BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB5D65171F17176200FEC2BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB5D65161F17176200FEC2BA /* LQFLearnDemo.app */,
+				DB5D65321F17176200FEC2BA /* LQFLearnDemoTests.xctest */,
+				DB5D653D1F17176200FEC2BA /* LQFLearnDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB5D65181F17176200FEC2BA /* LQFLearnDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DB5D651C1F17176200FEC2BA /* AppDelegate.h */,
+				DB5D651D1F17176200FEC2BA /* AppDelegate.m */,
+				DB5D651F1F17176200FEC2BA /* ViewController.h */,
+				DB5D65201F17176200FEC2BA /* ViewController.m */,
+				DB5D65221F17176200FEC2BA /* Main.storyboard */,
+				DB5D65281F17176200FEC2BA /* Assets.xcassets */,
+				DB5D652A1F17176200FEC2BA /* LaunchScreen.storyboard */,
+				DB5D652D1F17176200FEC2BA /* Info.plist */,
+				DB5D65251F17176200FEC2BA /* LQFLearnDemo.xcdatamodeld */,
+				DB5D65191F17176200FEC2BA /* Supporting Files */,
+			);
+			path = LQFLearnDemo;
+			sourceTree = "<group>";
+		};
+		DB5D65191F17176200FEC2BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB5D651A1F17176200FEC2BA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB5D65351F17176200FEC2BA /* LQFLearnDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB5D65361F17176200FEC2BA /* LQFLearnDemoTests.m */,
+				DB5D65381F17176200FEC2BA /* Info.plist */,
+			);
+			path = LQFLearnDemoTests;
+			sourceTree = "<group>";
+		};
+		DB5D65401F17176200FEC2BA /* LQFLearnDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB5D65411F17176200FEC2BA /* LQFLearnDemoUITests.m */,
+				DB5D65431F17176200FEC2BA /* Info.plist */,
+			);
+			path = LQFLearnDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB5D65151F17176200FEC2BA /* LQFLearnDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB5D65461F17176200FEC2BA /* Build configuration list for PBXNativeTarget "LQFLearnDemo" */;
+			buildPhases = (
+				DB5D65121F17176200FEC2BA /* Sources */,
+				DB5D65131F17176200FEC2BA /* Frameworks */,
+				DB5D65141F17176200FEC2BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LQFLearnDemo;
+			productName = LQFLearnDemo;
+			productReference = DB5D65161F17176200FEC2BA /* LQFLearnDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB5D65311F17176200FEC2BA /* LQFLearnDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB5D65491F17176200FEC2BA /* Build configuration list for PBXNativeTarget "LQFLearnDemoTests" */;
+			buildPhases = (
+				DB5D652E1F17176200FEC2BA /* Sources */,
+				DB5D652F1F17176200FEC2BA /* Frameworks */,
+				DB5D65301F17176200FEC2BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB5D65341F17176200FEC2BA /* PBXTargetDependency */,
+			);
+			name = LQFLearnDemoTests;
+			productName = LQFLearnDemoTests;
+			productReference = DB5D65321F17176200FEC2BA /* LQFLearnDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB5D653C1F17176200FEC2BA /* LQFLearnDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB5D654C1F17176200FEC2BA /* Build configuration list for PBXNativeTarget "LQFLearnDemoUITests" */;
+			buildPhases = (
+				DB5D65391F17176200FEC2BA /* Sources */,
+				DB5D653A1F17176200FEC2BA /* Frameworks */,
+				DB5D653B1F17176200FEC2BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB5D653F1F17176200FEC2BA /* PBXTargetDependency */,
+			);
+			name = LQFLearnDemoUITests;
+			productName = LQFLearnDemoUITests;
+			productReference = DB5D653D1F17176200FEC2BA /* LQFLearnDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB5D650E1F17176200FEC2BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = LQF;
+				TargetAttributes = {
+					DB5D65151F17176200FEC2BA = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					DB5D65311F17176200FEC2BA = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB5D65151F17176200FEC2BA;
+					};
+					DB5D653C1F17176200FEC2BA = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DB5D65151F17176200FEC2BA;
+					};
+				};
+			};
+			buildConfigurationList = DB5D65111F17176200FEC2BA /* Build configuration list for PBXProject "LQFLearnDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB5D650D1F17176200FEC2BA;
+			productRefGroup = DB5D65171F17176200FEC2BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB5D65151F17176200FEC2BA /* LQFLearnDemo */,
+				DB5D65311F17176200FEC2BA /* LQFLearnDemoTests */,
+				DB5D653C1F17176200FEC2BA /* LQFLearnDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB5D65141F17176200FEC2BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5D652C1F17176200FEC2BA /* LaunchScreen.storyboard in Resources */,
+				DB5D65291F17176200FEC2BA /* Assets.xcassets in Resources */,
+				DB5D65241F17176200FEC2BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5D65301F17176200FEC2BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5D653B1F17176200FEC2BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB5D65121F17176200FEC2BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5D65211F17176200FEC2BA /* ViewController.m in Sources */,
+				DB5D651E1F17176200FEC2BA /* AppDelegate.m in Sources */,
+				DB5D651B1F17176200FEC2BA /* main.m in Sources */,
+				DB5D65271F17176200FEC2BA /* LQFLearnDemo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5D652E1F17176200FEC2BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5D65371F17176200FEC2BA /* LQFLearnDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5D65391F17176200FEC2BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5D65421F17176200FEC2BA /* LQFLearnDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB5D65341F17176200FEC2BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB5D65151F17176200FEC2BA /* LQFLearnDemo */;
+			targetProxy = DB5D65331F17176200FEC2BA /* PBXContainerItemProxy */;
+		};
+		DB5D653F1F17176200FEC2BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB5D65151F17176200FEC2BA /* LQFLearnDemo */;
+			targetProxy = DB5D653E1F17176200FEC2BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB5D65221F17176200FEC2BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB5D65231F17176200FEC2BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB5D652A1F17176200FEC2BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB5D652B1F17176200FEC2BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB5D65441F17176200FEC2BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB5D65451F17176200FEC2BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB5D65471F17176200FEC2BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LQFLearnDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LearnDemo.LQFLearnDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB5D65481F17176200FEC2BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LQFLearnDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LearnDemo.LQFLearnDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DB5D654A1F17176200FEC2BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LQFLearnDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LearnDemo.LQFLearnDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LQFLearnDemo.app/LQFLearnDemo";
+			};
+			name = Debug;
+		};
+		DB5D654B1F17176200FEC2BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LQFLearnDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LearnDemo.LQFLearnDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LQFLearnDemo.app/LQFLearnDemo";
+			};
+			name = Release;
+		};
+		DB5D654D1F17176200FEC2BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LQFLearnDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LearnDemo.LQFLearnDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LQFLearnDemo;
+			};
+			name = Debug;
+		};
+		DB5D654E1F17176200FEC2BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LQFLearnDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LearnDemo.LQFLearnDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LQFLearnDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB5D65111F17176200FEC2BA /* Build configuration list for PBXProject "LQFLearnDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5D65441F17176200FEC2BA /* Debug */,
+				DB5D65451F17176200FEC2BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB5D65461F17176200FEC2BA /* Build configuration list for PBXNativeTarget "LQFLearnDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5D65471F17176200FEC2BA /* Debug */,
+				DB5D65481F17176200FEC2BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DB5D65491F17176200FEC2BA /* Build configuration list for PBXNativeTarget "LQFLearnDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5D654A1F17176200FEC2BA /* Debug */,
+				DB5D654B1F17176200FEC2BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DB5D654C1F17176200FEC2BA /* Build configuration list for PBXNativeTarget "LQFLearnDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5D654D1F17176200FEC2BA /* Debug */,
+				DB5D654E1F17176200FEC2BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DB5D65251F17176200FEC2BA /* LQFLearnDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DB5D65261F17176200FEC2BA /* LQFLearnDemo.xcdatamodel */,
+			);
+			currentVersion = DB5D65261F17176200FEC2BA /* LQFLearnDemo.xcdatamodel */;
+			path = LQFLearnDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DB5D650E1F17176200FEC2BA /* Project object */;
+}
