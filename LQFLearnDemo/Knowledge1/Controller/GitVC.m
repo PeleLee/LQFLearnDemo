@@ -21,7 +21,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSString *node = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@\n%@\n%@\n%@\n%@\n%@\n%@",
+    NSString *node = [NSString stringWithFormat:@"笔记\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n",
                       @"1.将目录变成git库: git init",
                       @"2.单个文件添加到git库: git add <文件名>",
                       @"3.提交: git commit -m 注释",
@@ -32,7 +32,12 @@
                       @"8.HEAD:当前版本,HEAD^:上个版本,HEAD^^:上上个版本....HEAD~100:往上100个版本",
                       @"9.回退到上一个版本: git reset --hard HEAD^",
                       @"10.git reset --hard <版本号> : 恢复到指定版本",
-                      @"11.git reflog : 命令历史记录"];
+                      @"11.git reflog : 命令历史记录",
+                      @"12.git diff HEAD -- <文件名> : 该文件在工作区和仓库中最新版本的区别",
+                      @"13.git checkout -- <file> : 撤销工作区的操作",
+                      @"14.git reset HEAD <file> : 撤销暂存区的操作",
+                      @"15.git rm <文件名> : 删除文件,还需加上git commit语句"
+                      ];
     
     _noteTV.text = node;
 }
