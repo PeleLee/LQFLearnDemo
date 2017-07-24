@@ -25,16 +25,16 @@
     _listArr = @[
                  @"KVC",
                  @"Autolayout",
-                 @"FMDB",
-                 @"CoreData",
-                 @"App上线流程",
-                 @"Masonry",
-                 @"iOS各版本更新内容",
-                 @"协议和扩展",
+//                 @"FMDB",
+//                 @"CoreData",
+//                 @"App上线流程",
+//                 @"Masonry",
+//                 @"iOS各版本更新内容",
+//                 @"协议和扩展",
                  @"AutoreleasePool",
                  @"TableView折叠",
-                 @"内存泄露检测",
-                 @"React Native",
+//                 @"内存泄露检测",
+//                 @"React Native",
                  //http://www.cocoachina.com/ios/20170707/19769.html
                  @"多线程",
                  //https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137402760310626208b4f695940a49e5348b689d095fc000
@@ -97,6 +97,10 @@
     else if ([content isEqualToString:@"TableView折叠"]) {
         FoldTableViewVC *foldVC = [[FoldTableViewVC alloc] init];
         [self.navigationController pushViewController:foldVC animated:YES];
+    }
+    
+    else if ([content isEqualToString:@"git"]) {
+        [self performSegueWithIdentifier:@"git" sender:self];
     }
 }
 

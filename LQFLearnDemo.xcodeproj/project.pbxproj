@@ -18,6 +18,9 @@
 		DB3C9EF31F1F3889005B8285 /* SectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EF21F1F3889005B8285 /* SectionView.m */; };
 		DB4538CA1F20B1B60037C1A8 /* CandleCorssScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4538C91F20B1B60037C1A8 /* CandleCorssScreenVC.m */; };
 		DB4538CD1F20B31C0037C1A8 /* LQFCrossPriceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4538CC1F20B31C0037C1A8 /* LQFCrossPriceView.m */; };
+		DB4B0CE91F258EEA0006CCBF /* LQFPopOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0CE81F258EEA0006CCBF /* LQFPopOutView.m */; };
+		DB4B0CEC1F2594390006CCBF /* LQFPopTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0CEB1F2594390006CCBF /* LQFPopTool.m */; };
+		DB4B0CEF1F259C570006CCBF /* GitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0CEE1F259C570006CCBF /* GitVC.m */; };
 		DB55EE311F1C539700C7B787 /* LQFBaseChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE301F1C539700C7B787 /* LQFBaseChartView.m */; };
 		DB55EE341F1C543500C7B787 /* LQFMacdView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE331F1C543500C7B787 /* LQFMacdView.m */; };
 		DB55EE371F1C559200C7B787 /* LQFMacdPositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE361F1C559200C7B787 /* LQFMacdPositionModel.m */; };
@@ -263,6 +266,12 @@
 		DB4538C91F20B1B60037C1A8 /* CandleCorssScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandleCorssScreenVC.m; sourceTree = "<group>"; };
 		DB4538CB1F20B31C0037C1A8 /* LQFCrossPriceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFCrossPriceView.h; sourceTree = "<group>"; };
 		DB4538CC1F20B31C0037C1A8 /* LQFCrossPriceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFCrossPriceView.m; sourceTree = "<group>"; };
+		DB4B0CE71F258EEA0006CCBF /* LQFPopOutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFPopOutView.h; sourceTree = "<group>"; };
+		DB4B0CE81F258EEA0006CCBF /* LQFPopOutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFPopOutView.m; sourceTree = "<group>"; };
+		DB4B0CEA1F2594390006CCBF /* LQFPopTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFPopTool.h; sourceTree = "<group>"; };
+		DB4B0CEB1F2594390006CCBF /* LQFPopTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFPopTool.m; sourceTree = "<group>"; };
+		DB4B0CED1F259C570006CCBF /* GitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitVC.h; sourceTree = "<group>"; };
+		DB4B0CEE1F259C570006CCBF /* GitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitVC.m; sourceTree = "<group>"; };
 		DB55EE2F1F1C539700C7B787 /* LQFBaseChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFBaseChartView.h; sourceTree = "<group>"; };
 		DB55EE301F1C539700C7B787 /* LQFBaseChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFBaseChartView.m; sourceTree = "<group>"; };
 		DB55EE321F1C543500C7B787 /* LQFMacdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFMacdView.h; sourceTree = "<group>"; };
@@ -553,6 +562,25 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DB4B0CE51F258E940006CCBF /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				DB4B0CE61F258EB70006CCBF /* PopView */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		DB4B0CE61F258EB70006CCBF /* PopView */ = {
+			isa = PBXGroup;
+			children = (
+				DB4B0CE71F258EEA0006CCBF /* LQFPopOutView.h */,
+				DB4B0CE81F258EEA0006CCBF /* LQFPopOutView.m */,
+				DB4B0CEA1F2594390006CCBF /* LQFPopTool.h */,
+				DB4B0CEB1F2594390006CCBF /* LQFPopTool.m */,
+			);
+			path = PopView;
+			sourceTree = "<group>";
+		};
 		DB5D650D1F17176200FEC2BA = {
 			isa = PBXGroup;
 			children = (
@@ -582,6 +610,7 @@
 				DB6FEE461F1763E10009702E /* Category */,
 				DB6FEE351F1746A80009702E /* Knowledge1 */,
 				DB6FEE301F1722530009702E /* Base */,
+				DB4B0CE51F258E940006CCBF /* Public */,
 				DB6FEE6D1F1775C70009702E /* Help */,
 				DB6FEE741F1775D30009702E /* ThirdPart */,
 				DB5D651C1F17176200FEC2BA /* AppDelegate.h */,
@@ -661,6 +690,8 @@
 				DB3C9EE51F1EF9C7005B8285 /* AutoreleasePoolVC.m */,
 				DB3C9EE71F1F3775005B8285 /* FoldTableViewVC.h */,
 				DB3C9EE81F1F3775005B8285 /* FoldTableViewVC.m */,
+				DB4B0CED1F259C570006CCBF /* GitVC.h */,
+				DB4B0CEE1F259C570006CCBF /* GitVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1223,6 +1254,7 @@
 				DB6FEFB71F1775D30009702E /* ta_SMA.c in Sources */,
 				DB55EE311F1C539700C7B787 /* LQFBaseChartView.m in Sources */,
 				DB6FEF8A1F1775D30009702E /* ta_HT_TRENDLINE.c in Sources */,
+				DB4B0CEC1F2594390006CCBF /* LQFPopTool.m in Sources */,
 				DB6FEF631F1775D30009702E /* ta_CDLLONGLEGGEDDOJI.c in Sources */,
 				DB6FEF5D1F1775D30009702E /* ta_CDLIDENTICAL3CROWS.c in Sources */,
 				DB6FEFAD1F1775D30009702E /* ta_PVI.c in Sources */,
@@ -1276,6 +1308,7 @@
 				DB6FEFB91F1775D30009702E /* ta_STDDEV.c in Sources */,
 				DB6FEE3A1F1746DF0009702E /* Knowledge1ViewController.m in Sources */,
 				DB6FEF721F1775D30009702E /* ta_CDLSTALLEDPATTERN.c in Sources */,
+				DB4B0CE91F258EEA0006CCBF /* LQFPopOutView.m in Sources */,
 				DB6FEF981F1775D30009702E /* ta_MAVP.c in Sources */,
 				DB6FEF431F1775D30009702E /* ta_CDL3STARSINSOUTH.c in Sources */,
 				DB4538CD1F20B31C0037C1A8 /* LQFCrossPriceView.m in Sources */,
@@ -1364,6 +1397,7 @@
 				DB6FEF941F1775D30009702E /* ta_MACD.c in Sources */,
 				DB6FEF761F1775D30009702E /* ta_CDLTHRUSTING.c in Sources */,
 				DB6FEF651F1775D30009702E /* ta_CDLMARUBOZU.c in Sources */,
+				DB4B0CEF1F259C570006CCBF /* GitVC.m in Sources */,
 				DB6FEFCA1F1775D30009702E /* ta_VAR.c in Sources */,
 				DB5D651E1F17176200FEC2BA /* AppDelegate.m in Sources */,
 				DB6FEF461F1775D30009702E /* ta_CDLADVANCEBLOCK.c in Sources */,

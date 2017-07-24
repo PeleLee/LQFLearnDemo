@@ -80,11 +80,61 @@
                         <outlet property="fucTV" destination="Lez-0o-6X6" id="k13-zw-8aq"/>
                         <segue destination="FXG-Rl-YQP" kind="push" identifier="KVC" id="D4R-GA-cid"/>
                         <segue destination="2ND-9H-ZdB" kind="push" identifier="Autolayout" id="d8O-wd-EEK"/>
+                        <segue destination="ZqC-Ok-s9y" kind="push" identifier="git" id="Ejl-UT-EnB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEk-0s-kyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1397.5999999999999" y="192.95352323838082"/>
+        </scene>
+        <!--GitVC-->
+        <scene sceneID="SbA-9g-hcO">
+            <objects>
+                <viewController id="ZqC-Ok-s9y" customClass="GitVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wNp-g0-UJO"/>
+                        <viewControllerLayoutGuide type="bottom" id="igP-1D-kPz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tEn-oO-0sa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfJ-7C-VxP">
+                                <rect key="frame" x="16" y="81" width="343" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="mjM-8r-0fw"/>
+                                </constraints>
+                                <state key="normal" title="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000"/>
+                                <connections>
+                                    <action selector="popWebView:" destination="ZqC-Ok-s9y" eventType="touchUpInside" id="ubJ-tp-AAz"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hWc-Ze-F4p">
+                                <rect key="frame" x="16" y="123" width="343" height="524"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hWc-Ze-F4p" firstAttribute="top" secondItem="EfJ-7C-VxP" secondAttribute="bottom" constant="-1" id="6Ql-Bc-4R4"/>
+                            <constraint firstItem="EfJ-7C-VxP" firstAttribute="top" secondItem="wNp-g0-UJO" secondAttribute="bottom" constant="17" id="V8N-I5-VR6"/>
+                            <constraint firstItem="hWc-Ze-F4p" firstAttribute="leading" secondItem="EfJ-7C-VxP" secondAttribute="leading" id="bgf-Fd-jBJ"/>
+                            <constraint firstItem="igP-1D-kPz" firstAttribute="top" secondItem="hWc-Ze-F4p" secondAttribute="bottom" constant="20" id="iqI-Bd-YN4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EfJ-7C-VxP" secondAttribute="trailing" id="noG-7H-qZo"/>
+                            <constraint firstItem="hWc-Ze-F4p" firstAttribute="trailing" secondItem="EfJ-7C-VxP" secondAttribute="trailing" id="vtZ-O6-Sm6"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="EfJ-7C-VxP" secondAttribute="leading" id="wYX-aE-BMz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Acy-Vl-AEy"/>
+                    <connections>
+                        <outlet property="noteTV" destination="hWc-Ze-F4p" id="2FL-Ug-Shg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u14-IS-5Pq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2232.8000000000002" y="377.36131934032989"/>
         </scene>
         <!--Line View Controller-->
         <scene sceneID="GMB-Nx-62d">
