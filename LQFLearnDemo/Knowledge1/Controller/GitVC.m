@@ -21,7 +21,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSString *node = [NSString stringWithFormat:@"笔记\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n",
+    NSString *node = [NSString stringWithFormat:@"笔记\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n",
                       @"1.将目录变成git库: git init",
                       @"2.单个文件添加到git库: git add <文件名>",
                       @"3.提交: git commit -m 注释",
@@ -47,7 +47,12 @@
                       @"23.git checkout -b <name> : 创建并切换到某分支",
                       @"24.git merge <name> : 合并某分支到当前分支",
                       @"25.git branch -d <name> : 删除某分支",
-                      @"26.git log --graph : 查看分支合并图"
+                      @"26.git log --graph : 查看分支合并图",
+                      @"27.git merge --no-ff -m <描述> <分支name> : --no-ff参数合并分支,合并后的历史有分支",
+                      @"28.git stash : 将当前工作区储藏起来,方便在其他分支修复bug",
+                      @"29.git stash list : 查看stash历史记录",
+                      @"30.git stash pop : 恢复工作区并删除stash",
+                      @"31.git branch -D <分支name> : 丢弃一个没有被合并过的分支"
                       ];
     
     _noteTV.text = node;
