@@ -105,6 +105,10 @@
                                     <constraint firstAttribute="height" constant="43" id="mjM-8r-0fw"/>
                                 </constraints>
                                 <state key="normal" title="点击查看教程"/>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.47058823529999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.97832602859999995" green="0.83125147219999995" blue="0.4234000128" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="popWebView:" destination="ZqC-Ok-s9y" eventType="touchUpInside" id="ubJ-tp-AAz"/>
                                 </connections>

@@ -21,7 +21,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSString *node = [NSString stringWithFormat:@"笔记\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n",
+    NSString *node = [NSString stringWithFormat:@"笔记\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n",
                       @"1.将目录变成git库: git init",
                       @"2.单个文件添加到git库: git add <文件名>",
                       @"3.提交: git commit -m 注释",
@@ -52,7 +52,22 @@
                       @"28.git stash : 将当前工作区储藏起来,方便在其他分支修复bug",
                       @"29.git stash list : 查看stash历史记录",
                       @"30.git stash pop : 恢复工作区并删除stash",
-                      @"31.git branch -D <分支name> : 丢弃一个没有被合并过的分支"
+                      @"31.git branch -D <分支name> : 丢弃一个没有被合并过的分支",
+                      @"32.git remote -v : 查看远程库信息",
+                      @"33.git push origin <分支name> : 从本地推送分支到远程库",
+                      @"34.git pull : 抓取远程库的新提交(更新)",
+                      @"35.git checkout -b <branch-name> origin/<branch-name> : 在本地创建和远程分支对应的分支",
+                      @"36.git branch --set-upstream <branch-name> origin/<branch-name> : 建立本地分支和远程分支的关联",
+                      @"37.git clone : 从远程库克隆项目到本地",
+                      @"38.git tag <标签name> : 在HEAD创建一个标签",
+                      @"39.git tag <标签name> <commit id> : 在某个commit处创建标签",
+                      @"40.git tag -a <标签name> -m <注释(需加引号)> : 创建有标签信息的标签",
+                      @"41.git tag : 查看所有标签",
+                      @"42.git show <标签name> : 查看标签信息",
+                      @"43.git push origin <tagname> : 将本地标签推送到远程库",
+                      @"44.git push origin --tags : 将本地全部位推送的标签推送到远程库",
+                      @"45.git tag -d <tagname> : 删除一个本地标签",
+                      @"46.git push origin :refs/tags/<tagname> : 删除一个远程库标签"
                       ];
     
     _noteTV.text = node;
