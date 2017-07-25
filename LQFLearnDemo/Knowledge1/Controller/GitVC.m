@@ -21,7 +21,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSString *node = [NSString stringWithFormat:@"笔记\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n",
+    NSString *node = [NSString stringWithFormat:@"笔记\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n",
                       @"1.将目录变成git库: git init",
                       @"2.单个文件添加到git库: git add <文件名>",
                       @"3.提交: git commit -m 注释",
@@ -36,7 +36,18 @@
                       @"12.git diff HEAD -- <文件名> : 该文件在工作区和仓库中最新版本的区别",
                       @"13.git checkout -- <file> : 撤销工作区的操作",
                       @"14.git reset HEAD <file> : 撤销暂存区的操作",
-                      @"15.git rm <文件名> : 删除文件,还需加上git commit语句"
+                      @"15.git rm <文件名> : 删除文件,还需加上git commit语句",
+                      @"16.git remote add origin <网址> : 关联一个远程库",
+                      @"17.git push -u origin master : 第一次推送所有内容",
+                      @"18.git push origin master : 推送修改到远程库",
+                      @"19.git clone <网址> : 从远程克隆仓库到本地",
+                      @"20.git branch : 查看分支",
+                      @"21.git branch <name> : 创建分支",
+                      @"22.git checkout <name> : 切换到某分支",
+                      @"23.git checkout -b <name> : 创建并切换到某分支",
+                      @"24.git merge <name> : 合并某分支到当前分支",
+                      @"25.git branch -d <name> : 删除某分支",
+                      @"26.git log --graph : 查看分支合并图"
                       ];
     
     _noteTV.text = node;
