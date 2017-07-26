@@ -10,7 +10,15 @@
 
 @interface SectionModel : BaseModel
 
+/**
+ 是否支持折叠
+ */
+@property (nonatomic, assign) BOOL isSupportExpand;
+/**
+ 折叠状态
+ */
 @property (nonatomic, assign) BOOL isExpand;
+
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSArray *cellArray;
 

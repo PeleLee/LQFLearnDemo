@@ -16,6 +16,8 @@
 		DB3C9EEC1F1F37B8005B8285 /* SectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EEB1F1F37B8005B8285 /* SectionModel.m */; };
 		DB3C9EEF1F1F3817005B8285 /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EEE1F1F3817005B8285 /* CellModel.m */; };
 		DB3C9EF31F1F3889005B8285 /* SectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EF21F1F3889005B8285 /* SectionView.m */; };
+		DB43620E1F2835FF0089CE4B /* MultiThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB43620D1F2835FF0089CE4B /* MultiThreadVC.m */; };
+		DB4362101F28412F0089CE4B /* KnowledgeList1.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB43620F1F28412F0089CE4B /* KnowledgeList1.plist */; };
 		DB4538CA1F20B1B60037C1A8 /* CandleCorssScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4538C91F20B1B60037C1A8 /* CandleCorssScreenVC.m */; };
 		DB4538CD1F20B31C0037C1A8 /* LQFCrossPriceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4538CC1F20B31C0037C1A8 /* LQFCrossPriceView.m */; };
 		DB4B0CE91F258EEA0006CCBF /* LQFPopOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0CE81F258EEA0006CCBF /* LQFPopOutView.m */; };
@@ -262,6 +264,9 @@
 		DB3C9EEE1F1F3817005B8285 /* CellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
 		DB3C9EF11F1F3889005B8285 /* SectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionView.h; sourceTree = "<group>"; };
 		DB3C9EF21F1F3889005B8285 /* SectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionView.m; sourceTree = "<group>"; };
+		DB43620C1F2835FF0089CE4B /* MultiThreadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiThreadVC.h; sourceTree = "<group>"; };
+		DB43620D1F2835FF0089CE4B /* MultiThreadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadVC.m; sourceTree = "<group>"; };
+		DB43620F1F28412F0089CE4B /* KnowledgeList1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KnowledgeList1.plist; sourceTree = "<group>"; };
 		DB4538C81F20B1B60037C1A8 /* CandleCorssScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandleCorssScreenVC.h; sourceTree = "<group>"; };
 		DB4538C91F20B1B60037C1A8 /* CandleCorssScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandleCorssScreenVC.m; sourceTree = "<group>"; };
 		DB4538CB1F20B31C0037C1A8 /* LQFCrossPriceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFCrossPriceView.h; sourceTree = "<group>"; };
@@ -680,6 +685,7 @@
 		DB6FEE361F1746BC0009702E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DB43620F1F28412F0089CE4B /* KnowledgeList1.plist */,
 				DB6FEE371F1746DF0009702E /* Knowledge1ViewController.h */,
 				DB6FEE381F1746DF0009702E /* Knowledge1ViewController.m */,
 				DB6FEE3C1F174DED0009702E /* KVCViewController.h */,
@@ -692,6 +698,8 @@
 				DB3C9EE81F1F3775005B8285 /* FoldTableViewVC.m */,
 				DB4B0CED1F259C570006CCBF /* GitVC.h */,
 				DB4B0CEE1F259C570006CCBF /* GitVC.m */,
+				DB43620C1F2835FF0089CE4B /* MultiThreadVC.h */,
+				DB43620D1F2835FF0089CE4B /* MultiThreadVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1156,6 +1164,7 @@
 				DB55EE421F1C8DE200C7B787 /* N225.xml in Resources */,
 				DB6FEF2B1F1775D30009702E /* ta_retcode.csv in Resources */,
 				DB5D65241F17176200FEC2BA /* Main.storyboard in Resources */,
+				DB4362101F28412F0089CE4B /* KnowledgeList1.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1374,6 +1383,7 @@
 				DB6FEF481F1775D30009702E /* ta_CDLBREAKAWAY.c in Sources */,
 				DB6FEE5B1F1770670009702E /* LQFLineData.m in Sources */,
 				DB6FEF311F1775D30009702E /* ta_ADX.c in Sources */,
+				DB43620E1F2835FF0089CE4B /* MultiThreadVC.m in Sources */,
 				DB2C7DCE1F1867C000D90634 /* LQFLineModel.m in Sources */,
 				DB3C9EEF1F1F3817005B8285 /* CellModel.m in Sources */,
 				DB6FEF321F1775D30009702E /* ta_ADXR.c in Sources */,

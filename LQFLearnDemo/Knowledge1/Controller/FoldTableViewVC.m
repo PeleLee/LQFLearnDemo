@@ -37,6 +37,7 @@
             SectionModel *model = [[SectionModel alloc] init];
             model.title = [NSString stringWithFormat:@"%ld",(long)i];
             model.isExpand = NO;
+            model.isSupportExpand = YES;
             NSMutableArray *array = [[NSMutableArray alloc] init];
             for (NSInteger j = 0; j < 3; j++) {
                 CellModel *cell = [[CellModel alloc] init];
@@ -79,7 +80,7 @@
     SectionView *view = [self.tableView dequeueReusableHeaderFooterViewWithIdentifier:@"section"];
     SectionModel *model = _sectionData[section];
     view.model = model;
-    view.block = ^(BOOL ieExpanded) {
+    view.callBackBlock = ^(BOOL isExpanded) {
         [tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationFade];
     };
     return view;

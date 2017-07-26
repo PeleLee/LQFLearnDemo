@@ -55,6 +55,15 @@
 }
 
 - (void)btnClick:(UIButton *)sender {
+    //非折叠操作
+    if (!_model.isSupportExpand) {
+        if (self.skipBlock) {
+            self.skipBlock();
+            return;
+        }
+    }
+    
+    //折叠操作
     self.model.isExpand = !self.model.isExpand;
     if (self.model.isExpand) {
         self.arrowImage.transform = CGAffineTransformMakeRotation(M_PI_2);
@@ -62,8 +71,8 @@
     else {
         self.arrowImage.transform = CGAffineTransformIdentity;
     }
-    if (self.block) {
-        self.block(self.model.isExpand);
+    if (self.callBackBlock) {
+        self.callBackBlock(self.model.isExpand);
     }
 }
 
