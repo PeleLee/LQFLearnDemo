@@ -24,7 +24,7 @@ static NSInteger cellCount = 0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _funcList = @[@"积累温故1",
+    _funcList = @[@"Knowledge1",
                   @"K线图"];
     
     //KVO监听 偏移量

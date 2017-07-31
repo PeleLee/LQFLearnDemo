@@ -10,6 +10,9 @@
 		DB2C7DCE1F1867C000D90634 /* LQFLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C7DCD1F1867C000D90634 /* LQFLineModel.m */; };
 		DB2C7DD11F18B71E00D90634 /* LQFTecnnicalView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C7DD01F18B71E00D90634 /* LQFTecnnicalView.m */; };
 		DB2C7DD51F18BEBC00D90634 /* UIColor+LQF.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C7DD41F18BEBC00D90634 /* UIColor+LQF.m */; };
+		DB2F7A241F29C16D000DECD8 /* LQFSegmentHead.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2F7A231F29C16D000DECD8 /* LQFSegmentHead.m */; };
+		DB2F7A271F29D3C2000DECD8 /* LQFSegmentScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2F7A261F29D3C2000DECD8 /* LQFSegmentScroll.m */; };
+		DB2F7A2A1F29D8B7000DECD8 /* LQFSegmentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2F7A291F29D8B7000DECD8 /* LQFSegmentManager.m */; };
 		DB323F0F1F1DA19400D31925 /* UIBezierPath+Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = DB323F0E1F1DA19400D31925 /* UIBezierPath+Draw.m */; };
 		DB3C9EE61F1EF9C7005B8285 /* AutoreleasePoolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EE51F1EF9C7005B8285 /* AutoreleasePoolVC.m */; };
 		DB3C9EE91F1F3775005B8285 /* FoldTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EE81F1F3775005B8285 /* FoldTableViewVC.m */; };
@@ -252,6 +255,12 @@
 		DB2C7DD01F18B71E00D90634 /* LQFTecnnicalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFTecnnicalView.m; sourceTree = "<group>"; };
 		DB2C7DD31F18BEBC00D90634 /* UIColor+LQF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LQF.h"; sourceTree = "<group>"; };
 		DB2C7DD41F18BEBC00D90634 /* UIColor+LQF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LQF.m"; sourceTree = "<group>"; };
+		DB2F7A221F29C16D000DECD8 /* LQFSegmentHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFSegmentHead.h; sourceTree = "<group>"; };
+		DB2F7A231F29C16D000DECD8 /* LQFSegmentHead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFSegmentHead.m; sourceTree = "<group>"; };
+		DB2F7A251F29D3C2000DECD8 /* LQFSegmentScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFSegmentScroll.h; sourceTree = "<group>"; };
+		DB2F7A261F29D3C2000DECD8 /* LQFSegmentScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFSegmentScroll.m; sourceTree = "<group>"; };
+		DB2F7A281F29D8B7000DECD8 /* LQFSegmentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFSegmentManager.h; sourceTree = "<group>"; };
+		DB2F7A291F29D8B7000DECD8 /* LQFSegmentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFSegmentManager.m; sourceTree = "<group>"; };
 		DB323F0D1F1DA19400D31925 /* UIBezierPath+Draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Draw.h"; sourceTree = "<group>"; };
 		DB323F0E1F1DA19400D31925 /* UIBezierPath+Draw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Draw.m"; sourceTree = "<group>"; };
 		DB3C9EE41F1EF9C7005B8285 /* AutoreleasePoolVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoreleasePoolVC.h; sourceTree = "<group>"; };
@@ -558,6 +567,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DB2F7A211F29BC8C000DECD8 /* LQFSegmentPageView */ = {
+			isa = PBXGroup;
+			children = (
+				DB2F7A221F29C16D000DECD8 /* LQFSegmentHead.h */,
+				DB2F7A231F29C16D000DECD8 /* LQFSegmentHead.m */,
+				DB2F7A251F29D3C2000DECD8 /* LQFSegmentScroll.h */,
+				DB2F7A261F29D3C2000DECD8 /* LQFSegmentScroll.m */,
+				DB2F7A281F29D8B7000DECD8 /* LQFSegmentManager.h */,
+				DB2F7A291F29D8B7000DECD8 /* LQFSegmentManager.m */,
+			);
+			path = LQFSegmentPageView;
+			sourceTree = "<group>";
+		};
 		DB3C9EF01F1F3859005B8285 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -570,6 +592,7 @@
 		DB4B0CE51F258E940006CCBF /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				DB2F7A211F29BC8C000DECD8 /* LQFSegmentPageView */,
 				DB4B0CE61F258EB70006CCBF /* PopView */,
 			);
 			path = Public;
@@ -1314,6 +1337,7 @@
 				DB6FEF911F1775D30009702E /* ta_LN.c in Sources */,
 				DB6FEF9C1F1775D30009702E /* ta_MFI.c in Sources */,
 				DB6FEFC81F1775D30009702E /* ta_ULTOSC.c in Sources */,
+				DB2F7A2A1F29D8B7000DECD8 /* LQFSegmentManager.m in Sources */,
 				DB6FEFB91F1775D30009702E /* ta_STDDEV.c in Sources */,
 				DB6FEE3A1F1746DF0009702E /* Knowledge1ViewController.m in Sources */,
 				DB6FEF721F1775D30009702E /* ta_CDLSTALLEDPATTERN.c in Sources */,
@@ -1364,6 +1388,7 @@
 				DB6FEF6A1F1775D30009702E /* ta_CDLONNECK.c in Sources */,
 				DB6FEF341F1775D30009702E /* ta_AROON.c in Sources */,
 				DB6FEF451F1775D30009702E /* ta_CDLABANDONEDBABY.c in Sources */,
+				DB2F7A271F29D3C2000DECD8 /* LQFSegmentScroll.m in Sources */,
 				DB6FEFBF1F1775D30009702E /* ta_T3.c in Sources */,
 				DB6FEF4D1F1775D30009702E /* ta_CDLDOJI.c in Sources */,
 				DB6FEFC31F1775D30009702E /* ta_TRANGE.c in Sources */,
@@ -1416,6 +1441,7 @@
 				DB6FEF711F1775D30009702E /* ta_CDLSPINNINGTOP.c in Sources */,
 				DB6FEFB51F1775D30009702E /* ta_SIN.c in Sources */,
 				DB6FEF5A1F1775D30009702E /* ta_CDLHIKKAKE.c in Sources */,
+				DB2F7A241F29C16D000DECD8 /* LQFSegmentHead.m in Sources */,
 				DB55EE341F1C543500C7B787 /* LQFMacdView.m in Sources */,
 				DB6FEF801F1775D30009702E /* ta_DEMA.c in Sources */,
 				DB6FEFB81F1775D30009702E /* ta_SQRT.c in Sources */,

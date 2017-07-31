@@ -14,4 +14,9 @@
 
 @property (nonatomic, strong) NSString *navTitle;
 
+/**
+ 原文地址
+ */
+@property (nonatomic, strong) NSString *quoteUrl;
+
 @end

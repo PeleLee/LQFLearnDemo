@@ -167,7 +167,7 @@
 }
 
 - (void)presentWithTitle:(NSString *)title {
-    if ([title isEqualToString:@"KVC"] || [title isEqualToString:@"git"]) {
+    if ([title isEqualToString:@"KVC"] || [title isEqualToString:@"git"] || [title isEqualToString:@"MultiThread"]) {
         [self performSegueWithIdentifier:title sender:self];
     }
 }
