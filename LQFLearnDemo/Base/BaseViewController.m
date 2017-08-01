@@ -45,6 +45,7 @@
         _quoteButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _quoteButton.frame = CGRectMake(0, 64, 100, 44);
         [_quoteButton setTitle:@"原文-->" forState:UIControlStateNormal];
+        [_quoteButton.titleLabel setFont:[UIFont systemFontOfSize:13.0f]];
         [_quoteButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [_quoteButton addTarget:self action:@selector(showQuoteView:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:_quoteButton];

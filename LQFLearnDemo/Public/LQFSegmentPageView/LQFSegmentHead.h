@@ -31,6 +31,12 @@ typedef enum : NSUInteger {
     LQFSegmentLayoutLeft
 } LQFSegmentLayoutStyle;
 
+@protocol LQFSegmentHeadDelegate <NSObject>
+
+- (void)didSelectedIndex:(NSInteger)index;
+
+@end
+
 @interface LQFSegmentHead : UIView
 
 /**
@@ -129,6 +135,13 @@ typedef enum : NSUInteger {
  */
 @property (nonatomic, assign) CGFloat maxTitles;
 
+@property (nonatomic, weak) id <LQFSegmentHeadDelegate> delegate;
+
+/**
+ block
+ */
+@property (nonatomic, copy) void(^selectedIndex)(NSInteger index);
+
 /**
  居中箭头样式的segview
 
@@ -147,4 +160,24 @@ typedef enum : NSUInteger {
  创建之后,初始化
  */
 - (void)defaultAndCreateView;
+
+/**
+ set currentIndex
+
+ @param index currentIndex
+ */
+- (void)setSelectIndex:(NSInteger)index;
+
+/**
+ 点击结束
+ */
+- (void)animationEnd;
+
+/**
+ animation by scale
+
+ @param scale scale
+ */
+- (void)changePointScale:(CGFloat)scale;
+
 @end

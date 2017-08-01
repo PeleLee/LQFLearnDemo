@@ -18,6 +18,7 @@
 #define RoseColor   [UIColor colorWithHexString:@"f05b72"]
 #define DropColor  [UIColor colorWithHexString:@"7fb80e"]
 #define ContentOffSet @"contentOffset"
+#define RandomColor                    [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]
 
 #define ImageNamed(imageName)  [UIImage imageNamed:imageName]
 

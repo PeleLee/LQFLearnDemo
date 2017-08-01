@@ -71,8 +71,8 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
 
-    CGFloat webW = DEVICE_WIDTH * 0.85;
-    CGFloat webH = DEVICE_HEIGHT * 0.7;
+    CGFloat webW = DEVICE_WIDTH * 0.9;
+    CGFloat webH = DEVICE_HEIGHT * 0.85;
     CGRect webRect = CGRectMake((DEVICE_WIDTH - webW) / 2, (DEVICE_HEIGHT - webH) / 2, webW, webH);
     _backView.frame = self.bounds;
     _webView.frame = webRect;

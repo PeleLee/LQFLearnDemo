@@ -325,7 +325,7 @@
             </objects>
             <point key="canvasLocation" x="2205.5999999999999" y="-961.16941529235385"/>
         </scene>
-        <!--Multi ThreadVC-->
+        <!--MultiThread-->
         <scene sceneID="hi1-Ok-OuD">
             <objects>
                 <viewController id="fnT-FT-VdW" customClass="MultiThreadVC" sceneMemberID="viewController">
@@ -336,18 +336,11 @@
                     <view key="view" contentMode="scaleToFill" id="GIq-o7-uFu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="依次判断位图（10位）的状态并用弹框显示" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrd-3o-0Xn">
-                                <rect key="frame" x="16" y="245" width="308" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ahu-Lo-DWd"/>
+                    <navigationItem key="navigationItem" title="MultiThread" id="Ahu-Lo-DWd">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="sAg-UV-mAX"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bkk-JE-0M1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

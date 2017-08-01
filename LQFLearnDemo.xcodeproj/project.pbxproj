@@ -34,6 +34,10 @@
 		DB55EE401F1C898500C7B787 /* LQFPriceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE3F1F1C898500C7B787 /* LQFPriceView.m */; };
 		DB55EE421F1C8DE200C7B787 /* N225.xml in Resources */ = {isa = PBXBuildFile; fileRef = DB55EE411F1C8DE200C7B787 /* N225.xml */; };
 		DB55EE451F1CBD5900C7B787 /* LQFCandlePositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE441F1CBD5900C7B787 /* LQFCandlePositionModel.m */; };
+		DB584C641F305B6100529562 /* MultiThreadView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB584C631F305B6100529562 /* MultiThreadView.m */; };
+		DB584C661F30606300529562 /* NSThreadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB584C651F30606300529562 /* NSThreadView.xib */; };
+		DB584C681F30618F00529562 /* GCDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB584C671F30618F00529562 /* GCDView.xib */; };
+		DB584C6A1F30621B00529562 /* NSOperationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB584C691F30621B00529562 /* NSOperationView.xib */; };
 		DB5D651B1F17176200FEC2BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D651A1F17176200FEC2BA /* main.m */; };
 		DB5D651E1F17176200FEC2BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D651D1F17176200FEC2BA /* AppDelegate.m */; };
 		DB5D65211F17176200FEC2BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D65201F17176200FEC2BA /* ViewController.m */; };
@@ -225,6 +229,7 @@
 		DB6FEFCB1F1775D30009702E /* ta_WCLPRICE.c in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEF261F1775D30009702E /* ta_WCLPRICE.c */; };
 		DB6FEFCC1F1775D30009702E /* ta_WILLR.c in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEF271F1775D30009702E /* ta_WILLR.c */; };
 		DB6FEFCD1F1775D30009702E /* ta_WMA.c in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEF281F1775D30009702E /* ta_WMA.c */; };
+		DB7948701F2F08BA00E74C93 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */; };
 		FA9890C2F6C38525334513A3 /* libPods-LQFLearnDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB04A7764BA14A414C18CB7 /* libPods-LQFLearnDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -301,6 +306,11 @@
 		DB55EE411F1C8DE200C7B787 /* N225.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = N225.xml; sourceTree = "<group>"; };
 		DB55EE431F1CBD5900C7B787 /* LQFCandlePositionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFCandlePositionModel.h; sourceTree = "<group>"; };
 		DB55EE441F1CBD5900C7B787 /* LQFCandlePositionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFCandlePositionModel.m; sourceTree = "<group>"; };
+		DB584C621F305B6100529562 /* MultiThreadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiThreadView.h; sourceTree = "<group>"; };
+		DB584C631F305B6100529562 /* MultiThreadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadView.m; sourceTree = "<group>"; };
+		DB584C651F30606300529562 /* NSThreadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSThreadView.xib; sourceTree = "<group>"; };
+		DB584C671F30618F00529562 /* GCDView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCDView.xib; sourceTree = "<group>"; };
+		DB584C691F30621B00529562 /* NSOperationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSOperationView.xib; sourceTree = "<group>"; };
 		DB5D65161F17176200FEC2BA /* LQFLearnDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQFLearnDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5D651A1F17176200FEC2BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB5D651C1F17176200FEC2BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -530,6 +540,8 @@
 		DB6FEF261F1775D30009702E /* ta_WCLPRICE.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ta_WCLPRICE.c; sourceTree = "<group>"; };
 		DB6FEF271F1775D30009702E /* ta_WILLR.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ta_WILLR.c; sourceTree = "<group>"; };
 		DB6FEF281F1775D30009702E /* ta_WMA.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ta_WMA.c; sourceTree = "<group>"; };
+		DB79486E1F2F08BA00E74C93 /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
+		DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -585,6 +597,11 @@
 			children = (
 				DB3C9EF11F1F3889005B8285 /* SectionView.h */,
 				DB3C9EF21F1F3889005B8285 /* SectionView.m */,
+				DB584C621F305B6100529562 /* MultiThreadView.h */,
+				DB584C631F305B6100529562 /* MultiThreadView.m */,
+				DB584C651F30606300529562 /* NSThreadView.xib */,
+				DB584C671F30618F00529562 /* GCDView.xib */,
+				DB584C691F30621B00529562 /* NSOperationView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -751,6 +768,8 @@
 				DB2C7DD41F18BEBC00D90634 /* UIColor+LQF.m */,
 				DB323F0D1F1DA19400D31925 /* UIBezierPath+Draw.h */,
 				DB323F0E1F1DA19400D31925 /* UIBezierPath+Draw.m */,
+				DB79486E1F2F08BA00E74C93 /* UIView+ViewController.h */,
+				DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1182,9 +1201,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB584C661F30606300529562 /* NSThreadView.xib in Resources */,
+				DB584C6A1F30621B00529562 /* NSOperationView.xib in Resources */,
 				DB5D652C1F17176200FEC2BA /* LaunchScreen.storyboard in Resources */,
 				DB5D65291F17176200FEC2BA /* Assets.xcassets in Resources */,
 				DB55EE421F1C8DE200C7B787 /* N225.xml in Resources */,
+				DB584C681F30618F00529562 /* GCDView.xib in Resources */,
 				DB6FEF2B1F1775D30009702E /* ta_retcode.csv in Resources */,
 				DB5D65241F17176200FEC2BA /* Main.storyboard in Resources */,
 				DB4362101F28412F0089CE4B /* KnowledgeList1.plist in Resources */,
@@ -1294,6 +1316,7 @@
 				DB6FEF871F1775D30009702E /* ta_HT_DCPHASE.c in Sources */,
 				DB6FEF511F1775D30009702E /* ta_CDLEVENINGDOJISTAR.c in Sources */,
 				DB6FEFC51F1775D30009702E /* ta_TRIX.c in Sources */,
+				DB584C641F305B6100529562 /* MultiThreadView.m in Sources */,
 				DB6FEE721F1775C70009702E /* LQFCalcuteTool.m in Sources */,
 				DB6FEF581F1775D30009702E /* ta_CDLHARAMICROSS.c in Sources */,
 				DB6FEF601F1775D30009702E /* ta_CDLKICKING.c in Sources */,
@@ -1371,6 +1394,7 @@
 				DB6FEF361F1775D30009702E /* ta_ASIN.c in Sources */,
 				DB6FEF841F1775D30009702E /* ta_EXP.c in Sources */,
 				DB6FEF7E1F1775D30009702E /* ta_COS.c in Sources */,
+				DB7948701F2F08BA00E74C93 /* UIView+ViewController.m in Sources */,
 				DB6FEE4F1F176A2A0009702E /* AutolayoutVC.m in Sources */,
 				DB6FEF9B1F1775D30009702E /* ta_MEDPRICE.c in Sources */,
 				DB3C9EE61F1EF9C7005B8285 /* AutoreleasePoolVC.m in Sources */,
