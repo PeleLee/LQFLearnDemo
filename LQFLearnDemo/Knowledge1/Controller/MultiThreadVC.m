@@ -10,6 +10,7 @@
 #import "LQFSegmentHead.h"
 #import "LQFSegmentScroll.h"
 #import "LQFSegmentManager.h"
+#import "MultiThreadView.h"
 
 @interface MultiThreadVC () {
     NSArray *_segList;
@@ -31,9 +32,15 @@
     _segList = @[@"NSThread",
                  @"CGD",
                  @"NSOperation"];
+//    _segList = @[@"NSThreadddddddddddddddddddd",
+//                 @"CGD",
+//                 @"AFNetworking",
+//                 @"Test",
+//                 @"Test",
+//                 @"Demo"];
     
     _segHead = [[LQFSegmentHead alloc] initWithFrame:CGRectMake(0, 108, DEVICE_WIDTH, 40) titles:_segList headStyle:SegmentHeadStyleArrow layoutStyle:LQFSegmentLayoutCenter];
-    _segHead.fontScale = 1.2;
+    _segHead.fontScale = .85;
     _segHead.fontSize = 14;
     _segHead.maxTitles = 3;
     
@@ -50,8 +57,8 @@
 - (NSArray *)vcArr:(NSInteger)count {
     NSMutableArray *arr = [NSMutableArray array];
     for (NSInteger i = 0; i < count; i++) {
-        UIView *view = [UIView new];
-        view.tag = 1000+i;
+        MultiThreadView *view = [MultiThreadView new];
+        view.index = i;
         [arr addObject:view];
     }
     return arr;
