@@ -47,6 +47,7 @@
 		DB5D652C1F17176200FEC2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5D652A1F17176200FEC2BA /* LaunchScreen.storyboard */; };
 		DB5D65371F17176200FEC2BA /* LQFLearnDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D65361F17176200FEC2BA /* LQFLearnDemoTests.m */; };
 		DB5D65421F17176200FEC2BA /* LQFLearnDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D65411F17176200FEC2BA /* LQFLearnDemoUITests.m */; };
+		DB6AEE0F1F31A181000D9716 /* LQFOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6AEE0E1F31A180000D9716 /* LQFOperation.m */; };
 		DB6FEE331F1722BA0009702E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE321F1722BA0009702E /* BaseViewController.m */; };
 		DB6FEE3A1F1746DF0009702E /* Knowledge1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE381F1746DF0009702E /* Knowledge1ViewController.m */; };
 		DB6FEE3E1F174DED0009702E /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE3D1F174DED0009702E /* KVCViewController.m */; };
@@ -328,6 +329,8 @@
 		DB5D653D1F17176200FEC2BA /* LQFLearnDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LQFLearnDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5D65411F17176200FEC2BA /* LQFLearnDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQFLearnDemoUITests.m; sourceTree = "<group>"; };
 		DB5D65431F17176200FEC2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6AEE0D1F31A180000D9716 /* LQFOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFOperation.h; sourceTree = "<group>"; };
+		DB6AEE0E1F31A180000D9716 /* LQFOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFOperation.m; sourceTree = "<group>"; };
 		DB6FEE311F1722BA0009702E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		DB6FEE321F1722BA0009702E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		DB6FEE341F17235B0009702E /* LQFLearnDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LQFLearnDemo-Prefix.pch"; sourceTree = "<group>"; };
@@ -599,6 +602,8 @@
 				DB3C9EF21F1F3889005B8285 /* SectionView.m */,
 				DB584C621F305B6100529562 /* MultiThreadView.h */,
 				DB584C631F305B6100529562 /* MultiThreadView.m */,
+				DB6AEE0D1F31A180000D9716 /* LQFOperation.h */,
+				DB6AEE0E1F31A180000D9716 /* LQFOperation.m */,
 				DB584C651F30606300529562 /* NSThreadView.xib */,
 				DB584C671F30618F00529562 /* GCDView.xib */,
 				DB584C691F30621B00529562 /* NSOperationView.xib */,
@@ -1452,6 +1457,7 @@
 				DB2C7DD51F18BEBC00D90634 /* UIColor+LQF.m in Sources */,
 				DB6FEF9F1F1775D30009702E /* ta_MIN.c in Sources */,
 				DB6FEE621F1770790009702E /* LQFCandleChartView.m in Sources */,
+				DB6AEE0F1F31A181000D9716 /* LQFOperation.m in Sources */,
 				DB6FEF9D1F1775D30009702E /* ta_MIDPOINT.c in Sources */,
 				DB6FEF941F1775D30009702E /* ta_MACD.c in Sources */,
 				DB6FEF761F1775D30009702E /* ta_CDLTHRUSTING.c in Sources */,

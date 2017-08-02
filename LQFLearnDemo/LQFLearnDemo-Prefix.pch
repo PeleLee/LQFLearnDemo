@@ -21,6 +21,7 @@
 #import "LQFPopOutView.h"
 #import "LQFPopTool.h"
 #import "KVOController.h"
+#import "SVProgressHUD.h"
 #endif
 
 

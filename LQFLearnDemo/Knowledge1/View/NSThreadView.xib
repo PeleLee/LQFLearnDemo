@@ -15,26 +15,36 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWq-Y8-iTg">
-                    <rect key="frame" x="182" y="323" width="11" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mf-dx-vVk">
-                    <rect key="frame" x="16" y="60" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDX-lX-uOG">
+                    <rect key="frame" x="105" y="99" width="165" height="30"/>
+                    <state key="normal" title="NSThread开线程 方法二"/>
                     <connections>
-                        <action selector="test:" destination="iN0-l3-epB" eventType="touchUpInside" id="LD8-2w-Guk"/>
+                        <action selector="createNSThread:" destination="iN0-l3-epB" eventType="touchUpInside" id="iiP-hp-LVH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gd-ac-334">
+                    <rect key="frame" x="105" y="40" width="165" height="30"/>
+                    <state key="normal" title="NSThread开线程 方法一"/>
+                    <connections>
+                        <action selector="createNSThread:" destination="iN0-l3-epB" eventType="touchUpInside" id="Tjx-ai-Vc7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjV-19-2Hg">
+                    <rect key="frame" x="105" y="155" width="165" height="30"/>
+                    <state key="normal" title="NSThread开线程 方法三"/>
+                    <connections>
+                        <action selector="createNSThread:" destination="iN0-l3-epB" eventType="touchUpInside" id="huK-HP-exc"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="9Mf-dx-vVk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="4C6-8E-wm8"/>
-                <constraint firstItem="9Mf-dx-vVk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="UkU-1m-mUH"/>
-                <constraint firstItem="cWq-Y8-iTg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vfb-5O-QKM"/>
-                <constraint firstItem="cWq-Y8-iTg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xSi-wM-Ce1"/>
+                <constraint firstItem="5gd-ac-334" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4MG-rh-EGx"/>
+                <constraint firstItem="ZjV-19-2Hg" firstAttribute="top" secondItem="QDX-lX-uOG" secondAttribute="bottom" constant="26" id="SaI-bT-wTK"/>
+                <constraint firstItem="ZjV-19-2Hg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="T0R-6w-GbC"/>
+                <constraint firstItem="QDX-lX-uOG" firstAttribute="top" secondItem="5gd-ac-334" secondAttribute="bottom" constant="29" id="jpG-JL-UDP"/>
+                <constraint firstItem="5gd-ac-334" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="lim-09-SSd"/>
+                <constraint firstItem="QDX-lX-uOG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wTa-XS-rBG"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="24.5" y="59.5"/>

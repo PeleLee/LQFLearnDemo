@@ -3,4 +3,5 @@ target 'LQFLearnDemo' do
 	pod 'Masonry'
     pod 'KVOController'
     pod 'FHHFPSIndicator'
+    pod 'SVProgressHUD'
 end

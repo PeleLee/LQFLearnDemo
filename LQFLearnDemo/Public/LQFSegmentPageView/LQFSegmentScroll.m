@@ -127,7 +127,6 @@
     }
     view.frame = CGRectMake(index * self.width, 0, self.width, self.height);
 //    view.backgroundColor = RandomColor;
-    view.alpha = 0.4;
     [self addSubview:view];
 }
 
