@@ -44,6 +44,10 @@ static NSInteger cellCount = 0;
     return _funcList.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 0.1;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [_funcTV dequeueReusableCellWithIdentifier:cellID];
     if (cell == nil) {
@@ -52,7 +56,7 @@ static NSInteger cellCount = 0;
         cell.tag = cellCount;
         cellCount++;
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld、%@",indexPath.row+1,_funcList[indexPath.row]];
+    cell.textLabel.text = _funcList[indexPath.row];
     return cell;
 }
 
