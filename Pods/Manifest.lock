@@ -2,17 +2,20 @@ PODS:
   - FHHFPSIndicator (1.0.0)
   - KVOController (1.2.0)
   - Masonry (1.0.2)
+  - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
   - FHHFPSIndicator
   - KVOController
   - Masonry
+  - SVProgressHUD
 
 SPEC CHECKSUMS:
   FHHFPSIndicator: b4d34c3a93b702ad18358a4eb49839f83f4f30fb
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 7bc19e040110c14f6ca750a4a4686e0948c134ac
+PODFILE CHECKSUM: 055b6c992f5f60133d8bb0c27c0e8483ed1af7b3
 
 COCOAPODS: 1.2.1
