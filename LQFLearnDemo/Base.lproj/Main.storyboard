@@ -24,8 +24,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="yi5-43-l4f"/>
                     <connections>
-                        <segue destination="5BJ-BM-hu7" kind="push" identifier="KLine" id="zZX-n1-vWT"/>
-                        <segue destination="NKQ-f8-XAp" kind="push" identifier="knowledge1" id="qcR-Yn-Qfc"/>
+                        <segue destination="5BJ-BM-hu7" kind="show" identifier="KLine" id="zZX-n1-vWT"/>
+                        <segue destination="NKQ-f8-XAp" kind="show" identifier="knowledge1" id="qcR-Yn-Qfc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9W2-qG-AHD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -47,11 +47,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Knowledge1" id="Gh0-MG-PRh"/>
                     <connections>
-                        <segue destination="FXG-Rl-YQP" kind="push" identifier="KVC" id="D4R-GA-cid"/>
-                        <segue destination="ZqC-Ok-s9y" kind="push" identifier="git" id="Ejl-UT-EnB"/>
-                        <segue destination="fnT-FT-VdW" kind="push" identifier="MultiThread" id="stH-s0-a2O"/>
-                        <segue destination="vSa-eW-8VI" kind="push" identifier="Regex" id="RTT-5x-Uss"/>
-                        <segue destination="3Wk-6A-apg" kind="push" identifier="Xib&amp;SB" id="Ryr-He-gUx"/>
+                        <segue destination="FXG-Rl-YQP" kind="show" identifier="KVC" id="D4R-GA-cid"/>
+                        <segue destination="ZqC-Ok-s9y" kind="show" identifier="git" id="Ejl-UT-EnB"/>
+                        <segue destination="fnT-FT-VdW" kind="show" identifier="MultiThread" id="stH-s0-a2O"/>
+                        <segue destination="vSa-eW-8VI" kind="show" identifier="Regex" id="RTT-5x-Uss"/>
+                        <segue destination="3Wk-6A-apg" kind="show" identifier="Xib&amp;SB" id="Ryr-He-gUx"/>
+                        <segue destination="uuU-fJ-2lq" kind="show" identifier="KillWarn" id="YYk-IG-rsr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEk-0s-kyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,6 +78,24 @@
             </objects>
             <point key="canvasLocation" x="3062" y="-271"/>
         </scene>
+        <!--Kill WarnVC-->
+        <scene sceneID="a8E-MK-eKU">
+            <objects>
+                <viewController id="uuU-fJ-2lq" customClass="KillWarnVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dco-nG-ZOb"/>
+                        <viewControllerLayoutGuide type="bottom" id="jN9-Bw-C1c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DtQ-OP-xhi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uc7-vP-sZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3854" y="-271"/>
+        </scene>
         <!--Xib AndSBVC-->
         <scene sceneID="16r-lg-JFE">
             <objects>
@@ -94,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHo-oU-BNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3980" y="378"/>
+            <point key="canvasLocation" x="3062" y="515"/>
         </scene>
         <!--KLine-->
         <scene sceneID="GMB-Nx-62d">
@@ -113,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08F-F5-SOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="891"/>
+            <point key="canvasLocation" x="679" y="1102"/>
         </scene>
         <!--Regex-->
         <scene sceneID="Ti4-F1-b8c">
@@ -132,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hIQ-uc-kjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4004" y="-291.00449775112446"/>
+            <point key="canvasLocation" x="3854" y="-953"/>
         </scene>
         <!--KVC-->
         <scene sceneID="qQz-x9-Xk8">

@@ -96,7 +96,7 @@ typedef NS_ENUM(NSUInteger, DataLineType) {
 - (void)addScrollView {
     _scrollView = [UIScrollView new];
     [self.view addSubview:_scrollView];
-    _scrollView.showsHorizontalScrollIndicator = YES;
+    _scrollView.showsHorizontalScrollIndicator = NO;
     _scrollView.backgroundColor = [UIColor whiteColor];
     
     [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -106,7 +106,7 @@ typedef NS_ENUM(NSUInteger, DataLineType) {
         make.height.equalTo(@((DEVICE_HEIGHT - 64 - 100)*ScrollScale));
     }];
     
-    [_scrollView setContentSize:CGSizeMake(500, 600)];
+//    [_scrollView setContentSize:CGSizeMake(0, 0)];
 }
 
 - (void)addCandleChartView {

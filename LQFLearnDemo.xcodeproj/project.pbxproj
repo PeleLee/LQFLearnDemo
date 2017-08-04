@@ -230,6 +230,7 @@
 		DB6FEFCC1F1775D30009702E /* ta_WILLR.c in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEF271F1775D30009702E /* ta_WILLR.c */; };
 		DB6FEFCD1F1775D30009702E /* ta_WMA.c in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEF281F1775D30009702E /* ta_WMA.c */; };
 		DB78B86D1F341971003D8A6D /* XibAndSBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB78B86C1F341971003D8A6D /* XibAndSBVC.m */; };
+		DB78B8B21F34727D003D8A6D /* KillWarnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB78B8B11F34727D003D8A6D /* KillWarnVC.m */; };
 		DB7948701F2F08BA00E74C93 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */; };
 		FA9890C2F6C38525334513A3 /* libPods-LQFLearnDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB04A7764BA14A414C18CB7 /* libPods-LQFLearnDemo.a */; };
 /* End PBXBuildFile section */
@@ -543,6 +544,8 @@
 		DB6FEF281F1775D30009702E /* ta_WMA.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ta_WMA.c; sourceTree = "<group>"; };
 		DB78B86B1F341971003D8A6D /* XibAndSBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibAndSBVC.h; sourceTree = "<group>"; };
 		DB78B86C1F341971003D8A6D /* XibAndSBVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibAndSBVC.m; sourceTree = "<group>"; };
+		DB78B8B01F34727D003D8A6D /* KillWarnVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KillWarnVC.h; sourceTree = "<group>"; };
+		DB78B8B11F34727D003D8A6D /* KillWarnVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KillWarnVC.m; sourceTree = "<group>"; };
 		DB79486E1F2F08BA00E74C93 /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
 		DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -745,6 +748,8 @@
 				DB4F2A7C1F32F1980088674A /* RegexVC.m */,
 				DB78B86B1F341971003D8A6D /* XibAndSBVC.h */,
 				DB78B86C1F341971003D8A6D /* XibAndSBVC.m */,
+				DB78B8B01F34727D003D8A6D /* KillWarnVC.h */,
+				DB78B8B11F34727D003D8A6D /* KillWarnVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1477,6 +1482,7 @@
 				DB6FEFB81F1775D30009702E /* ta_SQRT.c in Sources */,
 				DB6FEE451F174FB10009702E /* Person.m in Sources */,
 				DB6FEFA61F1775D30009702E /* ta_MULT.c in Sources */,
+				DB78B8B21F34727D003D8A6D /* KillWarnVC.m in Sources */,
 				DB6FEF6C1F1775D30009702E /* ta_CDLRICKSHAWMAN.c in Sources */,
 				DB6FEF951F1775D30009702E /* ta_MACDEXT.c in Sources */,
 				DB6FEF7F1F1775D30009702E /* ta_COSH.c in Sources */,
