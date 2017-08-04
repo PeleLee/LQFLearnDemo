@@ -11,25 +11,19 @@
 #import "Dog.h"
 #import "Person.h"
 
-@interface KVCViewController () <WKUIDelegate,WKNavigationDelegate>
-
-@property (weak, nonatomic) IBOutlet UIView *webview;
-@property (strong,nonatomic) UIProgressView *progressView;
-@property (strong,nonatomic) WKWebView *realWebView;
+@interface KVCViewController ()
 
 @end
 
 @implementation KVCViewController
 
-- (void)dealloc {
-    [_realWebView removeObserver:self forKeyPath:@"estimatedProgress"];
-    [_realWebView setNavigationDelegate:nil];
-    [_realWebView setUIDelegate:nil];
-    _realWebView = nil;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navTitle = @"KVC";
+    
+    self.quoteUrl = @"http://www.jianshu.com/p/45cbd324ea65";
+    
     [self testKVC];
     [self KVCTips];
 }
@@ -88,36 +82,6 @@
     
     NSNumber *dogsNumber = [p valueForKeyPath:@"dogs.@sum.number"];
     NSLog(@"%@",dogsNumber);
-}
-
-- (IBAction)loadWebView:(UIButton *)sender {
-    
-    _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 0, _webview.frame.size.width, 2)];
-    [_webview addSubview:_progressView];
-    
-    NSString *urlStr = @"http://www.jianshu.com/p/45cbd324ea65";
-    NSURL *url = [NSURL URLWithString:urlStr];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
-    
-    _realWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 2, _webview.width, _webview.height-2)];
-    _realWebView.UIDelegate = self;
-    _realWebView.navigationDelegate = self;
-    //KVO
-    [_realWebView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew| NSKeyValueObservingOptionOld context:nil];
-    
-    [_webview addSubview:_realWebView];
-    [_realWebView loadRequest:request];
-}
-
-#pragma mark - KVO
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-    if ([keyPath isEqualToString:@"estimatedProgress"] && object == _realWebView) {
-        [self.progressView setAlpha:1.0f];
-        [self.progressView setProgress:_realWebView.estimatedProgress animated:YES];
-        if (_realWebView.estimatedProgress >= 1.0f) {
-            [self.progressView setAlpha:0.0f];
-        }
-    }
 }
 
 - (void)didReceiveMemoryWarning {

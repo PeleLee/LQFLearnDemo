@@ -8,7 +8,6 @@
 
 #import "Knowledge1ViewController.h"
 #import "AutoreleasePoolVC.h"
-#import "FoldTableViewVC.h"
 #import "SectionModel.h"
 #import "CellModel.h"
 #import "SectionView.h"
@@ -17,7 +16,7 @@
     NSArray *_listArr;
 }
 
-@property (weak, nonatomic) IBOutlet UITableView *fucTV;
+@property (strong, nonatomic) UITableView *fucTV;
 @property (nonatomic, strong) NSMutableArray *sectionData;
 
 @end
@@ -26,26 +25,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navTitle = @"Knowledge";
+    
+    _fucTV = [[UITableView alloc] initWithFrame:CGRectMake(0, 65, DEVICE_WIDTH, DEVICE_HEIGHT - 65) style:UITableViewStylePlain];
+    _fucTV.delegate = self;
+    _fucTV.dataSource = self;
+    [self.view addSubview:_fucTV];
+    
+    //plist文件加载列表
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"KnowledgeList1.plist" ofType:nil];
     _listArr = [NSArray arrayWithContentsOfFile:plistPath];
-//    _listArr = @[
-//                 @"KVC",
-//                 @"TableView折叠",
-//                 @"Autolayout"/*https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137402760310626208b4f695940a49e5348b689d095fc000*/,
-//                 @"git",
-//                 @"AutoreleasePool",
-//                 @"多线程"/*http://www.cocoachina.com/ios/20170707/19769.html*/,
-//                 @"FMDB",
-//                 @"CoreData",
-//                 @"App上线流程",
-//                 @"Masonry",
-//                 @"iOS各版本更新内容",
-//                 @"协议和扩展",
-//                 @"内存泄露检测",
-//                 @"React Native",
-//                 ];
-    [_fucTV registerClass:[SectionView class] forHeaderFooterViewReuseIdentifier:@"section"];
     
+    [_fucTV registerClass:[SectionView class] forHeaderFooterViewReuseIdentifier:@"section"];
 }
 
 - (NSMutableArray *)sectionData {
@@ -56,16 +48,23 @@
             NSDictionary *dic = _listArr[i];
             
             SectionModel *sectionModel = [[SectionModel alloc] init];
-            sectionModel.title = dic[@"title"];
+            sectionModel.title = dic[@"Title"];
             sectionModel.isExpand = NO;
+            sectionModel.segID = dic[@"SegID"];
             
-            NSArray *subArr = dic[@"sub"];
+            //判断是否可折叠
+            //可折叠:   点击弹出折叠选项
+            //不可折叠:  点击即跳转
+            NSArray *subArr = dic[@"Sub"];
             if (subArr && subArr.count > 0) {
                 sectionModel.isSupportExpand = YES;
                 NSMutableArray *cellArr = [NSMutableArray arrayWithCapacity:0];
                 for (NSInteger j = 0; j < subArr.count; j++) {
                     CellModel *model = [[CellModel alloc] init];
-                    model.title = subArr[j];
+                    NSDictionary *cellDic = subArr[j];
+                    model.title = cellDic[@"Title"];
+                    model.segID = cellDic[@"SegID"];
+                    
                     [cellArr addObject:model];
                 }
                 sectionModel.cellArray = cellArr;
@@ -95,7 +94,12 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 0.1f;
+    if (section == _sectionData.count - 1) {
+        return 0.1f;
+    }
+    else {
+        return 0;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -113,12 +117,21 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     SectionView *view = [_fucTV dequeueReusableHeaderFooterViewWithIdentifier:@"section"];
+    if (!view) {
+        view = [[SectionView alloc] initWithReuseIdentifier:@"section"];
+    }
     SectionModel *model = _sectionData[section];
     view.model = model;
     
     view.skipBlock = ^{
-        NSString *title = model.title;
-        [self presentWithTitle:title];
+        NSString *segID = model.segID;
+        if (segID && segID.length > 0) {
+            //storyboard中跳转
+            [self presentWithTitle:segID];
+        }
+        else {
+            //其他方式跳转
+        }
     };
     
     view.callBackBlock = ^(BOOL isExpanded) {
@@ -129,47 +142,19 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *dic = _listArr[indexPath.section];
-    NSArray *cellArr = dic[@"sub"];
-    NSString *content = cellArr[indexPath.row];
+    NSArray *cellArr = dic[@"Sub"];
+    CellModel *cellModel = cellArr[indexPath.row];
+    NSString *segID = cellModel.segID;
     
-    [self presentWithTitle:content];
-    
-    
-//    else if ([content isEqualToString:@"AutoreleasePool"]) {
-//        
-//        
-//        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"场景选择" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-//        
-//        __weak typeof(self) this = self;
-//        UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"场景1" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//            [this pushToAutoreleasePooVCWithType:1];
-//        }];
-//        UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"场景2" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//            [this pushToAutoreleasePooVCWithType:2];
-//        }];
-//        UIAlertAction *action3 = [UIAlertAction actionWithTitle:@"场景3" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//            [this pushToAutoreleasePooVCWithType:3];
-//        }];
-//        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-//        
-//        [alert addAction:action1];
-//        [alert addAction:action2];
-//        [alert addAction:action3];
-//        [alert addAction:cancelAction];
-//        
-//        [self presentViewController:alert animated:YES completion:nil];
-//    }
-    
-//    else if ([content isEqualToString:@"TableView折叠"]) {
-//        FoldTableViewVC *foldVC = [[FoldTableViewVC alloc] init];
-//        [self.navigationController pushViewController:foldVC animated:YES];
-//    }
+    if (segID && segID.length > 0) {
+        [self presentWithTitle:segID];
+    }
+    else {
+    }
 }
 
 - (void)presentWithTitle:(NSString *)title {
-    if ([title isEqualToString:@"KVC"] || [title isEqualToString:@"git"] || [title isEqualToString:@"MultiThread"]) {
-        [self performSegueWithIdentifier:title sender:self];
-    }
+    [self performSegueWithIdentifier:title sender:self];
 }
 
 #pragma mark AutoreleasePool

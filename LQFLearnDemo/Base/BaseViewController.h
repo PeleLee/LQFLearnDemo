@@ -15,6 +15,11 @@
 @property (nonatomic, strong) NSString *navTitle;
 
 /**
+ 是否隐藏返回按钮
+ */
+@property (nonatomic, assign) BOOL hiddenBackBtn;
+
+/**
  原文地址
  */
 @property (nonatomic, strong) NSString *quoteUrl;

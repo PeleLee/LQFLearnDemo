@@ -67,6 +67,9 @@ typedef NS_ENUM(NSUInteger, DataLineType) {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navTitle = @"KLine";
+    
     [[FHHFPSIndicator sharedFPSIndicator] show];
     _type = MACD;
     [self addSubViews];

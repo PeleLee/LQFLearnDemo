@@ -24,7 +24,11 @@
 @implementation MultiThreadVC
 
 - (void)viewDidLoad {
+    [super viewDidLoad];
+    
     self.quoteUrl = @"http://www.cocoachina.com/ios/20170707/19769.html";
+    self.navTitle = @"多线程";
+    
     [self showSegView];
 }
 

@@ -10,8 +10,7 @@
 
 @interface GitVC ()
 
-@property (weak, nonatomic) IBOutlet UITextView *noteTV;
-@property (nonatomic, strong) LQFPopOutView *popOutView;
+@property (strong, nonatomic) UITextView *noteTV;
 
 @end
 
@@ -19,7 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.quoteUrl = @"https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000";
+    self.navTitle = @"git语法";
+    
+    _noteTV = [[UITextView alloc] initWithFrame:CGRectMake(20, 110, DEVICE_WIDTH - 40, DEVICE_HEIGHT - 110)];
+    _noteTV.editable = NO;
+    [self.view addSubview:_noteTV];
     
     NSString *node = [NSString stringWithFormat:@"笔记\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n%@\n\n",
                       @"1.将目录变成git库: git init",
@@ -71,21 +76,6 @@
                       ];
     
     _noteTV.text = node;
-}
-
-- (IBAction)popWebView:(UIButton *)sender {
-    [[LQFPopTool sharedInstance] popView:self.popOutView animated:YES];
-}
-
-- (LQFPopOutView *)popOutView {
-    if (!_popOutView) {
-        _popOutView = [[LQFPopOutView alloc] init];
-        _popOutView.urlStr = @"https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000";
-        _popOutView.dismissBlock = ^(LQFPopOutView *popOutView) {
-            [[LQFPopTool sharedInstance] closeAnimated:YES];
-        };
-    }
-    return _popOutView;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -15,7 +15,6 @@
 		DB2F7A2A1F29D8B7000DECD8 /* LQFSegmentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2F7A291F29D8B7000DECD8 /* LQFSegmentManager.m */; };
 		DB323F0F1F1DA19400D31925 /* UIBezierPath+Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = DB323F0E1F1DA19400D31925 /* UIBezierPath+Draw.m */; };
 		DB3C9EE61F1EF9C7005B8285 /* AutoreleasePoolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EE51F1EF9C7005B8285 /* AutoreleasePoolVC.m */; };
-		DB3C9EE91F1F3775005B8285 /* FoldTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EE81F1F3775005B8285 /* FoldTableViewVC.m */; };
 		DB3C9EEC1F1F37B8005B8285 /* SectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EEB1F1F37B8005B8285 /* SectionModel.m */; };
 		DB3C9EEF1F1F3817005B8285 /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EEE1F1F3817005B8285 /* CellModel.m */; };
 		DB3C9EF31F1F3889005B8285 /* SectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EF21F1F3889005B8285 /* SectionView.m */; };
@@ -26,6 +25,7 @@
 		DB4B0CE91F258EEA0006CCBF /* LQFPopOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0CE81F258EEA0006CCBF /* LQFPopOutView.m */; };
 		DB4B0CEC1F2594390006CCBF /* LQFPopTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0CEB1F2594390006CCBF /* LQFPopTool.m */; };
 		DB4B0CEF1F259C570006CCBF /* GitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0CEE1F259C570006CCBF /* GitVC.m */; };
+		DB4F2A7D1F32F1980088674A /* RegexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4F2A7C1F32F1980088674A /* RegexVC.m */; };
 		DB55EE311F1C539700C7B787 /* LQFBaseChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE301F1C539700C7B787 /* LQFBaseChartView.m */; };
 		DB55EE341F1C543500C7B787 /* LQFMacdView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE331F1C543500C7B787 /* LQFMacdView.m */; };
 		DB55EE371F1C559200C7B787 /* LQFMacdPositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE361F1C559200C7B787 /* LQFMacdPositionModel.m */; };
@@ -55,7 +55,6 @@
 		DB6FEE451F174FB10009702E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE441F174FB10009702E /* Person.m */; };
 		DB6FEE491F1763E10009702E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE481F1763E10009702E /* UIView+Extension.m */; };
 		DB6FEE4C1F17677B0009702E /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE4B1F17677B0009702E /* BaseModel.m */; };
-		DB6FEE4F1F176A2A0009702E /* AutolayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE4E1F176A2A0009702E /* AutolayoutVC.m */; };
 		DB6FEE5A1F1770670009702E /* LQFCandleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE531F1770670009702E /* LQFCandleModel.m */; };
 		DB6FEE5B1F1770670009702E /* LQFLineData.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE551F1770670009702E /* LQFLineData.m */; };
 		DB6FEE5C1F1770670009702E /* LQFLineUntil.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE571F1770670009702E /* LQFLineUntil.m */; };
@@ -230,6 +229,7 @@
 		DB6FEFCB1F1775D30009702E /* ta_WCLPRICE.c in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEF261F1775D30009702E /* ta_WCLPRICE.c */; };
 		DB6FEFCC1F1775D30009702E /* ta_WILLR.c in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEF271F1775D30009702E /* ta_WILLR.c */; };
 		DB6FEFCD1F1775D30009702E /* ta_WMA.c in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEF281F1775D30009702E /* ta_WMA.c */; };
+		DB78B86D1F341971003D8A6D /* XibAndSBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB78B86C1F341971003D8A6D /* XibAndSBVC.m */; };
 		DB7948701F2F08BA00E74C93 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */; };
 		FA9890C2F6C38525334513A3 /* libPods-LQFLearnDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB04A7764BA14A414C18CB7 /* libPods-LQFLearnDemo.a */; };
 /* End PBXBuildFile section */
@@ -271,8 +271,6 @@
 		DB323F0E1F1DA19400D31925 /* UIBezierPath+Draw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Draw.m"; sourceTree = "<group>"; };
 		DB3C9EE41F1EF9C7005B8285 /* AutoreleasePoolVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoreleasePoolVC.h; sourceTree = "<group>"; };
 		DB3C9EE51F1EF9C7005B8285 /* AutoreleasePoolVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoreleasePoolVC.m; sourceTree = "<group>"; };
-		DB3C9EE71F1F3775005B8285 /* FoldTableViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldTableViewVC.h; sourceTree = "<group>"; };
-		DB3C9EE81F1F3775005B8285 /* FoldTableViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldTableViewVC.m; sourceTree = "<group>"; };
 		DB3C9EEA1F1F37B8005B8285 /* SectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionModel.h; sourceTree = "<group>"; };
 		DB3C9EEB1F1F37B8005B8285 /* SectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionModel.m; sourceTree = "<group>"; };
 		DB3C9EED1F1F3817005B8285 /* CellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
@@ -292,6 +290,8 @@
 		DB4B0CEB1F2594390006CCBF /* LQFPopTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFPopTool.m; sourceTree = "<group>"; };
 		DB4B0CED1F259C570006CCBF /* GitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitVC.h; sourceTree = "<group>"; };
 		DB4B0CEE1F259C570006CCBF /* GitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitVC.m; sourceTree = "<group>"; };
+		DB4F2A7B1F32F1980088674A /* RegexVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexVC.h; sourceTree = "<group>"; };
+		DB4F2A7C1F32F1980088674A /* RegexVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexVC.m; sourceTree = "<group>"; };
 		DB55EE2F1F1C539700C7B787 /* LQFBaseChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFBaseChartView.h; sourceTree = "<group>"; };
 		DB55EE301F1C539700C7B787 /* LQFBaseChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFBaseChartView.m; sourceTree = "<group>"; };
 		DB55EE321F1C543500C7B787 /* LQFMacdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFMacdView.h; sourceTree = "<group>"; };
@@ -346,8 +346,6 @@
 		DB6FEE481F1763E10009702E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		DB6FEE4A1F17677B0009702E /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		DB6FEE4B1F17677B0009702E /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
-		DB6FEE4D1F176A2A0009702E /* AutolayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutolayoutVC.h; sourceTree = "<group>"; };
-		DB6FEE4E1F176A2A0009702E /* AutolayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutolayoutVC.m; sourceTree = "<group>"; };
 		DB6FEE521F1770670009702E /* LQFCandleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFCandleModel.h; sourceTree = "<group>"; };
 		DB6FEE531F1770670009702E /* LQFCandleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFCandleModel.m; sourceTree = "<group>"; };
 		DB6FEE541F1770670009702E /* LQFLineData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFLineData.h; sourceTree = "<group>"; };
@@ -543,6 +541,8 @@
 		DB6FEF261F1775D30009702E /* ta_WCLPRICE.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ta_WCLPRICE.c; sourceTree = "<group>"; };
 		DB6FEF271F1775D30009702E /* ta_WILLR.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ta_WILLR.c; sourceTree = "<group>"; };
 		DB6FEF281F1775D30009702E /* ta_WMA.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ta_WMA.c; sourceTree = "<group>"; };
+		DB78B86B1F341971003D8A6D /* XibAndSBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibAndSBVC.h; sourceTree = "<group>"; };
+		DB78B86C1F341971003D8A6D /* XibAndSBVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibAndSBVC.m; sourceTree = "<group>"; };
 		DB79486E1F2F08BA00E74C93 /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
 		DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -735,16 +735,16 @@
 				DB6FEE381F1746DF0009702E /* Knowledge1ViewController.m */,
 				DB6FEE3C1F174DED0009702E /* KVCViewController.h */,
 				DB6FEE3D1F174DED0009702E /* KVCViewController.m */,
-				DB6FEE4D1F176A2A0009702E /* AutolayoutVC.h */,
-				DB6FEE4E1F176A2A0009702E /* AutolayoutVC.m */,
 				DB3C9EE41F1EF9C7005B8285 /* AutoreleasePoolVC.h */,
 				DB3C9EE51F1EF9C7005B8285 /* AutoreleasePoolVC.m */,
-				DB3C9EE71F1F3775005B8285 /* FoldTableViewVC.h */,
-				DB3C9EE81F1F3775005B8285 /* FoldTableViewVC.m */,
 				DB4B0CED1F259C570006CCBF /* GitVC.h */,
 				DB4B0CEE1F259C570006CCBF /* GitVC.m */,
 				DB43620C1F2835FF0089CE4B /* MultiThreadVC.h */,
 				DB43620D1F2835FF0089CE4B /* MultiThreadVC.m */,
+				DB4F2A7B1F32F1980088674A /* RegexVC.h */,
+				DB4F2A7C1F32F1980088674A /* RegexVC.m */,
+				DB78B86B1F341971003D8A6D /* XibAndSBVC.h */,
+				DB78B86C1F341971003D8A6D /* XibAndSBVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1294,6 +1294,7 @@
 				DB6FEF5C1F1775D30009702E /* ta_CDLHOMINGPIGEON.c in Sources */,
 				DB6FEF371F1775D30009702E /* ta_ATAN.c in Sources */,
 				DB6FEFC91F1775D30009702E /* ta_utility.c in Sources */,
+				DB78B86D1F341971003D8A6D /* XibAndSBVC.m in Sources */,
 				DB6FEF6D1F1775D30009702E /* ta_CDLRISEFALL3METHODS.c in Sources */,
 				DB6FEF7B1F1775D30009702E /* ta_CEIL.c in Sources */,
 				DB6FEE5A1F1770670009702E /* LQFCandleModel.m in Sources */,
@@ -1347,6 +1348,7 @@
 				DB6FEE5D1F1770670009702E /* LQFMacdModel.m in Sources */,
 				DB6FEF5B1F1775D30009702E /* ta_CDLHIKKAKEMOD.c in Sources */,
 				DB6FEFB01F1775D30009702E /* ta_ROCR.c in Sources */,
+				DB4F2A7D1F32F1980088674A /* RegexVC.m in Sources */,
 				DB6FEF4A1F1775D30009702E /* ta_CDLCONCEALBABYSWALL.c in Sources */,
 				DB6FEFBA1F1775D30009702E /* ta_STOCH.c in Sources */,
 				DB3C9EF31F1F3889005B8285 /* SectionView.m in Sources */,
@@ -1393,14 +1395,12 @@
 				DB6FEF611F1775D30009702E /* ta_CDLKICKINGBYLENGTH.c in Sources */,
 				DB6FEF881F1775D30009702E /* ta_HT_PHASOR.c in Sources */,
 				DB55EE371F1C559200C7B787 /* LQFMacdPositionModel.m in Sources */,
-				DB3C9EE91F1F3775005B8285 /* FoldTableViewVC.m in Sources */,
 				DB6FEF3A1F1775D30009702E /* ta_BBANDS.c in Sources */,
 				DB6FEF901F1775D30009702E /* ta_LINEARREG_SLOPE.c in Sources */,
 				DB6FEF361F1775D30009702E /* ta_ASIN.c in Sources */,
 				DB6FEF841F1775D30009702E /* ta_EXP.c in Sources */,
 				DB6FEF7E1F1775D30009702E /* ta_COS.c in Sources */,
 				DB7948701F2F08BA00E74C93 /* UIView+ViewController.m in Sources */,
-				DB6FEE4F1F176A2A0009702E /* AutolayoutVC.m in Sources */,
 				DB6FEF9B1F1775D30009702E /* ta_MEDPRICE.c in Sources */,
 				DB3C9EE61F1EF9C7005B8285 /* AutoreleasePoolVC.m in Sources */,
 				DB6FEFC11F1775D30009702E /* ta_TANH.c in Sources */,
