@@ -26,7 +26,7 @@
     _questionTV.editable = NO;
     [self.view addSubview:_questionTV];
     
-    NSString *question = [NSString stringWithFormat:@"1.%@\n",@"storyboard中布局的控件,在代码中隐藏导航栏之后坐标变化'诡异'"];
+    NSString *question = [NSString stringWithFormat:@"1.%@\n",@"storyboard中布局的控件,在代码中隐藏导航栏之后坐标变化'诡异'O_o???"];
     
     _questionTV.text = question;
 }

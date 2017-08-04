@@ -34,7 +34,7 @@ typedef enum
 #define MinCount 10
 #define MaxCount 50
 
-@interface CandleCorssScreenVC () <NSXMLParserDelegate>
+@interface CandleCorssScreenVC () <NSXMLParserDelegate,LQFCandleProtocol,LQFTecnnicalViewDelegate>
 
 @property (nonatomic,strong) LQFCrossPriceView *quotaView;
 @property (nonatomic,strong) UIScrollView *scrollView;
