@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -93,37 +94,54 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bAi-IN-BrI">
-                    <rect key="frame" x="105" y="236" width="165" height="165"/>
+                    <rect key="frame" x="113" y="272" width="150" height="150"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="bAi-IN-BrI" secondAttribute="height" multiplier="1:1" id="C9L-M3-a3b"/>
-                        <constraint firstAttribute="width" constant="165" id="oUu-Ku-V0p"/>
+                        <constraint firstAttribute="width" secondItem="bAi-IN-BrI" secondAttribute="height" multiplier="1:1" id="NyP-I3-NGD"/>
                     </constraints>
                 </imageView>
                 <button hidden="YES" opaque="NO" tag="211" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPf-HF-c6f">
-                    <rect key="frame" x="157" y="198" width="62" height="30"/>
+                    <rect key="frame" x="157" y="231" width="62" height="30"/>
                     <state key="normal" title="隐藏图片"/>
                     <connections>
                         <action selector="actionGCD:" destination="iN0-l3-epB" eventType="touchUpInside" id="SAg-cP-nlo"/>
                     </connections>
                 </button>
+                <button opaque="NO" tag="212" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPn-2t-VMa">
+                    <rect key="frame" x="90" y="195" width="62" height="30"/>
+                    <state key="normal" title="全局同步"/>
+                    <connections>
+                        <action selector="actionGCD:" destination="iN0-l3-epB" eventType="touchUpInside" id="fhI-El-XcV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="213" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbe-2P-4BM">
+                    <rect key="frame" x="228" y="195" width="62" height="30"/>
+                    <state key="normal" title="全局异步"/>
+                    <connections>
+                        <action selector="actionGCD:" destination="iN0-l3-epB" eventType="touchUpInside" id="tPU-BA-VKv"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="bAi-IN-BrI" firstAttribute="top" secondItem="LPf-HF-c6f" secondAttribute="bottom" constant="11" id="4cc-R9-C1x"/>
                 <constraint firstItem="aZd-i5-ng4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="43" id="5dM-cX-RrL"/>
-                <constraint firstItem="bAi-IN-BrI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9Ev-D4-MBs"/>
+                <constraint firstItem="bAi-IN-BrI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="99i-9c-FuY"/>
                 <constraint firstItem="hsL-pm-mK8" firstAttribute="leading" secondItem="43h-jt-tHM" secondAttribute="leading" id="9vO-mQ-Nze"/>
+                <constraint firstItem="Kbe-2P-4BM" firstAttribute="top" secondItem="hLX-dZ-UYl" secondAttribute="bottom" constant="2" id="Akb-uG-hLq"/>
+                <constraint firstItem="bAi-IN-BrI" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="150:375" id="CU3-qQ-FMv"/>
                 <constraint firstItem="8BO-hO-ETz" firstAttribute="leading" secondItem="hsL-pm-mK8" secondAttribute="leading" id="E8T-9U-VQk"/>
                 <constraint firstItem="43h-jt-tHM" firstAttribute="top" secondItem="sjS-Jf-rCO" secondAttribute="bottom" constant="5" id="HPL-nB-0WN"/>
-                <constraint firstItem="LPf-HF-c6f" firstAttribute="top" secondItem="xkl-Za-3Lp" secondAttribute="bottom" constant="5" id="Ilj-b0-T7U"/>
+                <constraint firstItem="Kbe-2P-4BM" firstAttribute="leading" secondItem="hLX-dZ-UYl" secondAttribute="leading" id="HsE-04-zuZ"/>
+                <constraint firstItem="lPn-2t-VMa" firstAttribute="trailing" secondItem="xkl-Za-3Lp" secondAttribute="trailing" id="OYH-9f-JV3"/>
                 <constraint firstItem="2YV-hi-wPV" firstAttribute="top" secondItem="aZd-i5-ng4" secondAttribute="bottom" constant="5" id="PcG-0D-sTu"/>
                 <constraint firstItem="hsL-pm-mK8" firstAttribute="top" secondItem="43h-jt-tHM" secondAttribute="bottom" constant="6" id="Pef-6t-6O3"/>
                 <constraint firstItem="pPv-vb-4Ca" firstAttribute="trailing" secondItem="w1q-f8-QSk" secondAttribute="trailing" id="XSm-YZ-vmy"/>
+                <constraint firstItem="LPf-HF-c6f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Y36-0X-Gxf"/>
                 <constraint firstItem="xkl-Za-3Lp" firstAttribute="top" secondItem="pPv-vb-4Ca" secondAttribute="bottom" constant="4" id="aD7-F2-iMd"/>
                 <constraint firstAttribute="trailing" secondItem="sjS-Jf-rCO" secondAttribute="trailing" constant="53" id="arT-2H-38v"/>
                 <constraint firstItem="xkl-Za-3Lp" firstAttribute="trailing" secondItem="pPv-vb-4Ca" secondAttribute="trailing" id="b4D-BF-pEp"/>
-                <constraint firstItem="bAi-IN-BrI" firstAttribute="top" secondItem="LPf-HF-c6f" secondAttribute="bottom" constant="8" id="f6Z-Qj-2ol"/>
                 <constraint firstItem="2YV-hi-wPV" firstAttribute="trailing" secondItem="aZd-i5-ng4" secondAttribute="trailing" id="f6h-O7-d3O"/>
-                <constraint firstItem="LPf-HF-c6f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gds-AH-wIy"/>
+                <constraint firstItem="lPn-2t-VMa" firstAttribute="top" secondItem="xkl-Za-3Lp" secondAttribute="bottom" constant="2" id="mLU-KV-heo"/>
                 <constraint firstItem="pPv-vb-4Ca" firstAttribute="top" secondItem="w1q-f8-QSk" secondAttribute="bottom" constant="6" id="mgc-qy-6d6"/>
                 <constraint firstItem="w1q-f8-QSk" firstAttribute="top" secondItem="2YV-hi-wPV" secondAttribute="bottom" constant="6" id="o5H-YU-HDb"/>
                 <constraint firstItem="w1q-f8-QSk" firstAttribute="trailing" secondItem="2YV-hi-wPV" secondAttribute="trailing" id="rCk-HM-LUG"/>
@@ -133,6 +151,7 @@
                 <constraint firstItem="hLX-dZ-UYl" firstAttribute="leading" secondItem="8BO-hO-ETz" secondAttribute="leading" id="u5k-ML-1cY"/>
                 <constraint firstItem="aZd-i5-ng4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="wdd-71-n0G"/>
                 <constraint firstItem="43h-jt-tHM" firstAttribute="leading" secondItem="sjS-Jf-rCO" secondAttribute="leading" id="yKF-Qr-IAw"/>
+                <constraint firstItem="LPf-HF-c6f" firstAttribute="top" secondItem="lPn-2t-VMa" secondAttribute="bottom" constant="6" id="z2w-7Y-M3g"/>
             </constraints>
             <connections>
                 <outlet property="hiddenBtn" destination="LPf-HF-c6f" id="wS7-Tn-nzQ"/>

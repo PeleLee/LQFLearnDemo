@@ -314,6 +314,16 @@
             self.myImage.hidden = YES;
         }
             break;
+        case 212:
+        {
+            [self syncGlobal];
+        }
+            break;
+        case 213:
+        {
+            [self asyncGlobal];
+        }
+            break;
         default:
             break;
     }
@@ -358,7 +368,7 @@
     
     //异步执行 (无效)
     dispatch_async(queue, ^{
-        for (NSInteger i = 0; i < 100; i++) {
+        for (NSInteger i = 0; i < 10; i++) {
             NSLog(@"串行异步1 i:%ld thread:%@",(long)i,[NSThread currentThread]);
         }
     });
@@ -570,6 +580,46 @@
     dispatch_async(queue, ^{
         for (NSInteger i = 0; i < 10; i++) {
             NSLog(@"栅栏 : 并发异步4 i:%ld, %@",(long)i,[NSThread currentThread]);
+        }
+    });
+}
+
+#pragma mark 全局同步
+- (void)syncGlobal {
+    NSLog(@"\n\n************** 全局同步 ***************\n\n");
+    dispatch_sync(dispatch_get_global_queue(0, 0), ^{
+        for (NSInteger i = 0; i < 10; i++) {
+            NSLog(@"全局同步1 i:%ld , %@",(long)i,[NSThread currentThread]);
+        }
+    });
+    dispatch_sync(dispatch_get_global_queue(0, 0), ^{
+        for (NSInteger i = 0; i < 3; i++) {
+            NSLog(@"全局同步2 i:%ld , %@",(long)i,[NSThread currentThread]);
+        }
+    });
+    dispatch_sync(dispatch_get_global_queue(0, 0), ^{
+        for (NSInteger i = 0; i < 3; i++) {
+            NSLog(@"全局同步3 i:%ld , %@",(long)i,[NSThread currentThread]);
+        }
+    });
+}
+
+#pragma mark 全局异步
+- (void)asyncGlobal {
+    NSLog(@"\n\n************** 全局异步 ***************\n\n");
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        for (NSInteger i = 0; i < 10; i++) {
+            NSLog(@"全局异步1 i:%ld , %@",(long)i,[NSThread currentThread]);
+        }
+    });
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        for (NSInteger i = 0; i < 3; i++) {
+            NSLog(@"全局异步2 i:%ld , %@",(long)i,[NSThread currentThread]);
+        }
+    });
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        for (NSInteger i = 0; i < 3; i++) {
+            NSLog(@"全局异步3 i:%ld , %@",(long)i,[NSThread currentThread]);
         }
     });
 }

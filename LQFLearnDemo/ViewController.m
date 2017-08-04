@@ -9,13 +9,12 @@
 #import "ViewController.h"
 
 static NSString *cellID = @"CELLID";
-static NSInteger cellCount = 0;
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
     NSArray *_funcList;
 }
 
-@property (weak, nonatomic) IBOutlet UITableView *funcTV;
+@property (strong, nonatomic) UITableView *funcTV;
 
 @end
 
@@ -24,8 +23,15 @@ static NSInteger cellCount = 0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.hiddenBackBtn = YES;
+    
     _funcList = @[@"Knowledge1",
                   @"K线图"];
+    
+    _funcTV = [[UITableView alloc] initWithFrame:CGRectMake(0, 65, DEVICE_WIDTH, DEVICE_HEIGHT - 65) style:UITableViewStylePlain];
+    _funcTV.delegate = self;
+    _funcTV.dataSource = self;
+    [self.view addSubview:_funcTV];
     
     //KVO监听 偏移量
     [_funcTV addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
@@ -40,12 +46,24 @@ static NSInteger cellCount = 0;
     self.navAlpha = delta;
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _funcList.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 44.0f;
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return 0.1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 0.1f;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -53,8 +71,9 @@ static NSInteger cellCount = 0;
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        cell.tag = cellCount;
-        cellCount++;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.textLabel.font = [UIFont systemFontOfSize:14.0];
+        cell.backgroundColor = RGBA(247, 247, 247, 1);
     }
     cell.textLabel.text = _funcList[indexPath.row];
     return cell;

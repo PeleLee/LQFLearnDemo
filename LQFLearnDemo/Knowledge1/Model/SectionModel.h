@@ -21,5 +21,9 @@
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSArray *cellArray;
+/**
+ Storyboard中跳转时使用
+ */
+@property (nonatomic, strong) NSString *segID;
 
 @end

@@ -20,12 +20,18 @@
 
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
-        self.arrowImage = [[UIImageView alloc] initWithFrame:CGRectMake(DEVICE_WIDTH - 44, 12, 11, 20)];
+        self.frame = CGRectMake(0, 0, DEVICE_WIDTH, 44);
+        
+        for (UIView *subView in self.contentView.subviews) {
+            [subView removeFromSuperview];
+        }
+        
+        self.arrowImage = [[UIImageView alloc] initWithFrame:CGRectMake(self.contentView.width - 30, (self.contentView.height - 10) / 2, 10, 10)];
         self.arrowImage.image = ImageNamed(@"arrow");
         [self.contentView addSubview:self.arrowImage];
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [button setFrame:CGRectMake(0, 0, DEVICE_WIDTH, 44)];
+        [button setFrame:self.bounds];
         [button addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:button];
         
@@ -34,8 +40,8 @@
         self.titleLabel.textColor = [UIColor blackColor];
         [self.contentView addSubview:self.titleLabel];
         
-        UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, 43, DEVICE_WIDTH, 1)];
-        line.backgroundColor = [UIColor darkGrayColor];
+        UIView *line = [[UIView alloc] initWithFrame:CGRectMake(20, self.contentView.height - 1, self.contentView.width - 20, 1)];
+        line.backgroundColor = [UIColor lightGrayColor];
         [self.contentView addSubview:line];
     }
     return self;
@@ -47,10 +53,10 @@
     }
     self.titleLabel.text = model.title;
     if (model.isExpand) {
-        self.arrowImage.transform = CGAffineTransformMakeRotation(M_PI_2);
+        self.arrowImage.transform = CGAffineTransformIdentity;
     }
     else {
-        self.arrowImage.transform = CGAffineTransformIdentity;
+        self.arrowImage.transform = CGAffineTransformMakeRotation(-M_PI_2);
     }
 }
 
@@ -66,10 +72,10 @@
     //折叠操作
     self.model.isExpand = !self.model.isExpand;
     if (self.model.isExpand) {
-        self.arrowImage.transform = CGAffineTransformMakeRotation(M_PI_2);
+        self.arrowImage.transform = CGAffineTransformIdentity;
     }
     else {
-        self.arrowImage.transform = CGAffineTransformIdentity;
+        self.arrowImage.transform = CGAffineTransformMakeRotation(-M_PI_2);
     }
     if (self.callBackBlock) {
         self.callBackBlock(self.model.isExpand);

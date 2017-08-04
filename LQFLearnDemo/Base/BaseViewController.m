@@ -12,23 +12,61 @@
 
 @property (nonatomic, strong) UIButton *quoteButton;
 @property (nonatomic, strong) LQFPopOutView *popOutView;
+@property (nonatomic, strong) UIView *customNavbar;
+@property (nonatomic, strong) UIButton *backButton;
+@property (nonatomic, strong) UILabel *titleLabel;
 
 @end
 
 @implementation BaseViewController
 
 #pragma mark - set
+- (void)setHiddenBackBtn:(BOOL)hiddenBackBtn {
+    _hiddenBackBtn = hiddenBackBtn;
+    _backButton.hidden = hiddenBackBtn;
+}
+
 - (void)setNavAlpha:(CGFloat)navAlpha {
-    self.navigationController.navigationBar.alpha = navAlpha;
+    _customNavbar.alpha = navAlpha;
 }
 
 - (void)setNavTitle:(NSString *)navTitle {
-    self.navigationController.navigationItem.title = navTitle;
+    _titleLabel.text = navTitle;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBarHidden = YES;
+    [self customNavigationBar];
 }
+
+#pragma mark - 自定义导航栏
+- (void)customNavigationBar {
+    _customNavbar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, DEVICE_WIDTH, 64)];
+    UIImageView *navImageView = [[UIImageView alloc] initWithFrame:_customNavbar.bounds];
+    navImageView.image = ImageNamed(@"navgationBack");
+    [_customNavbar addSubview:navImageView];
+    [self.view addSubview:_customNavbar];
+    
+    _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_backButton setFrame:CGRectMake(0, 20, 44, 44)];
+    [_backButton setBackgroundImage:ImageNamed(@"Back") forState:UIControlStateNormal];
+    [_backButton addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
+    [_customNavbar addSubview:_backButton];
+    
+    _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, DEVICE_WIDTH, 200)];
+    _titleLabel.textColor = [UIColor darkGrayColor];
+    _titleLabel.font = [UIFont systemFontOfSize:16.0f];
+    _titleLabel.center = CGPointMake(DEVICE_WIDTH / 2, 44);
+    _titleLabel.textAlignment = NSTextAlignmentCenter;
+    [_customNavbar addSubview:_titleLabel];
+}
+
+- (void)back:(UIButton *)button {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - 弹出webView
 
 - (LQFPopOutView *)popOutView {
     if (!_popOutView) {

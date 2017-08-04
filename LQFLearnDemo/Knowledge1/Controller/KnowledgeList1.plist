@@ -3,21 +3,43 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>title</key>
+		<key>Title</key>
 		<string>KVC</string>
-		<key>sub</key>
+		<key>SegID</key>
+		<string>KVC</string>
+		<key>Sub</key>
 		<array/>
 	</dict>
 	<dict>
-		<key>title</key>
+		<key>Title</key>
 		<string>git</string>
-		<key>sub</key>
+		<key>SegID</key>
+		<string>git</string>
+		<key>Sub</key>
 		<array/>
 	</dict>
 	<dict>
-		<key>title</key>
+		<key>Title</key>
+		<string>多线程</string>
+		<key>SegID</key>
 		<string>MultiThread</string>
-		<key>sub</key>
+		<key>Sub</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>RE(正则表达式)</string>
+		<key>SegID</key>
+		<string>Regex</string>
+		<key>Sub</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Xib&amp;SB</string>
+		<key>SegID</key>
+		<string>Xib&amp;SB</string>
+		<key>Sub</key>
 		<array/>
 	</dict>
 </array>
