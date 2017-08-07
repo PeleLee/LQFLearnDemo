@@ -10,7 +10,6 @@
 
 @interface BaseViewController ()
 
-@property (nonatomic, strong) UIButton *quoteButton;
 @property (nonatomic, strong) LQFPopOutView *popOutView;
 @property (nonatomic, strong) UIView *customNavbar;
 @property (nonatomic, strong) UIButton *backButton;
@@ -36,6 +35,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //侧滑返回
+    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    
     self.navigationController.navigationBarHidden = YES;
     [self customNavigationBar];
 }

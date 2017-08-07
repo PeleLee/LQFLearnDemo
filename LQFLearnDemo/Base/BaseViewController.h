@@ -14,6 +14,8 @@
 
 @property (nonatomic, strong) NSString *navTitle;
 
+@property (nonatomic, strong) UIButton *quoteButton;
+
 /**
  是否隐藏返回按钮
  */

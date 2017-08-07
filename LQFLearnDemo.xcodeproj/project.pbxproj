@@ -232,6 +232,7 @@
 		DB78B86D1F341971003D8A6D /* XibAndSBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB78B86C1F341971003D8A6D /* XibAndSBVC.m */; };
 		DB78B8B21F34727D003D8A6D /* KillWarnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB78B8B11F34727D003D8A6D /* KillWarnVC.m */; };
 		DB7948701F2F08BA00E74C93 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */; };
+		DBC6F4E51F381A2C00277DBF /* NSString+LQF.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC6F4E41F381A2C00277DBF /* NSString+LQF.m */; };
 		FA9890C2F6C38525334513A3 /* libPods-LQFLearnDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB04A7764BA14A414C18CB7 /* libPods-LQFLearnDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -548,6 +549,8 @@
 		DB78B8B11F34727D003D8A6D /* KillWarnVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KillWarnVC.m; sourceTree = "<group>"; };
 		DB79486E1F2F08BA00E74C93 /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
 		DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
+		DBC6F4E31F381A2C00277DBF /* NSString+LQF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LQF.h"; sourceTree = "<group>"; };
+		DBC6F4E41F381A2C00277DBF /* NSString+LQF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LQF.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -780,6 +783,8 @@
 				DB323F0E1F1DA19400D31925 /* UIBezierPath+Draw.m */,
 				DB79486E1F2F08BA00E74C93 /* UIView+ViewController.h */,
 				DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */,
+				DBC6F4E31F381A2C00277DBF /* NSString+LQF.h */,
+				DBC6F4E41F381A2C00277DBF /* NSString+LQF.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1176,11 +1181,13 @@
 					};
 					DB5D65311F17176200FEC2BA = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 69S36A93WW;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DB5D65151F17176200FEC2BA;
 					};
 					DB5D653C1F17176200FEC2BA = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 69S36A93WW;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DB5D65151F17176200FEC2BA;
 					};
@@ -1319,6 +1326,7 @@
 				DB6FEFB71F1775D30009702E /* ta_SMA.c in Sources */,
 				DB55EE311F1C539700C7B787 /* LQFBaseChartView.m in Sources */,
 				DB6FEF8A1F1775D30009702E /* ta_HT_TRENDLINE.c in Sources */,
+				DBC6F4E51F381A2C00277DBF /* NSString+LQF.m in Sources */,
 				DB4B0CEC1F2594390006CCBF /* LQFPopTool.m in Sources */,
 				DB6FEF631F1775D30009702E /* ta_CDLLONGLEGGEDDOJI.c in Sources */,
 				DB6FEF5D1F1775D30009702E /* ta_CDLIDENTICAL3CROWS.c in Sources */,
@@ -1663,6 +1671,8 @@
 			baseConfigurationReference = 6E86A419F43B117196202772 /* Pods-LQFLearnDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 69S36A93WW;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = LQFLearnDemo/Info.plist;
@@ -1670,6 +1680,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LearnDemo.LQFLearnDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1679,6 +1690,8 @@
 			baseConfigurationReference = 14E23D6ACD41336261BCA39C /* Pods-LQFLearnDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 69S36A93WW;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = LQFLearnDemo/Info.plist;
@@ -1686,6 +1699,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LearnDemo.LQFLearnDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -1694,6 +1708,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 69S36A93WW;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.framework *.gch *.xcode* *.xcassets (*) .DS_Store CVS .svn .git .hg *.pbproj *.pbxproj";
 				INFOPLIST_FILE = LQFLearnDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LearnDemo.LQFLearnDemoTests;
@@ -1706,6 +1722,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 69S36A93WW;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.framework *.gch *.xcode* *.xcassets (*) .DS_Store CVS .svn .git .hg *.pbproj *.pbxproj";
 				INFOPLIST_FILE = LQFLearnDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LearnDemo.LQFLearnDemoTests;
@@ -1717,6 +1735,7 @@
 		DB5D654D1F17176200FEC2BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 69S36A93WW;
 				INFOPLIST_FILE = LQFLearnDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LearnDemo.LQFLearnDemoUITests;
@@ -1728,6 +1747,7 @@
 		DB5D654E1F17176200FEC2BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 69S36A93WW;
 				INFOPLIST_FILE = LQFLearnDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LearnDemo.LQFLearnDemoUITests;
