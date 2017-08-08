@@ -81,7 +81,15 @@
                        [self QStrWithElement:@"\\b\\w+(?=ing\\b)" explain:@"匹配以ing结尾的单词的前面部分(除了ing以外的部分)"],
                        [self QStrWithElement:@"(?<=exp)" explain:@"匹配exp后面的位置,如下面1条"],
                        [self QStrWithElement:@"(?<=\\bre)\\w+\\b" explain:@"匹配以re开头的单词的后半部分(除了re以外的部分)"],
-//                       [self]
+                       [self QStrWithElement:@"(?!exp)" explain:@"断言此位置的后面不能匹配表达式exp,如下面1条"],
+                       [self QStrWithElement:@"\\b((?!abc)\\w)+\\b" explain:@"匹配不包含连续字符串abc的单词"],
+                       [self QStrWithElement:@"(?<!exp)" explain:@"断言此位置的前面不能匹配表达式exp,如下面1条"],
+                       [self QStrWithElement:@"(?<![a-z])\\d{7}" explain:@"匹配前面不是小写字母的七位数字"],
+                       [self QStrWithElement:@"(?#comment)" explain:@"包含注释,如下面1条"],
+                       [self QStrWithElement:@"2[0-4]\\d(?#200-249)|25[0-5](?#250-255)|[01]?\\d\\d?(?#0-199)" explain:@"注释了匹配的范围"],
+                       [self QStrWithElement:@"表达式?" explain:@"懒惰匹配,能使整个匹配成功的前提下使用最少的重复,如下面2个例子"],
+                       [self QStrWithElement:@"a.*b" explain:@"匹配最长的以a开始，以b结束的字符串"],
+                       [self QStrWithElement:@"a.*?b" explain:@"匹配最短的，以a开始，以b结束的字符串"]
                        ];
     [self addStrToNoteStr:notes];
 }
