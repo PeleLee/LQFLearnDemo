@@ -18,4 +18,16 @@
  */
 + (NSString *)addQuotationMark:(NSString *)str;
 
+/**
+ 根据内容计算label的size
+
+ @param text 内容文字
+ @param width 最大宽度
+ @param font 字体
+ @return 计算好的size
+ */
++ (CGSize)calculateSizeWithText:(NSString *)text
+                          width:(CGFloat)width
+                           font:(CGFloat)font;
+
 @end

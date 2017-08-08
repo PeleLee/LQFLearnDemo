@@ -15,4 +15,10 @@
     return tobeStr;
 }
 
++ (CGSize)calculateSizeWithText:(NSString *)text
+                          width:(CGFloat)width
+                           font:(CGFloat)font {
+    return [text boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:font]} context:nil].size;
+}
+
 @end

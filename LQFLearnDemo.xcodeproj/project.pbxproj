@@ -14,6 +14,7 @@
 		DB2F7A271F29D3C2000DECD8 /* LQFSegmentScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2F7A261F29D3C2000DECD8 /* LQFSegmentScroll.m */; };
 		DB2F7A2A1F29D8B7000DECD8 /* LQFSegmentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2F7A291F29D8B7000DECD8 /* LQFSegmentManager.m */; };
 		DB323F0F1F1DA19400D31925 /* UIBezierPath+Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = DB323F0E1F1DA19400D31925 /* UIBezierPath+Draw.m */; };
+		DB3691831F3965400026DF4F /* MasonryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3691821F3965400026DF4F /* MasonryVC.m */; };
 		DB3C9EE61F1EF9C7005B8285 /* AutoreleasePoolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EE51F1EF9C7005B8285 /* AutoreleasePoolVC.m */; };
 		DB3C9EEC1F1F37B8005B8285 /* SectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EEB1F1F37B8005B8285 /* SectionModel.m */; };
 		DB3C9EEF1F1F3817005B8285 /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EEE1F1F3817005B8285 /* CellModel.m */; };
@@ -271,6 +272,8 @@
 		DB2F7A291F29D8B7000DECD8 /* LQFSegmentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFSegmentManager.m; sourceTree = "<group>"; };
 		DB323F0D1F1DA19400D31925 /* UIBezierPath+Draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Draw.h"; sourceTree = "<group>"; };
 		DB323F0E1F1DA19400D31925 /* UIBezierPath+Draw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Draw.m"; sourceTree = "<group>"; };
+		DB3691811F3965400026DF4F /* MasonryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryVC.h; sourceTree = "<group>"; };
+		DB3691821F3965400026DF4F /* MasonryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryVC.m; sourceTree = "<group>"; };
 		DB3C9EE41F1EF9C7005B8285 /* AutoreleasePoolVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoreleasePoolVC.h; sourceTree = "<group>"; };
 		DB3C9EE51F1EF9C7005B8285 /* AutoreleasePoolVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoreleasePoolVC.m; sourceTree = "<group>"; };
 		DB3C9EEA1F1F37B8005B8285 /* SectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionModel.h; sourceTree = "<group>"; };
@@ -753,6 +756,8 @@
 				DB78B86C1F341971003D8A6D /* XibAndSBVC.m */,
 				DB78B8B01F34727D003D8A6D /* KillWarnVC.h */,
 				DB78B8B11F34727D003D8A6D /* KillWarnVC.m */,
+				DB3691811F3965400026DF4F /* MasonryVC.h */,
+				DB3691821F3965400026DF4F /* MasonryVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1419,6 +1424,7 @@
 				DB6FEFC11F1775D30009702E /* ta_TANH.c in Sources */,
 				DB6FEFBD1F1775D30009702E /* ta_SUB.c in Sources */,
 				DB6FEF3E1F1775D30009702E /* ta_CDL2CROWS.c in Sources */,
+				DB3691831F3965400026DF4F /* MasonryVC.m in Sources */,
 				DB6FEF571F1775D30009702E /* ta_CDLHARAMI.c in Sources */,
 				DB6FEFC01F1775D30009702E /* ta_TAN.c in Sources */,
 				DB6FEE3E1F174DED0009702E /* KVCViewController.m in Sources */,

@@ -53,6 +53,7 @@
                         <segue destination="vSa-eW-8VI" kind="show" identifier="Regex" id="RTT-5x-Uss"/>
                         <segue destination="3Wk-6A-apg" kind="show" identifier="Xib&amp;SB" id="Ryr-He-gUx"/>
                         <segue destination="uuU-fJ-2lq" kind="show" identifier="KillWarn" id="YYk-IG-rsr"/>
+                        <segue destination="MqL-o1-fDr" kind="show" identifier="Masonry" id="AYk-Zv-ui5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEk-0s-kyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -114,6 +115,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHo-oU-BNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3062" y="515"/>
+        </scene>
+        <!--MasonryVC-->
+        <scene sceneID="nTq-8r-o1s">
+            <objects>
+                <viewController id="MqL-o1-fDr" customClass="MasonryVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xxw-BL-wXL"/>
+                        <viewControllerLayoutGuide type="bottom" id="shB-AB-JvL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3LU-VP-JJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I2y-VV-UQQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3830" y="511"/>
         </scene>
         <!--KLine-->
         <scene sceneID="GMB-Nx-62d">
