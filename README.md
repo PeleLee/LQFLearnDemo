@@ -1,15 +1,18 @@
-####
+####Home
+![Home](https://raw.githubusercontent.com/ThinkerLqf/LQFLearnDemo/master/Screenshot/Home.png)
 
 * knowledge
   
 
-![knowledge](https://raw.githubusercontent.com/ThinkerLqf/LQFLearnDemo/master/Screenshot/knowledge1.png)
+![knowledge](https://raw.githubusercontent.com/ThinkerLqf/LQFLearnDemo/master/Screenshot/Knowledge.png)
+
+![GCD](https://raw.githubusercontent.com/ThinkerLqf/LQFLearnDemo/master/Screenshot/GCD.png)
+
+![LoadAnimation](https://raw.githubusercontent.com/ThinkerLqf/LQFLearnDemo/master/Screenshot/LoadAnimation.png)
   
 
 * KLine(K线图)
   
 
-![KLine1](https://raw.githubusercontent.com/ThinkerLqf/LQFLearnDemo/master/Screenshot/KLine1.png)
+![KLine](https://raw.githubusercontent.com/ThinkerLqf/LQFLearnDemo/master/Screenshot/KLine.png)
   
-
-![KLine2](https://raw.githubusercontent.com/ThinkerLqf/LQFLearnDemo/master/Screenshot/KLine2.png)
