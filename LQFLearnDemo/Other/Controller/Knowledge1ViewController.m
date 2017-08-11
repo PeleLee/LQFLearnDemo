@@ -62,8 +62,8 @@
                 for (NSInteger j = 0; j < subArr.count; j++) {
                     CellModel *model = [[CellModel alloc] init];
                     NSDictionary *cellDic = subArr[j];
-                    model.title = cellDic[@"Title"];
-                    model.segID = cellDic[@"SegID"];
+                    model.Title = cellDic[@"Title"];
+                    model.SegID = cellDic[@"SegID"];
                     
                     [cellArr addObject:model];
                 }
@@ -108,10 +108,12 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.textLabel.font = [UIFont systemFontOfSize:12.0f];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     SectionModel *section = _sectionData[indexPath.section];
     CellModel *model = section.cellArray[indexPath.row];
-    cell.textLabel.text = model.title;
+    cell.textLabel.text = [NSString stringWithFormat:@"      %@",model.Title];
     return cell;
 }
 
@@ -141,10 +143,10 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *dic = _listArr[indexPath.section];
-    NSArray *cellArr = dic[@"Sub"];
+    SectionModel *sectionModel = _sectionData[indexPath.section];
+    NSArray *cellArr = sectionModel.cellArray;
     CellModel *cellModel = cellArr[indexPath.row];
-    NSString *segID = cellModel.segID;
+    NSString *segID = cellModel.SegID;
     
     if (segID && segID.length > 0) {
         [self presentWithTitle:segID];

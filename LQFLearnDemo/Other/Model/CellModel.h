@@ -10,7 +10,8 @@
 
 @interface CellModel : BaseModel
 
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *segID;
+@property (nonatomic, strong) NSString *Title;
+@property (nonatomic, strong) NSString *SegID;
+@property (nonatomic, strong) NSString *VCName;
 
 @end

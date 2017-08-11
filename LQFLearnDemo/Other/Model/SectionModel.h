@@ -25,5 +25,6 @@
  Storyboard中跳转时使用
  */
 @property (nonatomic, strong) NSString *segID;
+@property (nonatomic, strong) NSString *VCName;
 
 @end

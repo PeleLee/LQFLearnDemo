@@ -7,11 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "ThirdPartVC.h"
+#import "AnimationVC.h"
 
 static NSString *cellID = @"CELLID";
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource> {
     NSArray *_funcList;
+    NSArray *_sectionList;
 }
 
 @property (strong, nonatomic) UITableView *funcTV;
@@ -24,11 +27,17 @@ static NSString *cellID = @"CELLID";
     [super viewDidLoad];
     
     self.hiddenBackBtn = YES;
+    self.view.backgroundColor = MainColor;
     
-    _funcList = @[@"Knowledge1",
-                  @"K线图"];
+    _funcList = @[@[@"Other",
+                    @"第三方库",
+                    @"动画"],
+                  @[@"K线图"]];
     
-    _funcTV = [[UITableView alloc] initWithFrame:CGRectMake(0, 65, DEVICE_WIDTH, DEVICE_HEIGHT - 65) style:UITableViewStylePlain];
+    _sectionList = @[@"Knowledge",
+                     @"Projects"];
+    
+    _funcTV = [[UITableView alloc] initWithFrame:CGRectMake(0, 65, DEVICE_WIDTH, DEVICE_HEIGHT - 65) style:UITableViewStyleGrouped];
     _funcTV.delegate = self;
     _funcTV.dataSource = self;
     [self.view addSubview:_funcTV];
@@ -47,11 +56,12 @@ static NSString *cellID = @"CELLID";
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return _sectionList.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _funcList.count;
+    NSArray *array = _funcList[section];
+    return array.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -63,7 +73,31 @@ static NSString *cellID = @"CELLID";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0.1f;
+    return 40.0f;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UITableViewHeaderFooterView *headerView = [_funcTV dequeueReusableHeaderFooterViewWithIdentifier:@"headerID"];
+    if (!headerView) {
+        headerView = [[UITableViewHeaderFooterView alloc] initWithReuseIdentifier:@"headerID"];
+        headerView.contentView.backgroundColor = MainColor;
+    }
+    
+    UILabel *label = [UILabel new];
+    [headerView.contentView addSubview:label];
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(0);
+        make.leading.mas_equalTo(0);
+        make.trailing.equalTo(headerView);
+        make.bottom.equalTo(headerView);
+    }];
+    
+    label.font = [UIFont systemFontOfSize:13.0f];
+    label.textColor = [UIColor darkGrayColor];
+    label.text = _sectionList[section];
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    return headerView;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -73,18 +107,31 @@ static NSString *cellID = @"CELLID";
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.textLabel.font = [UIFont systemFontOfSize:14.0];
-        cell.backgroundColor = RGBA(247, 247, 247, 1);
+        cell.backgroundColor = [UIColor whiteColor];
     }
-    cell.textLabel.text = _funcList[indexPath.row];
+    NSArray *array = _funcList[indexPath.section];
+    cell.textLabel.text = array[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        [self performSegueWithIdentifier:@"knowledge1" sender:self];
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            [self performSegueWithIdentifier:@"knowledge1" sender:self];
+        }
+        else if (indexPath.row == 1) {
+            ThirdPartVC *thirdVC = [[ThirdPartVC alloc] init];
+            [self.navigationController pushViewController:thirdVC animated:YES];
+        }
+        else if (indexPath.row == 2) {
+            AnimationVC *animationVC = [[AnimationVC alloc] init];
+            [self.navigationController pushViewController:animationVC animated:YES];
+        }
     }
-    else if (indexPath.row == 1) {
-        [self performSegueWithIdentifier:@"KLine" sender:self];
+    else if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            [self performSegueWithIdentifier:@"KLine" sender:self];
+        }
     }
 }
 

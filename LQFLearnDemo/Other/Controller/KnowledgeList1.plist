@@ -16,7 +16,20 @@
 		<key>SegID</key>
 		<string>git</string>
 		<key>Sub</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>git语法</string>
+				<key>SegID</key>
+				<string>git</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Xcode自带git管理工具的使用</string>
+				<key>SegID</key>
+				<string>XcodeGit</string>
+			</dict>
+		</array>
 	</dict>
 	<dict>
 		<key>Title</key>
@@ -39,14 +52,6 @@
 		<string>Xib&amp;SB</string>
 		<key>SegID</key>
 		<string>Xib&amp;SB</string>
-		<key>Sub</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>Masonry</string>
-		<key>SegID</key>
-		<string></string>
 		<key>Sub</key>
 		<array/>
 	</dict>

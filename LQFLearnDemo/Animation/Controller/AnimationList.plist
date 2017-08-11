@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Title</key>
+		<string>载入动画</string>
+		<key>VCName</key>
+		<string>LoadAnimationVC</string>
+		<key>Cell</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>CADisplayLink</string>
+		<key>VCName</key>
+		<string>CADisplayLinkVC</string>
+		<key>Cell</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>绘图框架CoreGraphics</string>
+		<key>VCName</key>
+		<string>CoreGraphicsVC</string>
+		<key>Cell</key>
+		<array/>
+	</dict>
+</array>
+</plist>
