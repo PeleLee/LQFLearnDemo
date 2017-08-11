@@ -26,7 +26,7 @@
             [subView removeFromSuperview];
         }
         
-        self.arrowImage = [[UIImageView alloc] initWithFrame:CGRectMake(self.contentView.width - 30, (self.contentView.height - 10) / 2, 10, 10)];
+        self.arrowImage = [[UIImageView alloc] initWithFrame:CGRectMake(self.contentView.width - 20, (self.contentView.height - 10) / 2, 10, 10)];
         self.arrowImage.image = ImageNamed(@"arrow");
         [self.contentView addSubview:self.arrowImage];
         

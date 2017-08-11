@@ -8,7 +8,7 @@
 
 #import "LQFPopTool.h"
 
-@interface LQFPopTool();
+@interface LQFPopTool()
 
 /**
  当前弹出的view

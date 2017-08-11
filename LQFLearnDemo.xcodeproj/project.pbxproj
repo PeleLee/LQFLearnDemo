@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB1B61781F3AFAF900FE0A19 /* LQFProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1B61771F3AFAF900FE0A19 /* LQFProgressView.m */; };
 		DB2C7DCE1F1867C000D90634 /* LQFLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C7DCD1F1867C000D90634 /* LQFLineModel.m */; };
 		DB2C7DD11F18B71E00D90634 /* LQFTecnnicalView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C7DD01F18B71E00D90634 /* LQFTecnnicalView.m */; };
 		DB2C7DD51F18BEBC00D90634 /* UIColor+LQF.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C7DD41F18BEBC00D90634 /* UIColor+LQF.m */; };
@@ -14,19 +15,37 @@
 		DB2F7A271F29D3C2000DECD8 /* LQFSegmentScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2F7A261F29D3C2000DECD8 /* LQFSegmentScroll.m */; };
 		DB2F7A2A1F29D8B7000DECD8 /* LQFSegmentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2F7A291F29D8B7000DECD8 /* LQFSegmentManager.m */; };
 		DB323F0F1F1DA19400D31925 /* UIBezierPath+Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = DB323F0E1F1DA19400D31925 /* UIBezierPath+Draw.m */; };
-		DB3691831F3965400026DF4F /* MasonryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3691821F3965400026DF4F /* MasonryVC.m */; };
-		DB3C9EE61F1EF9C7005B8285 /* AutoreleasePoolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EE51F1EF9C7005B8285 /* AutoreleasePoolVC.m */; };
-		DB3C9EEC1F1F37B8005B8285 /* SectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EEB1F1F37B8005B8285 /* SectionModel.m */; };
-		DB3C9EEF1F1F3817005B8285 /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EEE1F1F3817005B8285 /* CellModel.m */; };
-		DB3C9EF31F1F3889005B8285 /* SectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3C9EF21F1F3889005B8285 /* SectionView.m */; };
-		DB43620E1F2835FF0089CE4B /* MultiThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB43620D1F2835FF0089CE4B /* MultiThreadVC.m */; };
-		DB4362101F28412F0089CE4B /* KnowledgeList1.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB43620F1F28412F0089CE4B /* KnowledgeList1.plist */; };
+		DB356C5A1F3C2BBF0056B6BD /* AutoreleasePoolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C321F3C2BBF0056B6BD /* AutoreleasePoolVC.m */; };
+		DB356C5B1F3C2BBF0056B6BD /* GitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C341F3C2BBF0056B6BD /* GitVC.m */; };
+		DB356C5C1F3C2BBF0056B6BD /* KillWarnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C361F3C2BBF0056B6BD /* KillWarnVC.m */; };
+		DB356C5D1F3C2BBF0056B6BD /* Knowledge1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C381F3C2BBF0056B6BD /* Knowledge1ViewController.m */; };
+		DB356C5E1F3C2BBF0056B6BD /* Knowledge1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB356C391F3C2BBF0056B6BD /* Knowledge1ViewController.xib */; };
+		DB356C5F1F3C2BBF0056B6BD /* KnowledgeList1.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB356C3A1F3C2BBF0056B6BD /* KnowledgeList1.plist */; };
+		DB356C601F3C2BBF0056B6BD /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C3C1F3C2BBF0056B6BD /* KVCViewController.m */; };
+		DB356C621F3C2BBF0056B6BD /* MultiThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C401F3C2BBF0056B6BD /* MultiThreadVC.m */; };
+		DB356C631F3C2BBF0056B6BD /* RegexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C421F3C2BBF0056B6BD /* RegexVC.m */; };
+		DB356C641F3C2BBF0056B6BD /* XcodeGitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C441F3C2BBF0056B6BD /* XcodeGitVC.m */; };
+		DB356C651F3C2BBF0056B6BD /* XibAndSBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C461F3C2BBF0056B6BD /* XibAndSBVC.m */; };
+		DB356C661F3C2BBF0056B6BD /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C491F3C2BBF0056B6BD /* CellModel.m */; };
+		DB356C671F3C2BBF0056B6BD /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C4B1F3C2BBF0056B6BD /* Dog.m */; };
+		DB356C681F3C2BBF0056B6BD /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C4D1F3C2BBF0056B6BD /* Person.m */; };
+		DB356C691F3C2BBF0056B6BD /* SectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C4F1F3C2BBF0056B6BD /* SectionModel.m */; };
+		DB356C6A1F3C2BBF0056B6BD /* GCDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB356C511F3C2BBF0056B6BD /* GCDView.xib */; };
+		DB356C6B1F3C2BBF0056B6BD /* LQFOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C531F3C2BBF0056B6BD /* LQFOperation.m */; };
+		DB356C6C1F3C2BBF0056B6BD /* MultiThreadView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C551F3C2BBF0056B6BD /* MultiThreadView.m */; };
+		DB356C6D1F3C2BBF0056B6BD /* NSOperationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB356C561F3C2BBF0056B6BD /* NSOperationView.xib */; };
+		DB356C6E1F3C2BBF0056B6BD /* NSThreadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB356C571F3C2BBF0056B6BD /* NSThreadView.xib */; };
+		DB356C6F1F3C2BBF0056B6BD /* SectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C591F3C2BBF0056B6BD /* SectionView.m */; };
+		DB356C7B1F3C42AF0056B6BD /* ThirdPartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C7A1F3C42AF0056B6BD /* ThirdPartVC.m */; };
+		DB356C7E1F3C42E50056B6BD /* AnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C7D1F3C42E50056B6BD /* AnimationVC.m */; };
+		DB356C801F3C44590056B6BD /* ThirdPartList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB356C7F1F3C44590056B6BD /* ThirdPartList.plist */; };
+		DB356C831F3C4EBD0056B6BD /* MasonryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C821F3C4EBD0056B6BD /* MasonryVC.m */; };
+		DB356C851F3C50530056B6BD /* AnimationList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB356C841F3C50530056B6BD /* AnimationList.plist */; };
+		DB356C881F3C508C0056B6BD /* LoadAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C871F3C508C0056B6BD /* LoadAnimationVC.m */; };
 		DB4538CA1F20B1B60037C1A8 /* CandleCorssScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4538C91F20B1B60037C1A8 /* CandleCorssScreenVC.m */; };
 		DB4538CD1F20B31C0037C1A8 /* LQFCrossPriceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4538CC1F20B31C0037C1A8 /* LQFCrossPriceView.m */; };
 		DB4B0CE91F258EEA0006CCBF /* LQFPopOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0CE81F258EEA0006CCBF /* LQFPopOutView.m */; };
 		DB4B0CEC1F2594390006CCBF /* LQFPopTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0CEB1F2594390006CCBF /* LQFPopTool.m */; };
-		DB4B0CEF1F259C570006CCBF /* GitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0CEE1F259C570006CCBF /* GitVC.m */; };
-		DB4F2A7D1F32F1980088674A /* RegexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4F2A7C1F32F1980088674A /* RegexVC.m */; };
 		DB55EE311F1C539700C7B787 /* LQFBaseChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE301F1C539700C7B787 /* LQFBaseChartView.m */; };
 		DB55EE341F1C543500C7B787 /* LQFMacdView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE331F1C543500C7B787 /* LQFMacdView.m */; };
 		DB55EE371F1C559200C7B787 /* LQFMacdPositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE361F1C559200C7B787 /* LQFMacdPositionModel.m */; };
@@ -35,10 +54,6 @@
 		DB55EE401F1C898500C7B787 /* LQFPriceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE3F1F1C898500C7B787 /* LQFPriceView.m */; };
 		DB55EE421F1C8DE200C7B787 /* N225.xml in Resources */ = {isa = PBXBuildFile; fileRef = DB55EE411F1C8DE200C7B787 /* N225.xml */; };
 		DB55EE451F1CBD5900C7B787 /* LQFCandlePositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE441F1CBD5900C7B787 /* LQFCandlePositionModel.m */; };
-		DB584C641F305B6100529562 /* MultiThreadView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB584C631F305B6100529562 /* MultiThreadView.m */; };
-		DB584C661F30606300529562 /* NSThreadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB584C651F30606300529562 /* NSThreadView.xib */; };
-		DB584C681F30618F00529562 /* GCDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB584C671F30618F00529562 /* GCDView.xib */; };
-		DB584C6A1F30621B00529562 /* NSOperationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB584C691F30621B00529562 /* NSOperationView.xib */; };
 		DB5D651B1F17176200FEC2BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D651A1F17176200FEC2BA /* main.m */; };
 		DB5D651E1F17176200FEC2BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D651D1F17176200FEC2BA /* AppDelegate.m */; };
 		DB5D65211F17176200FEC2BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D65201F17176200FEC2BA /* ViewController.m */; };
@@ -48,12 +63,7 @@
 		DB5D652C1F17176200FEC2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5D652A1F17176200FEC2BA /* LaunchScreen.storyboard */; };
 		DB5D65371F17176200FEC2BA /* LQFLearnDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D65361F17176200FEC2BA /* LQFLearnDemoTests.m */; };
 		DB5D65421F17176200FEC2BA /* LQFLearnDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D65411F17176200FEC2BA /* LQFLearnDemoUITests.m */; };
-		DB6AEE0F1F31A181000D9716 /* LQFOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6AEE0E1F31A180000D9716 /* LQFOperation.m */; };
 		DB6FEE331F1722BA0009702E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE321F1722BA0009702E /* BaseViewController.m */; };
-		DB6FEE3A1F1746DF0009702E /* Knowledge1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE381F1746DF0009702E /* Knowledge1ViewController.m */; };
-		DB6FEE3E1F174DED0009702E /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE3D1F174DED0009702E /* KVCViewController.m */; };
-		DB6FEE421F174EC20009702E /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE411F174EC20009702E /* Dog.m */; };
-		DB6FEE451F174FB10009702E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE441F174FB10009702E /* Person.m */; };
 		DB6FEE491F1763E10009702E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE481F1763E10009702E /* UIView+Extension.m */; };
 		DB6FEE4C1F17677B0009702E /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE4B1F17677B0009702E /* BaseModel.m */; };
 		DB6FEE5A1F1770670009702E /* LQFCandleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEE531F1770670009702E /* LQFCandleModel.m */; };
@@ -230,8 +240,7 @@
 		DB6FEFCB1F1775D30009702E /* ta_WCLPRICE.c in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEF261F1775D30009702E /* ta_WCLPRICE.c */; };
 		DB6FEFCC1F1775D30009702E /* ta_WILLR.c in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEF271F1775D30009702E /* ta_WILLR.c */; };
 		DB6FEFCD1F1775D30009702E /* ta_WMA.c in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEF281F1775D30009702E /* ta_WMA.c */; };
-		DB78B86D1F341971003D8A6D /* XibAndSBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB78B86C1F341971003D8A6D /* XibAndSBVC.m */; };
-		DB78B8B21F34727D003D8A6D /* KillWarnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB78B8B11F34727D003D8A6D /* KillWarnVC.m */; };
+		DB744BD81F3D4E7D001AC492 /* WaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB744BD71F3D4E7D001AC492 /* WaveModel.m */; };
 		DB7948701F2F08BA00E74C93 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */; };
 		DBC6F4E51F381A2C00277DBF /* NSString+LQF.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC6F4E41F381A2C00277DBF /* NSString+LQF.m */; };
 		FA9890C2F6C38525334513A3 /* libPods-LQFLearnDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB04A7764BA14A414C18CB7 /* libPods-LQFLearnDemo.a */; };
@@ -258,6 +267,8 @@
 		14E23D6ACD41336261BCA39C /* Pods-LQFLearnDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQFLearnDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LQFLearnDemo/Pods-LQFLearnDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6E86A419F43B117196202772 /* Pods-LQFLearnDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQFLearnDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LQFLearnDemo/Pods-LQFLearnDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		ACB04A7764BA14A414C18CB7 /* libPods-LQFLearnDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LQFLearnDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1B61761F3AFAF900FE0A19 /* LQFProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFProgressView.h; sourceTree = "<group>"; };
+		DB1B61771F3AFAF900FE0A19 /* LQFProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFProgressView.m; sourceTree = "<group>"; };
 		DB2C7DCC1F1867C000D90634 /* LQFLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFLineModel.h; sourceTree = "<group>"; };
 		DB2C7DCD1F1867C000D90634 /* LQFLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFLineModel.m; sourceTree = "<group>"; };
 		DB2C7DCF1F18B71E00D90634 /* LQFTecnnicalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFTecnnicalView.h; sourceTree = "<group>"; };
@@ -272,19 +283,53 @@
 		DB2F7A291F29D8B7000DECD8 /* LQFSegmentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFSegmentManager.m; sourceTree = "<group>"; };
 		DB323F0D1F1DA19400D31925 /* UIBezierPath+Draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Draw.h"; sourceTree = "<group>"; };
 		DB323F0E1F1DA19400D31925 /* UIBezierPath+Draw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Draw.m"; sourceTree = "<group>"; };
-		DB3691811F3965400026DF4F /* MasonryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryVC.h; sourceTree = "<group>"; };
-		DB3691821F3965400026DF4F /* MasonryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryVC.m; sourceTree = "<group>"; };
-		DB3C9EE41F1EF9C7005B8285 /* AutoreleasePoolVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoreleasePoolVC.h; sourceTree = "<group>"; };
-		DB3C9EE51F1EF9C7005B8285 /* AutoreleasePoolVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoreleasePoolVC.m; sourceTree = "<group>"; };
-		DB3C9EEA1F1F37B8005B8285 /* SectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionModel.h; sourceTree = "<group>"; };
-		DB3C9EEB1F1F37B8005B8285 /* SectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionModel.m; sourceTree = "<group>"; };
-		DB3C9EED1F1F3817005B8285 /* CellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
-		DB3C9EEE1F1F3817005B8285 /* CellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
-		DB3C9EF11F1F3889005B8285 /* SectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionView.h; sourceTree = "<group>"; };
-		DB3C9EF21F1F3889005B8285 /* SectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionView.m; sourceTree = "<group>"; };
-		DB43620C1F2835FF0089CE4B /* MultiThreadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiThreadVC.h; sourceTree = "<group>"; };
-		DB43620D1F2835FF0089CE4B /* MultiThreadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadVC.m; sourceTree = "<group>"; };
-		DB43620F1F28412F0089CE4B /* KnowledgeList1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KnowledgeList1.plist; sourceTree = "<group>"; };
+		DB356C311F3C2BBF0056B6BD /* AutoreleasePoolVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoreleasePoolVC.h; sourceTree = "<group>"; };
+		DB356C321F3C2BBF0056B6BD /* AutoreleasePoolVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoreleasePoolVC.m; sourceTree = "<group>"; };
+		DB356C331F3C2BBF0056B6BD /* GitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitVC.h; sourceTree = "<group>"; };
+		DB356C341F3C2BBF0056B6BD /* GitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitVC.m; sourceTree = "<group>"; };
+		DB356C351F3C2BBF0056B6BD /* KillWarnVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KillWarnVC.h; sourceTree = "<group>"; };
+		DB356C361F3C2BBF0056B6BD /* KillWarnVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KillWarnVC.m; sourceTree = "<group>"; };
+		DB356C371F3C2BBF0056B6BD /* Knowledge1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Knowledge1ViewController.h; sourceTree = "<group>"; };
+		DB356C381F3C2BBF0056B6BD /* Knowledge1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Knowledge1ViewController.m; sourceTree = "<group>"; };
+		DB356C391F3C2BBF0056B6BD /* Knowledge1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Knowledge1ViewController.xib; sourceTree = "<group>"; };
+		DB356C3A1F3C2BBF0056B6BD /* KnowledgeList1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KnowledgeList1.plist; sourceTree = "<group>"; };
+		DB356C3B1F3C2BBF0056B6BD /* KVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCViewController.h; sourceTree = "<group>"; };
+		DB356C3C1F3C2BBF0056B6BD /* KVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCViewController.m; sourceTree = "<group>"; };
+		DB356C3F1F3C2BBF0056B6BD /* MultiThreadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiThreadVC.h; sourceTree = "<group>"; };
+		DB356C401F3C2BBF0056B6BD /* MultiThreadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadVC.m; sourceTree = "<group>"; };
+		DB356C411F3C2BBF0056B6BD /* RegexVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexVC.h; sourceTree = "<group>"; };
+		DB356C421F3C2BBF0056B6BD /* RegexVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexVC.m; sourceTree = "<group>"; };
+		DB356C431F3C2BBF0056B6BD /* XcodeGitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeGitVC.h; sourceTree = "<group>"; };
+		DB356C441F3C2BBF0056B6BD /* XcodeGitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeGitVC.m; sourceTree = "<group>"; };
+		DB356C451F3C2BBF0056B6BD /* XibAndSBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibAndSBVC.h; sourceTree = "<group>"; };
+		DB356C461F3C2BBF0056B6BD /* XibAndSBVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibAndSBVC.m; sourceTree = "<group>"; };
+		DB356C481F3C2BBF0056B6BD /* CellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
+		DB356C491F3C2BBF0056B6BD /* CellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
+		DB356C4A1F3C2BBF0056B6BD /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		DB356C4B1F3C2BBF0056B6BD /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		DB356C4C1F3C2BBF0056B6BD /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		DB356C4D1F3C2BBF0056B6BD /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		DB356C4E1F3C2BBF0056B6BD /* SectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionModel.h; sourceTree = "<group>"; };
+		DB356C4F1F3C2BBF0056B6BD /* SectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionModel.m; sourceTree = "<group>"; };
+		DB356C511F3C2BBF0056B6BD /* GCDView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCDView.xib; sourceTree = "<group>"; };
+		DB356C521F3C2BBF0056B6BD /* LQFOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFOperation.h; sourceTree = "<group>"; };
+		DB356C531F3C2BBF0056B6BD /* LQFOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFOperation.m; sourceTree = "<group>"; };
+		DB356C541F3C2BBF0056B6BD /* MultiThreadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiThreadView.h; sourceTree = "<group>"; };
+		DB356C551F3C2BBF0056B6BD /* MultiThreadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadView.m; sourceTree = "<group>"; };
+		DB356C561F3C2BBF0056B6BD /* NSOperationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSOperationView.xib; sourceTree = "<group>"; };
+		DB356C571F3C2BBF0056B6BD /* NSThreadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSThreadView.xib; sourceTree = "<group>"; };
+		DB356C581F3C2BBF0056B6BD /* SectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionView.h; sourceTree = "<group>"; };
+		DB356C591F3C2BBF0056B6BD /* SectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionView.m; sourceTree = "<group>"; };
+		DB356C791F3C42AF0056B6BD /* ThirdPartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPartVC.h; sourceTree = "<group>"; };
+		DB356C7A1F3C42AF0056B6BD /* ThirdPartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPartVC.m; sourceTree = "<group>"; };
+		DB356C7C1F3C42E50056B6BD /* AnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationVC.h; sourceTree = "<group>"; };
+		DB356C7D1F3C42E50056B6BD /* AnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationVC.m; sourceTree = "<group>"; };
+		DB356C7F1F3C44590056B6BD /* ThirdPartList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ThirdPartList.plist; sourceTree = "<group>"; };
+		DB356C811F3C4EBD0056B6BD /* MasonryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryVC.h; sourceTree = "<group>"; };
+		DB356C821F3C4EBD0056B6BD /* MasonryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryVC.m; sourceTree = "<group>"; };
+		DB356C841F3C50530056B6BD /* AnimationList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AnimationList.plist; sourceTree = "<group>"; };
+		DB356C861F3C508C0056B6BD /* LoadAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadAnimationVC.h; sourceTree = "<group>"; };
+		DB356C871F3C508C0056B6BD /* LoadAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadAnimationVC.m; sourceTree = "<group>"; };
 		DB4538C81F20B1B60037C1A8 /* CandleCorssScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandleCorssScreenVC.h; sourceTree = "<group>"; };
 		DB4538C91F20B1B60037C1A8 /* CandleCorssScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandleCorssScreenVC.m; sourceTree = "<group>"; };
 		DB4538CB1F20B31C0037C1A8 /* LQFCrossPriceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFCrossPriceView.h; sourceTree = "<group>"; };
@@ -293,10 +338,6 @@
 		DB4B0CE81F258EEA0006CCBF /* LQFPopOutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFPopOutView.m; sourceTree = "<group>"; };
 		DB4B0CEA1F2594390006CCBF /* LQFPopTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFPopTool.h; sourceTree = "<group>"; };
 		DB4B0CEB1F2594390006CCBF /* LQFPopTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFPopTool.m; sourceTree = "<group>"; };
-		DB4B0CED1F259C570006CCBF /* GitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitVC.h; sourceTree = "<group>"; };
-		DB4B0CEE1F259C570006CCBF /* GitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitVC.m; sourceTree = "<group>"; };
-		DB4F2A7B1F32F1980088674A /* RegexVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexVC.h; sourceTree = "<group>"; };
-		DB4F2A7C1F32F1980088674A /* RegexVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexVC.m; sourceTree = "<group>"; };
 		DB55EE2F1F1C539700C7B787 /* LQFBaseChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFBaseChartView.h; sourceTree = "<group>"; };
 		DB55EE301F1C539700C7B787 /* LQFBaseChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFBaseChartView.m; sourceTree = "<group>"; };
 		DB55EE321F1C543500C7B787 /* LQFMacdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFMacdView.h; sourceTree = "<group>"; };
@@ -312,11 +353,6 @@
 		DB55EE411F1C8DE200C7B787 /* N225.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = N225.xml; sourceTree = "<group>"; };
 		DB55EE431F1CBD5900C7B787 /* LQFCandlePositionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFCandlePositionModel.h; sourceTree = "<group>"; };
 		DB55EE441F1CBD5900C7B787 /* LQFCandlePositionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFCandlePositionModel.m; sourceTree = "<group>"; };
-		DB584C621F305B6100529562 /* MultiThreadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiThreadView.h; sourceTree = "<group>"; };
-		DB584C631F305B6100529562 /* MultiThreadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiThreadView.m; sourceTree = "<group>"; };
-		DB584C651F30606300529562 /* NSThreadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSThreadView.xib; sourceTree = "<group>"; };
-		DB584C671F30618F00529562 /* GCDView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCDView.xib; sourceTree = "<group>"; };
-		DB584C691F30621B00529562 /* NSOperationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSOperationView.xib; sourceTree = "<group>"; };
 		DB5D65161F17176200FEC2BA /* LQFLearnDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQFLearnDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5D651A1F17176200FEC2BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB5D651C1F17176200FEC2BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -334,19 +370,9 @@
 		DB5D653D1F17176200FEC2BA /* LQFLearnDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LQFLearnDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5D65411F17176200FEC2BA /* LQFLearnDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQFLearnDemoUITests.m; sourceTree = "<group>"; };
 		DB5D65431F17176200FEC2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB6AEE0D1F31A180000D9716 /* LQFOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFOperation.h; sourceTree = "<group>"; };
-		DB6AEE0E1F31A180000D9716 /* LQFOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFOperation.m; sourceTree = "<group>"; };
 		DB6FEE311F1722BA0009702E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		DB6FEE321F1722BA0009702E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		DB6FEE341F17235B0009702E /* LQFLearnDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LQFLearnDemo-Prefix.pch"; sourceTree = "<group>"; };
-		DB6FEE371F1746DF0009702E /* Knowledge1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Knowledge1ViewController.h; sourceTree = "<group>"; };
-		DB6FEE381F1746DF0009702E /* Knowledge1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Knowledge1ViewController.m; sourceTree = "<group>"; };
-		DB6FEE3C1F174DED0009702E /* KVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCViewController.h; sourceTree = "<group>"; };
-		DB6FEE3D1F174DED0009702E /* KVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCViewController.m; sourceTree = "<group>"; };
-		DB6FEE401F174EC20009702E /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
-		DB6FEE411F174EC20009702E /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
-		DB6FEE431F174FB10009702E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		DB6FEE441F174FB10009702E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		DB6FEE471F1763E10009702E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		DB6FEE481F1763E10009702E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		DB6FEE4A1F17677B0009702E /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -546,10 +572,8 @@
 		DB6FEF261F1775D30009702E /* ta_WCLPRICE.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ta_WCLPRICE.c; sourceTree = "<group>"; };
 		DB6FEF271F1775D30009702E /* ta_WILLR.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ta_WILLR.c; sourceTree = "<group>"; };
 		DB6FEF281F1775D30009702E /* ta_WMA.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ta_WMA.c; sourceTree = "<group>"; };
-		DB78B86B1F341971003D8A6D /* XibAndSBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibAndSBVC.h; sourceTree = "<group>"; };
-		DB78B86C1F341971003D8A6D /* XibAndSBVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibAndSBVC.m; sourceTree = "<group>"; };
-		DB78B8B01F34727D003D8A6D /* KillWarnVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KillWarnVC.h; sourceTree = "<group>"; };
-		DB78B8B11F34727D003D8A6D /* KillWarnVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KillWarnVC.m; sourceTree = "<group>"; };
+		DB744BD61F3D4E7D001AC492 /* WaveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveModel.h; sourceTree = "<group>"; };
+		DB744BD71F3D4E7D001AC492 /* WaveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveModel.m; sourceTree = "<group>"; };
 		DB79486E1F2F08BA00E74C93 /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
 		DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 		DBC6F4E31F381A2C00277DBF /* NSString+LQF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LQF.h"; sourceTree = "<group>"; };
@@ -591,6 +615,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DB1B61751F3AFAAB00FE0A19 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				DB744BD51F3D4E68001AC492 /* Model */,
+				DB1B61761F3AFAF900FE0A19 /* LQFProgressView.h */,
+				DB1B61771F3AFAF900FE0A19 /* LQFProgressView.m */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
 		DB2F7A211F29BC8C000DECD8 /* LQFSegmentPageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -604,18 +638,142 @@
 			path = LQFSegmentPageView;
 			sourceTree = "<group>";
 		};
-		DB3C9EF01F1F3859005B8285 /* View */ = {
+		DB356C2F1F3C2BBF0056B6BD /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				DB3C9EF11F1F3889005B8285 /* SectionView.h */,
-				DB3C9EF21F1F3889005B8285 /* SectionView.m */,
-				DB584C621F305B6100529562 /* MultiThreadView.h */,
-				DB584C631F305B6100529562 /* MultiThreadView.m */,
-				DB6AEE0D1F31A180000D9716 /* LQFOperation.h */,
-				DB6AEE0E1F31A180000D9716 /* LQFOperation.m */,
-				DB584C651F30606300529562 /* NSThreadView.xib */,
-				DB584C671F30618F00529562 /* GCDView.xib */,
-				DB584C691F30621B00529562 /* NSOperationView.xib */,
+				DB356C301F3C2BBF0056B6BD /* Controller */,
+				DB356C471F3C2BBF0056B6BD /* Model */,
+				DB356C501F3C2BBF0056B6BD /* View */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		DB356C301F3C2BBF0056B6BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB356C3A1F3C2BBF0056B6BD /* KnowledgeList1.plist */,
+				DB356C371F3C2BBF0056B6BD /* Knowledge1ViewController.h */,
+				DB356C381F3C2BBF0056B6BD /* Knowledge1ViewController.m */,
+				DB356C311F3C2BBF0056B6BD /* AutoreleasePoolVC.h */,
+				DB356C321F3C2BBF0056B6BD /* AutoreleasePoolVC.m */,
+				DB356C331F3C2BBF0056B6BD /* GitVC.h */,
+				DB356C341F3C2BBF0056B6BD /* GitVC.m */,
+				DB356C351F3C2BBF0056B6BD /* KillWarnVC.h */,
+				DB356C361F3C2BBF0056B6BD /* KillWarnVC.m */,
+				DB356C391F3C2BBF0056B6BD /* Knowledge1ViewController.xib */,
+				DB356C3B1F3C2BBF0056B6BD /* KVCViewController.h */,
+				DB356C3C1F3C2BBF0056B6BD /* KVCViewController.m */,
+				DB356C3F1F3C2BBF0056B6BD /* MultiThreadVC.h */,
+				DB356C401F3C2BBF0056B6BD /* MultiThreadVC.m */,
+				DB356C411F3C2BBF0056B6BD /* RegexVC.h */,
+				DB356C421F3C2BBF0056B6BD /* RegexVC.m */,
+				DB356C431F3C2BBF0056B6BD /* XcodeGitVC.h */,
+				DB356C441F3C2BBF0056B6BD /* XcodeGitVC.m */,
+				DB356C451F3C2BBF0056B6BD /* XibAndSBVC.h */,
+				DB356C461F3C2BBF0056B6BD /* XibAndSBVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DB356C471F3C2BBF0056B6BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB356C481F3C2BBF0056B6BD /* CellModel.h */,
+				DB356C491F3C2BBF0056B6BD /* CellModel.m */,
+				DB356C4A1F3C2BBF0056B6BD /* Dog.h */,
+				DB356C4B1F3C2BBF0056B6BD /* Dog.m */,
+				DB356C4C1F3C2BBF0056B6BD /* Person.h */,
+				DB356C4D1F3C2BBF0056B6BD /* Person.m */,
+				DB356C4E1F3C2BBF0056B6BD /* SectionModel.h */,
+				DB356C4F1F3C2BBF0056B6BD /* SectionModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB356C501F3C2BBF0056B6BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB356C511F3C2BBF0056B6BD /* GCDView.xib */,
+				DB356C521F3C2BBF0056B6BD /* LQFOperation.h */,
+				DB356C531F3C2BBF0056B6BD /* LQFOperation.m */,
+				DB356C541F3C2BBF0056B6BD /* MultiThreadView.h */,
+				DB356C551F3C2BBF0056B6BD /* MultiThreadView.m */,
+				DB356C561F3C2BBF0056B6BD /* NSOperationView.xib */,
+				DB356C571F3C2BBF0056B6BD /* NSThreadView.xib */,
+				DB356C581F3C2BBF0056B6BD /* SectionView.h */,
+				DB356C591F3C2BBF0056B6BD /* SectionView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB356C711F3C41AF0056B6BD /* ThirdPartUse */ = {
+			isa = PBXGroup;
+			children = (
+				DB356C761F3C42540056B6BD /* Controller */,
+				DB356C771F3C42540056B6BD /* Model */,
+				DB356C781F3C42540056B6BD /* View */,
+			);
+			path = ThirdPartUse;
+			sourceTree = "<group>";
+		};
+		DB356C721F3C41CA0056B6BD /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				DB356C731F3C42330056B6BD /* Controller */,
+				DB356C741F3C42330056B6BD /* Model */,
+				DB356C751F3C42330056B6BD /* View */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		DB356C731F3C42330056B6BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB356C841F3C50530056B6BD /* AnimationList.plist */,
+				DB356C7C1F3C42E50056B6BD /* AnimationVC.h */,
+				DB356C7D1F3C42E50056B6BD /* AnimationVC.m */,
+				DB356C861F3C508C0056B6BD /* LoadAnimationVC.h */,
+				DB356C871F3C508C0056B6BD /* LoadAnimationVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DB356C741F3C42330056B6BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB356C751F3C42330056B6BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB356C761F3C42540056B6BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB356C7F1F3C44590056B6BD /* ThirdPartList.plist */,
+				DB356C791F3C42AF0056B6BD /* ThirdPartVC.h */,
+				DB356C7A1F3C42AF0056B6BD /* ThirdPartVC.m */,
+				DB356C811F3C4EBD0056B6BD /* MasonryVC.h */,
+				DB356C821F3C4EBD0056B6BD /* MasonryVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DB356C771F3C42540056B6BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB356C781F3C42540056B6BD /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -623,6 +781,7 @@
 		DB4B0CE51F258E940006CCBF /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				DB1B61751F3AFAAB00FE0A19 /* ProgressView */,
 				DB2F7A211F29BC8C000DECD8 /* LQFSegmentPageView */,
 				DB4B0CE61F258EB70006CCBF /* PopView */,
 			);
@@ -665,9 +824,12 @@
 		DB5D65181F17176200FEC2BA /* LQFLearnDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DB744BDC1F3D855F001AC492 /* Knowledge1 */,
+				DB356C721F3C41CA0056B6BD /* Animation */,
+				DB356C711F3C41AF0056B6BD /* ThirdPartUse */,
+				DB356C2F1F3C2BBF0056B6BD /* Other */,
 				DB6FEE501F1770240009702E /* Kline */,
 				DB6FEE461F1763E10009702E /* Category */,
-				DB6FEE351F1746A80009702E /* Knowledge1 */,
 				DB6FEE301F1722530009702E /* Base */,
 				DB4B0CE51F258E940006CCBF /* Public */,
 				DB6FEE6D1F1775C70009702E /* Help */,
@@ -724,57 +886,6 @@
 				DB6FEE4B1F17677B0009702E /* BaseModel.m */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		DB6FEE351F1746A80009702E /* Knowledge1 */ = {
-			isa = PBXGroup;
-			children = (
-				DB6FEE3F1F174EA10009702E /* Model */,
-				DB3C9EF01F1F3859005B8285 /* View */,
-				DB6FEE361F1746BC0009702E /* Controller */,
-			);
-			path = Knowledge1;
-			sourceTree = "<group>";
-		};
-		DB6FEE361F1746BC0009702E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DB43620F1F28412F0089CE4B /* KnowledgeList1.plist */,
-				DB6FEE371F1746DF0009702E /* Knowledge1ViewController.h */,
-				DB6FEE381F1746DF0009702E /* Knowledge1ViewController.m */,
-				DB6FEE3C1F174DED0009702E /* KVCViewController.h */,
-				DB6FEE3D1F174DED0009702E /* KVCViewController.m */,
-				DB3C9EE41F1EF9C7005B8285 /* AutoreleasePoolVC.h */,
-				DB3C9EE51F1EF9C7005B8285 /* AutoreleasePoolVC.m */,
-				DB4B0CED1F259C570006CCBF /* GitVC.h */,
-				DB4B0CEE1F259C570006CCBF /* GitVC.m */,
-				DB43620C1F2835FF0089CE4B /* MultiThreadVC.h */,
-				DB43620D1F2835FF0089CE4B /* MultiThreadVC.m */,
-				DB4F2A7B1F32F1980088674A /* RegexVC.h */,
-				DB4F2A7C1F32F1980088674A /* RegexVC.m */,
-				DB78B86B1F341971003D8A6D /* XibAndSBVC.h */,
-				DB78B86C1F341971003D8A6D /* XibAndSBVC.m */,
-				DB78B8B01F34727D003D8A6D /* KillWarnVC.h */,
-				DB78B8B11F34727D003D8A6D /* KillWarnVC.m */,
-				DB3691811F3965400026DF4F /* MasonryVC.h */,
-				DB3691821F3965400026DF4F /* MasonryVC.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		DB6FEE3F1F174EA10009702E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DB6FEE431F174FB10009702E /* Person.h */,
-				DB6FEE441F174FB10009702E /* Person.m */,
-				DB6FEE401F174EC20009702E /* Dog.h */,
-				DB6FEE411F174EC20009702E /* Dog.m */,
-				DB3C9EEA1F1F37B8005B8285 /* SectionModel.h */,
-				DB3C9EEB1F1F37B8005B8285 /* SectionModel.m */,
-				DB3C9EED1F1F3817005B8285 /* CellModel.h */,
-				DB3C9EEE1F1F3817005B8285 /* CellModel.m */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		DB6FEE461F1763E10009702E /* Category */ = {
@@ -1103,6 +1214,30 @@
 			path = ta_func;
 			sourceTree = "<group>";
 		};
+		DB744BD51F3D4E68001AC492 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB744BD61F3D4E7D001AC492 /* WaveModel.h */,
+				DB744BD71F3D4E7D001AC492 /* WaveModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB744BDC1F3D855F001AC492 /* Knowledge1 */ = {
+			isa = PBXGroup;
+			children = (
+				DB744BDD1F3D855F001AC492 /* Controller */,
+			);
+			path = Knowledge1;
+			sourceTree = "<group>";
+		};
+		DB744BDD1F3D855F001AC492 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		FA11FDDDAC5F364E63D51057 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1223,15 +1358,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB584C661F30606300529562 /* NSThreadView.xib in Resources */,
-				DB584C6A1F30621B00529562 /* NSOperationView.xib in Resources */,
+				DB356C6A1F3C2BBF0056B6BD /* GCDView.xib in Resources */,
+				DB356C801F3C44590056B6BD /* ThirdPartList.plist in Resources */,
 				DB5D652C1F17176200FEC2BA /* LaunchScreen.storyboard in Resources */,
 				DB5D65291F17176200FEC2BA /* Assets.xcassets in Resources */,
+				DB356C6E1F3C2BBF0056B6BD /* NSThreadView.xib in Resources */,
 				DB55EE421F1C8DE200C7B787 /* N225.xml in Resources */,
-				DB584C681F30618F00529562 /* GCDView.xib in Resources */,
+				DB356C5F1F3C2BBF0056B6BD /* KnowledgeList1.plist in Resources */,
+				DB356C5E1F3C2BBF0056B6BD /* Knowledge1ViewController.xib in Resources */,
 				DB6FEF2B1F1775D30009702E /* ta_retcode.csv in Resources */,
+				DB356C851F3C50530056B6BD /* AnimationList.plist in Resources */,
 				DB5D65241F17176200FEC2BA /* Main.storyboard in Resources */,
-				DB4362101F28412F0089CE4B /* KnowledgeList1.plist in Resources */,
+				DB356C6D1F3C2BBF0056B6BD /* NSOperationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1309,11 +1447,12 @@
 				DB6FEF641F1775D30009702E /* ta_CDLLONGLINE.c in Sources */,
 				DB6FEF5F1F1775D30009702E /* ta_CDLINVERTEDHAMMER.c in Sources */,
 				DB6FEF5C1F1775D30009702E /* ta_CDLHOMINGPIGEON.c in Sources */,
+				DB1B61781F3AFAF900FE0A19 /* LQFProgressView.m in Sources */,
 				DB6FEF371F1775D30009702E /* ta_ATAN.c in Sources */,
 				DB6FEFC91F1775D30009702E /* ta_utility.c in Sources */,
-				DB78B86D1F341971003D8A6D /* XibAndSBVC.m in Sources */,
 				DB6FEF6D1F1775D30009702E /* ta_CDLRISEFALL3METHODS.c in Sources */,
 				DB6FEF7B1F1775D30009702E /* ta_CEIL.c in Sources */,
+				DB356C681F3C2BBF0056B6BD /* Person.m in Sources */,
 				DB6FEE5A1F1770670009702E /* LQFCandleModel.m in Sources */,
 				DB6FEFB61F1775D30009702E /* ta_SINH.c in Sources */,
 				DB6FEF771F1775D30009702E /* ta_CDLTRISTAR.c in Sources */,
@@ -1323,6 +1462,7 @@
 				DB6FEFAB1F1775D30009702E /* ta_PLUS_DM.c in Sources */,
 				DB6FEF8B1F1775D30009702E /* ta_HT_TRENDMODE.c in Sources */,
 				DB6FEF401F1775D30009702E /* ta_CDL3INSIDE.c in Sources */,
+				DB356C881F3C508C0056B6BD /* LoadAnimationVC.m in Sources */,
 				DB6FEF3B1F1775D30009702E /* ta_BETA.c in Sources */,
 				DB6FEF781F1775D30009702E /* ta_CDLUNIQUE3RIVER.c in Sources */,
 				DB6FEF861F1775D30009702E /* ta_HT_DCPERIOD.c in Sources */,
@@ -1330,6 +1470,7 @@
 				DB6FEF8D1F1775D30009702E /* ta_LINEARREG.c in Sources */,
 				DB6FEFB71F1775D30009702E /* ta_SMA.c in Sources */,
 				DB55EE311F1C539700C7B787 /* LQFBaseChartView.m in Sources */,
+				DB356C5D1F3C2BBF0056B6BD /* Knowledge1ViewController.m in Sources */,
 				DB6FEF8A1F1775D30009702E /* ta_HT_TRENDLINE.c in Sources */,
 				DBC6F4E51F381A2C00277DBF /* NSString+LQF.m in Sources */,
 				DB4B0CEC1F2594390006CCBF /* LQFPopTool.m in Sources */,
@@ -1340,15 +1481,15 @@
 				DB6FEF871F1775D30009702E /* ta_HT_DCPHASE.c in Sources */,
 				DB6FEF511F1775D30009702E /* ta_CDLEVENINGDOJISTAR.c in Sources */,
 				DB6FEFC51F1775D30009702E /* ta_TRIX.c in Sources */,
-				DB584C641F305B6100529562 /* MultiThreadView.m in Sources */,
 				DB6FEE721F1775C70009702E /* LQFCalcuteTool.m in Sources */,
 				DB6FEF581F1775D30009702E /* ta_CDLHARAMICROSS.c in Sources */,
 				DB6FEF601F1775D30009702E /* ta_CDLKICKING.c in Sources */,
 				DB6FEE491F1763E10009702E /* UIView+Extension.m in Sources */,
-				DB3C9EEC1F1F37B8005B8285 /* SectionModel.m in Sources */,
 				DB6FEFA11F1775D30009702E /* ta_MINMAX.c in Sources */,
 				DB6FEFCD1F1775D30009702E /* ta_WMA.c in Sources */,
 				DB6FEF381F1775D30009702E /* ta_ATR.c in Sources */,
+				DB356C7E1F3C42E50056B6BD /* AnimationVC.m in Sources */,
+				DB356C7B1F3C42AF0056B6BD /* ThirdPartVC.m in Sources */,
 				DB2C7DD11F18B71E00D90634 /* LQFTecnnicalView.m in Sources */,
 				DB6FEFA71F1775D30009702E /* ta_NATR.c in Sources */,
 				DB6FEF501F1775D30009702E /* ta_CDLENGULFING.c in Sources */,
@@ -1358,18 +1499,21 @@
 				DB6FEF991F1775D30009702E /* ta_MAX.c in Sources */,
 				DB6FEF7D1F1775D30009702E /* ta_CORREL.c in Sources */,
 				DB6FEF411F1775D30009702E /* ta_CDL3LINESTRIKE.c in Sources */,
+				DB356C631F3C2BBF0056B6BD /* RegexVC.m in Sources */,
+				DB356C5C1F3C2BBF0056B6BD /* KillWarnVC.m in Sources */,
 				DB6FEF931F1775D30009702E /* ta_MA.c in Sources */,
+				DB356C6C1F3C2BBF0056B6BD /* MultiThreadView.m in Sources */,
 				DB6FEF3D1F1775D30009702E /* ta_CCI.c in Sources */,
 				DB6FEF741F1775D30009702E /* ta_CDLTAKURI.c in Sources */,
 				DB6FEFB11F1775D30009702E /* ta_ROCR100.c in Sources */,
 				DB6FEF621F1775D30009702E /* ta_CDLLADDERBOTTOM.c in Sources */,
 				DB6FEE5D1F1770670009702E /* LQFMacdModel.m in Sources */,
 				DB6FEF5B1F1775D30009702E /* ta_CDLHIKKAKEMOD.c in Sources */,
+				DB356C6F1F3C2BBF0056B6BD /* SectionView.m in Sources */,
+				DB356C5A1F3C2BBF0056B6BD /* AutoreleasePoolVC.m in Sources */,
 				DB6FEFB01F1775D30009702E /* ta_ROCR.c in Sources */,
-				DB4F2A7D1F32F1980088674A /* RegexVC.m in Sources */,
 				DB6FEF4A1F1775D30009702E /* ta_CDLCONCEALBABYSWALL.c in Sources */,
 				DB6FEFBA1F1775D30009702E /* ta_STOCH.c in Sources */,
-				DB3C9EF31F1F3889005B8285 /* SectionView.m in Sources */,
 				DB6FEF4F1F1775D30009702E /* ta_CDLDRAGONFLYDOJI.c in Sources */,
 				DB5D65211F17176200FEC2BA /* ViewController.m in Sources */,
 				DB6FEF731F1775D30009702E /* ta_CDLSTICKSANDWICH.c in Sources */,
@@ -1387,7 +1531,6 @@
 				DB6FEFC81F1775D30009702E /* ta_ULTOSC.c in Sources */,
 				DB2F7A2A1F29D8B7000DECD8 /* LQFSegmentManager.m in Sources */,
 				DB6FEFB91F1775D30009702E /* ta_STDDEV.c in Sources */,
-				DB6FEE3A1F1746DF0009702E /* Knowledge1ViewController.m in Sources */,
 				DB6FEF721F1775D30009702E /* ta_CDLSTALLEDPATTERN.c in Sources */,
 				DB4B0CE91F258EEA0006CCBF /* LQFPopOutView.m in Sources */,
 				DB6FEF981F1775D30009702E /* ta_MAVP.c in Sources */,
@@ -1400,10 +1543,12 @@
 				DB6FEF471F1775D30009702E /* ta_CDLBELTHOLD.c in Sources */,
 				DB6FEF521F1775D30009702E /* ta_CDLEVENINGSTAR.c in Sources */,
 				DB6FEE4C1F17677B0009702E /* BaseModel.m in Sources */,
+				DB356C5B1F3C2BBF0056B6BD /* GitVC.m in Sources */,
 				DB6FEF421F1775D30009702E /* ta_CDL3OUTSIDE.c in Sources */,
 				DB6FEFB41F1775D30009702E /* ta_SAREXT.c in Sources */,
+				DB356C671F3C2BBF0056B6BD /* Dog.m in Sources */,
+				DB356C661F3C2BBF0056B6BD /* CellModel.m in Sources */,
 				DB6FEFBE1F1775D30009702E /* ta_SUM.c in Sources */,
-				DB6FEE421F174EC20009702E /* Dog.m in Sources */,
 				DB6FEFAC1F1775D30009702E /* ta_PPO.c in Sources */,
 				DB6FEF7A1F1775D30009702E /* ta_CDLXSIDEGAP3METHODS.c in Sources */,
 				DB6FEF4C1F1775D30009702E /* ta_CDLDARKCLOUDCOVER.c in Sources */,
@@ -1420,14 +1565,11 @@
 				DB6FEF7E1F1775D30009702E /* ta_COS.c in Sources */,
 				DB7948701F2F08BA00E74C93 /* UIView+ViewController.m in Sources */,
 				DB6FEF9B1F1775D30009702E /* ta_MEDPRICE.c in Sources */,
-				DB3C9EE61F1EF9C7005B8285 /* AutoreleasePoolVC.m in Sources */,
 				DB6FEFC11F1775D30009702E /* ta_TANH.c in Sources */,
 				DB6FEFBD1F1775D30009702E /* ta_SUB.c in Sources */,
 				DB6FEF3E1F1775D30009702E /* ta_CDL2CROWS.c in Sources */,
-				DB3691831F3965400026DF4F /* MasonryVC.m in Sources */,
 				DB6FEF571F1775D30009702E /* ta_CDLHARAMI.c in Sources */,
 				DB6FEFC01F1775D30009702E /* ta_TAN.c in Sources */,
-				DB6FEE3E1F174DED0009702E /* KVCViewController.m in Sources */,
 				DB6FEF6B1F1775D30009702E /* ta_CDLPIERCING.c in Sources */,
 				DB6FEF2E1F1775D30009702E /* ta_AD.c in Sources */,
 				DB6FEF831F1775D30009702E /* ta_EMA.c in Sources */,
@@ -1439,9 +1581,11 @@
 				DB2F7A271F29D3C2000DECD8 /* LQFSegmentScroll.m in Sources */,
 				DB6FEFBF1F1775D30009702E /* ta_T3.c in Sources */,
 				DB6FEF4D1F1775D30009702E /* ta_CDLDOJI.c in Sources */,
+				DB356C691F3C2BBF0056B6BD /* SectionModel.m in Sources */,
 				DB6FEFC31F1775D30009702E /* ta_TRANGE.c in Sources */,
 				DB6FEF9A1F1775D30009702E /* ta_MAXINDEX.c in Sources */,
 				DB55EE401F1C898500C7B787 /* LQFPriceView.m in Sources */,
+				DB356C651F3C2BBF0056B6BD /* XibAndSBVC.m in Sources */,
 				DB6FEF531F1775D30009702E /* ta_CDLGAPSIDESIDEWHITE.c in Sources */,
 				DB6FEFBB1F1775D30009702E /* ta_STOCHF.c in Sources */,
 				DB6FEF821F1775D30009702E /* ta_DX.c in Sources */,
@@ -1451,14 +1595,13 @@
 				DB6FEF3F1F1775D30009702E /* ta_CDL3BLACKCROWS.c in Sources */,
 				DB6FEF811F1775D30009702E /* ta_DIV.c in Sources */,
 				DB6FEF971F1775D30009702E /* ta_MAMA.c in Sources */,
+				DB356C6B1F3C2BBF0056B6BD /* LQFOperation.m in Sources */,
 				DB6FEF8E1F1775D30009702E /* ta_LINEARREG_ANGLE.c in Sources */,
 				DB6FEF681F1775D30009702E /* ta_CDLMORNINGDOJISTAR.c in Sources */,
 				DB6FEF481F1775D30009702E /* ta_CDLBREAKAWAY.c in Sources */,
 				DB6FEE5B1F1770670009702E /* LQFLineData.m in Sources */,
 				DB6FEF311F1775D30009702E /* ta_ADX.c in Sources */,
-				DB43620E1F2835FF0089CE4B /* MultiThreadVC.m in Sources */,
 				DB2C7DCE1F1867C000D90634 /* LQFLineModel.m in Sources */,
-				DB3C9EEF1F1F3817005B8285 /* CellModel.m in Sources */,
 				DB6FEF321F1775D30009702E /* ta_ADXR.c in Sources */,
 				DB55EE3A1F1C683400C7B787 /* LQFKdjLineView.m in Sources */,
 				DB6FEFC21F1775D30009702E /* ta_TEMA.c in Sources */,
@@ -1474,14 +1617,13 @@
 				DB6FEFA01F1775D30009702E /* ta_MININDEX.c in Sources */,
 				DB6FEFB21F1775D30009702E /* ta_RSI.c in Sources */,
 				DB2C7DD51F18BEBC00D90634 /* UIColor+LQF.m in Sources */,
+				DB356C601F3C2BBF0056B6BD /* KVCViewController.m in Sources */,
 				DB6FEF9F1F1775D30009702E /* ta_MIN.c in Sources */,
 				DB6FEE621F1770790009702E /* LQFCandleChartView.m in Sources */,
-				DB6AEE0F1F31A181000D9716 /* LQFOperation.m in Sources */,
 				DB6FEF9D1F1775D30009702E /* ta_MIDPOINT.c in Sources */,
 				DB6FEF941F1775D30009702E /* ta_MACD.c in Sources */,
 				DB6FEF761F1775D30009702E /* ta_CDLTHRUSTING.c in Sources */,
 				DB6FEF651F1775D30009702E /* ta_CDLMARUBOZU.c in Sources */,
-				DB4B0CEF1F259C570006CCBF /* GitVC.m in Sources */,
 				DB6FEFCA1F1775D30009702E /* ta_VAR.c in Sources */,
 				DB5D651E1F17176200FEC2BA /* AppDelegate.m in Sources */,
 				DB6FEF461F1775D30009702E /* ta_CDLADVANCEBLOCK.c in Sources */,
@@ -1493,13 +1635,14 @@
 				DB2F7A241F29C16D000DECD8 /* LQFSegmentHead.m in Sources */,
 				DB55EE341F1C543500C7B787 /* LQFMacdView.m in Sources */,
 				DB6FEF801F1775D30009702E /* ta_DEMA.c in Sources */,
+				DB356C621F3C2BBF0056B6BD /* MultiThreadVC.m in Sources */,
 				DB6FEFB81F1775D30009702E /* ta_SQRT.c in Sources */,
-				DB6FEE451F174FB10009702E /* Person.m in Sources */,
 				DB6FEFA61F1775D30009702E /* ta_MULT.c in Sources */,
-				DB78B8B21F34727D003D8A6D /* KillWarnVC.m in Sources */,
 				DB6FEF6C1F1775D30009702E /* ta_CDLRICKSHAWMAN.c in Sources */,
 				DB6FEF951F1775D30009702E /* ta_MACDEXT.c in Sources */,
 				DB6FEF7F1F1775D30009702E /* ta_COSH.c in Sources */,
+				DB356C641F3C2BBF0056B6BD /* XcodeGitVC.m in Sources */,
+				DB744BD81F3D4E7D001AC492 /* WaveModel.m in Sources */,
 				DB6FEF8F1F1775D30009702E /* ta_LINEARREG_INTERCEPT.c in Sources */,
 				DB6FEF751F1775D30009702E /* ta_CDLTASUKIGAP.c in Sources */,
 				DB6FEF491F1775D30009702E /* ta_CDLCLOSINGMARUBOZU.c in Sources */,
@@ -1512,6 +1655,7 @@
 				DB6FEE6A1F1771630009702E /* KLineViewController.m in Sources */,
 				DB6FEFAA1F1775D30009702E /* ta_PLUS_DI.c in Sources */,
 				DB6FEF6F1F1775D30009702E /* ta_CDLSHOOTINGSTAR.c in Sources */,
+				DB356C831F3C4EBD0056B6BD /* MasonryVC.m in Sources */,
 				DB6FEF2D1F1775D30009702E /* ta_ACOS.c in Sources */,
 				DB6FEF5E1F1775D30009702E /* ta_CDLINNECK.c in Sources */,
 				DB6FEE661F1770F40009702E /* LQFQuotaView.m in Sources */,

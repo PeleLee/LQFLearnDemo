@@ -48,7 +48,7 @@
 - (void)customNavigationBar {
     _customNavbar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, DEVICE_WIDTH, 64)];
     UIImageView *navImageView = [[UIImageView alloc] initWithFrame:_customNavbar.bounds];
-    navImageView.image = ImageNamed(@"navgationBack");
+    navImageView.image = ImageNamed(@"navgationBackground");
     [_customNavbar addSubview:navImageView];
     [self.view addSubview:_customNavbar];
     

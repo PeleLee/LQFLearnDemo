@@ -47,6 +47,7 @@
     
     self.navTitle = @"Masonry";
     self.quoteUrl = @"https://github.com/SnapKit/Masonry/blob/master/README.md";
+    self.view.backgroundColor = [UIColor whiteColor];
     
     _showScrollView = [UIScrollView new];
     [self.view addSubview:_showScrollView];
