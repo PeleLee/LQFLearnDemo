@@ -8,12 +8,13 @@
 
 #import "BaseViewController.h"
 
-@interface BaseViewController ()
+@interface BaseViewController () <UIWebViewDelegate>
 
 @property (nonatomic, strong) LQFPopOutView *popOutView;
 @property (nonatomic, strong) UIView *customNavbar;
 @property (nonatomic, strong) UIButton *backButton;
 @property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UIWebView *showWebview;
 
 @end
 
@@ -35,6 +36,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
     
     //侧滑返回
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
@@ -102,6 +105,34 @@
 - (void)setQuoteUrl:(NSString *)quoteUrl {
     [self.view addSubview:self.quoteButton];
     self.popOutView.urlStr = quoteUrl;
+}
+
+#pragma mark - 展示url
+- (void)setShowUrl:(NSString *)showUrl {
+    _showWebview = [UIWebView new];
+    [self.view addSubview:_showWebview];
+    
+    [_showWebview mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(65);
+        make.leading.equalTo(self.view);
+        make.trailing.equalTo(self.view);
+        make.bottom.equalTo(self.view);
+    }];
+    
+    _showWebview.delegate = self;
+    
+    _showUrl = showUrl;
+    NSURL *url = [NSURL URLWithString:showUrl];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [_showWebview loadRequest:request];
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+    [SVProgressHUD showWithStatus:@"load..."];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    [SVProgressHUD dismiss];
 }
 
 @end

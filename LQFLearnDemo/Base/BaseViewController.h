@@ -26,4 +26,6 @@
  */
 @property (nonatomic, strong) NSString *quoteUrl;
 
+@property (nonatomic, strong) NSString *showUrl;
+
 @end

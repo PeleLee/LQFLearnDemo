@@ -242,6 +242,9 @@
 		DB6FEFCD1F1775D30009702E /* ta_WMA.c in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEF281F1775D30009702E /* ta_WMA.c */; };
 		DB744BD81F3D4E7D001AC492 /* WaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB744BD71F3D4E7D001AC492 /* WaveModel.m */; };
 		DB7948701F2F08BA00E74C93 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */; };
+		DB89089A1F3D993B00F36624 /* CADisplayLinkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8908991F3D993B00F36624 /* CADisplayLinkVC.m */; };
+		DB89089D1F3D9E5C00F36624 /* CoreGraphicsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB89089C1F3D9E5C00F36624 /* CoreGraphicsVC.m */; };
+		DB8908A11F3DA58300F36624 /* LQFNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8908A01F3DA58300F36624 /* LQFNoteView.m */; };
 		DBC6F4E51F381A2C00277DBF /* NSString+LQF.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC6F4E41F381A2C00277DBF /* NSString+LQF.m */; };
 		FA9890C2F6C38525334513A3 /* libPods-LQFLearnDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB04A7764BA14A414C18CB7 /* libPods-LQFLearnDemo.a */; };
 /* End PBXBuildFile section */
@@ -576,6 +579,12 @@
 		DB744BD71F3D4E7D001AC492 /* WaveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveModel.m; sourceTree = "<group>"; };
 		DB79486E1F2F08BA00E74C93 /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
 		DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
+		DB8908981F3D993B00F36624 /* CADisplayLinkVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLinkVC.h; sourceTree = "<group>"; };
+		DB8908991F3D993B00F36624 /* CADisplayLinkVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADisplayLinkVC.m; sourceTree = "<group>"; };
+		DB89089B1F3D9E5C00F36624 /* CoreGraphicsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsVC.h; sourceTree = "<group>"; };
+		DB89089C1F3D9E5C00F36624 /* CoreGraphicsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsVC.m; sourceTree = "<group>"; };
+		DB89089F1F3DA58300F36624 /* LQFNoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFNoteView.h; sourceTree = "<group>"; };
+		DB8908A01F3DA58300F36624 /* LQFNoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFNoteView.m; sourceTree = "<group>"; };
 		DBC6F4E31F381A2C00277DBF /* NSString+LQF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LQF.h"; sourceTree = "<group>"; };
 		DBC6F4E41F381A2C00277DBF /* NSString+LQF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LQF.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -734,6 +743,10 @@
 				DB356C7D1F3C42E50056B6BD /* AnimationVC.m */,
 				DB356C861F3C508C0056B6BD /* LoadAnimationVC.h */,
 				DB356C871F3C508C0056B6BD /* LoadAnimationVC.m */,
+				DB8908981F3D993B00F36624 /* CADisplayLinkVC.h */,
+				DB8908991F3D993B00F36624 /* CADisplayLinkVC.m */,
+				DB89089B1F3D9E5C00F36624 /* CoreGraphicsVC.h */,
+				DB89089C1F3D9E5C00F36624 /* CoreGraphicsVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -781,6 +794,7 @@
 		DB4B0CE51F258E940006CCBF /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				DB89089E1F3DA56200F36624 /* NoteView */,
 				DB1B61751F3AFAAB00FE0A19 /* ProgressView */,
 				DB2F7A211F29BC8C000DECD8 /* LQFSegmentPageView */,
 				DB4B0CE61F258EB70006CCBF /* PopView */,
@@ -824,7 +838,6 @@
 		DB5D65181F17176200FEC2BA /* LQFLearnDemo */ = {
 			isa = PBXGroup;
 			children = (
-				DB744BDC1F3D855F001AC492 /* Knowledge1 */,
 				DB356C721F3C41CA0056B6BD /* Animation */,
 				DB356C711F3C41AF0056B6BD /* ThirdPartUse */,
 				DB356C2F1F3C2BBF0056B6BD /* Other */,
@@ -1223,19 +1236,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		DB744BDC1F3D855F001AC492 /* Knowledge1 */ = {
+		DB89089E1F3DA56200F36624 /* NoteView */ = {
 			isa = PBXGroup;
 			children = (
-				DB744BDD1F3D855F001AC492 /* Controller */,
+				DB89089F1F3DA58300F36624 /* LQFNoteView.h */,
+				DB8908A01F3DA58300F36624 /* LQFNoteView.m */,
 			);
-			path = Knowledge1;
-			sourceTree = "<group>";
-		};
-		DB744BDD1F3D855F001AC492 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
+			path = NoteView;
 			sourceTree = "<group>";
 		};
 		FA11FDDDAC5F364E63D51057 /* Frameworks */ = {
@@ -1465,6 +1472,7 @@
 				DB356C881F3C508C0056B6BD /* LoadAnimationVC.m in Sources */,
 				DB6FEF3B1F1775D30009702E /* ta_BETA.c in Sources */,
 				DB6FEF781F1775D30009702E /* ta_CDLUNIQUE3RIVER.c in Sources */,
+				DB8908A11F3DA58300F36624 /* LQFNoteView.m in Sources */,
 				DB6FEF861F1775D30009702E /* ta_HT_DCPERIOD.c in Sources */,
 				DB6FEF701F1775D30009702E /* ta_CDLSHORTLINE.c in Sources */,
 				DB6FEF8D1F1775D30009702E /* ta_LINEARREG.c in Sources */,
@@ -1619,6 +1627,7 @@
 				DB2C7DD51F18BEBC00D90634 /* UIColor+LQF.m in Sources */,
 				DB356C601F3C2BBF0056B6BD /* KVCViewController.m in Sources */,
 				DB6FEF9F1F1775D30009702E /* ta_MIN.c in Sources */,
+				DB89089A1F3D993B00F36624 /* CADisplayLinkVC.m in Sources */,
 				DB6FEE621F1770790009702E /* LQFCandleChartView.m in Sources */,
 				DB6FEF9D1F1775D30009702E /* ta_MIDPOINT.c in Sources */,
 				DB6FEF941F1775D30009702E /* ta_MACD.c in Sources */,
@@ -1663,6 +1672,7 @@
 				DB5D651B1F17176200FEC2BA /* main.m in Sources */,
 				DB6FEFAF1F1775D30009702E /* ta_ROCP.c in Sources */,
 				DB6FEF2A1F1775D30009702E /* ta_retcode.c in Sources */,
+				DB89089D1F3D9E5C00F36624 /* CoreGraphicsVC.m in Sources */,
 				DB5D65271F17176200FEC2BA /* LQFLearnDemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
