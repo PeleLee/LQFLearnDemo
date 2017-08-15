@@ -23,5 +23,13 @@
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>Title</key>
+		<string>SVProgressHUD</string>
+		<key>VCName</key>
+		<string>SVProgressHUDVC</string>
+		<key>Cell</key>
+		<array/>
+	</dict>
 </array>
 </plist>
