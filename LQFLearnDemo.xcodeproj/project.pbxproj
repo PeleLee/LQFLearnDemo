@@ -246,6 +246,7 @@
 		DB89089D1F3D9E5C00F36624 /* CoreGraphicsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB89089C1F3D9E5C00F36624 /* CoreGraphicsVC.m */; };
 		DB8908A11F3DA58300F36624 /* LQFNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8908A01F3DA58300F36624 /* LQFNoteView.m */; };
 		DBC6F4E51F381A2C00277DBF /* NSString+LQF.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC6F4E41F381A2C00277DBF /* NSString+LQF.m */; };
+		DBD138331F41934A003F2848 /* SVProgressHUDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD138321F41934A003F2848 /* SVProgressHUDVC.m */; };
 		FA9890C2F6C38525334513A3 /* libPods-LQFLearnDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB04A7764BA14A414C18CB7 /* libPods-LQFLearnDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -587,6 +588,8 @@
 		DB8908A01F3DA58300F36624 /* LQFNoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFNoteView.m; sourceTree = "<group>"; };
 		DBC6F4E31F381A2C00277DBF /* NSString+LQF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LQF.h"; sourceTree = "<group>"; };
 		DBC6F4E41F381A2C00277DBF /* NSString+LQF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LQF.m"; sourceTree = "<group>"; };
+		DBD138311F41934A003F2848 /* SVProgressHUDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUDVC.h; sourceTree = "<group>"; };
+		DBD138321F41934A003F2848 /* SVProgressHUDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUDVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -773,6 +776,8 @@
 				DB356C7A1F3C42AF0056B6BD /* ThirdPartVC.m */,
 				DB356C811F3C4EBD0056B6BD /* MasonryVC.h */,
 				DB356C821F3C4EBD0056B6BD /* MasonryVC.m */,
+				DBD138311F41934A003F2848 /* SVProgressHUDVC.h */,
+				DBD138321F41934A003F2848 /* SVProgressHUDVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1649,6 +1654,7 @@
 				DB6FEFA61F1775D30009702E /* ta_MULT.c in Sources */,
 				DB6FEF6C1F1775D30009702E /* ta_CDLRICKSHAWMAN.c in Sources */,
 				DB6FEF951F1775D30009702E /* ta_MACDEXT.c in Sources */,
+				DBD138331F41934A003F2848 /* SVProgressHUDVC.m in Sources */,
 				DB6FEF7F1F1775D30009702E /* ta_COSH.c in Sources */,
 				DB356C641F3C2BBF0056B6BD /* XcodeGitVC.m in Sources */,
 				DB744BD81F3D4E7D001AC492 /* WaveModel.m in Sources */,
