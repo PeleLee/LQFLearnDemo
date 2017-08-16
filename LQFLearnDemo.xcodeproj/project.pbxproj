@@ -42,6 +42,7 @@
 		DB356C831F3C4EBD0056B6BD /* MasonryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C821F3C4EBD0056B6BD /* MasonryVC.m */; };
 		DB356C851F3C50530056B6BD /* AnimationList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB356C841F3C50530056B6BD /* AnimationList.plist */; };
 		DB356C881F3C508C0056B6BD /* LoadAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C871F3C508C0056B6BD /* LoadAnimationVC.m */; };
+		DB37D7571F43ED0D000EEF79 /* WriteDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB37D7561F43ED0D000EEF79 /* WriteDateVC.m */; };
 		DB4538CA1F20B1B60037C1A8 /* CandleCorssScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4538C91F20B1B60037C1A8 /* CandleCorssScreenVC.m */; };
 		DB4538CD1F20B31C0037C1A8 /* LQFCrossPriceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4538CC1F20B31C0037C1A8 /* LQFCrossPriceView.m */; };
 		DB4B0CE91F258EEA0006CCBF /* LQFPopOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0CE81F258EEA0006CCBF /* LQFPopOutView.m */; };
@@ -334,6 +335,8 @@
 		DB356C841F3C50530056B6BD /* AnimationList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AnimationList.plist; sourceTree = "<group>"; };
 		DB356C861F3C508C0056B6BD /* LoadAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadAnimationVC.h; sourceTree = "<group>"; };
 		DB356C871F3C508C0056B6BD /* LoadAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadAnimationVC.m; sourceTree = "<group>"; };
+		DB37D7551F43ED0D000EEF79 /* WriteDateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteDateVC.h; sourceTree = "<group>"; };
+		DB37D7561F43ED0D000EEF79 /* WriteDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteDateVC.m; sourceTree = "<group>"; };
 		DB4538C81F20B1B60037C1A8 /* CandleCorssScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandleCorssScreenVC.h; sourceTree = "<group>"; };
 		DB4538C91F20B1B60037C1A8 /* CandleCorssScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandleCorssScreenVC.m; sourceTree = "<group>"; };
 		DB4538CB1F20B31C0037C1A8 /* LQFCrossPriceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFCrossPriceView.h; sourceTree = "<group>"; };
@@ -683,6 +686,8 @@
 				DB356C441F3C2BBF0056B6BD /* XcodeGitVC.m */,
 				DB356C451F3C2BBF0056B6BD /* XibAndSBVC.h */,
 				DB356C461F3C2BBF0056B6BD /* XibAndSBVC.m */,
+				DB37D7551F43ED0D000EEF79 /* WriteDateVC.h */,
+				DB37D7561F43ED0D000EEF79 /* WriteDateVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1664,6 +1669,7 @@
 				DB55EE3D1F1C697C00C7B787 /* LQFWrLineView.m in Sources */,
 				DB6FEF441F1775D30009702E /* ta_CDL3WHITESOLDIERS.c in Sources */,
 				DB6FEF7C1F1775D30009702E /* ta_CMO.c in Sources */,
+				DB37D7571F43ED0D000EEF79 /* WriteDateVC.m in Sources */,
 				DB6FEF301F1775D30009702E /* ta_ADOSC.c in Sources */,
 				DB6FEF561F1775D30009702E /* ta_CDLHANGINGMAN.c in Sources */,
 				DB6FEFC61F1775D30009702E /* ta_TSF.c in Sources */,

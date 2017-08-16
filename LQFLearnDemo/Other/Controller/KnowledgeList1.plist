@@ -71,5 +71,15 @@
 		<key>Sub</key>
 		<array/>
 	</dict>
+	<dict>
+		<key>Title</key>
+		<string>写入文件</string>
+		<key>VCName</key>
+		<string>WriteDateVC</string>
+		<key>SegID</key>
+		<string></string>
+		<key>Sub</key>
+		<array/>
+	</dict>
 </array>
 </plist>
