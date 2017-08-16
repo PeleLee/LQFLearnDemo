@@ -51,6 +51,7 @@
             sectionModel.title = dic[@"Title"];
             sectionModel.isExpand = NO;
             sectionModel.segID = dic[@"SegID"];
+            sectionModel.VCName = dic[@"VCName"];
             
             //判断是否可折叠
             //可折叠:   点击弹出折叠选项
@@ -64,6 +65,7 @@
                     NSDictionary *cellDic = subArr[j];
                     model.Title = cellDic[@"Title"];
                     model.SegID = cellDic[@"SegID"];
+                    model.VCName = cellDic[@"VCName"];
                     
                     [cellArr addObject:model];
                 }
@@ -127,12 +129,18 @@
     
     view.skipBlock = ^{
         NSString *segID = model.segID;
+        NSString *vcName = model.VCName;
         if (segID && segID.length > 0) {
             //storyboard中跳转
             [self presentWithTitle:segID];
         }
+        else if (vcName && vcName.length > 0) {
+            //代码push跳转
+            BaseViewController *vc = [[NSClassFromString(vcName) alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
         else {
-            //其他方式跳转
+            //不跳转
         }
     };
     
