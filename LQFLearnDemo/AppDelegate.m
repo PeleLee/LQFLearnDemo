@@ -9,8 +9,9 @@
 #import "AppDelegate.h"
 #import "FHHFPSIndicator.h"
 #import "ViewController.h"
+#import <RongIMKit/RongIMKit.h>
 
-@interface AppDelegate ()
+@interface AppDelegate () <RCIMUserInfoDataSource>
 
 @end
 
@@ -18,10 +19,47 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //融云初始化
+    [[RCIM sharedRCIM] initWithAppKey:@"c9kqb3rdcxkrj"];
+    
+    //lqf0001:  0+ac83GOKxw1PIbdRM3mc1OH4jTlfiWYGcBGb0nC1HYkgtCpskCdS3WsgNaYoImOBvLXycwmKo12tcvhSbE1aQ==
+    //lqf:      WTVLoWwrQl/JopOKx1i61sXfp4PaogOhJhKUIzbyg9UpAQc3D0GTTeMuGUQZG00yJ2Ow7A+Ch+I6MDmWnm1Xog==
+    [[RCIM sharedRCIM] connectWithToken:@"0+ac83GOKxw1PIbdRM3mc1OH4jTlfiWYGcBGb0nC1HYkgtCpskCdS3WsgNaYoImOBvLXycwmKo12tcvhSbE1aQ==" success:^(NSString *userId) {
+        NSLog(@"登陆成功。当前登录的用户ID:%@",userId);
+        
+        //用户信息
+        [[RCIM sharedRCIM] setUserInfoDataSource:self];
+        
+    } error:^(RCConnectErrorCode status) {
+        NSLog(@"登录的错误码为:%ld",(long)status);
+    } tokenIncorrect:^{
+        NSLog(@"token错误");
+    }];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     return YES;
 }
 
+- (void)getUserInfoWithUserId:(NSString *)userId
+                   completion:(void (^)(RCUserInfo *userInfo))completion {
+    //用户昵称 头像
+    if ([userId isEqualToString:@"lqf"]) {
+        RCUserInfo *userInfo = [[RCUserInfo alloc] init];
+        userInfo.userId = userId;
+        userInfo.name = @"Idler";
+        userInfo.portraitUri = @"https://static.lagou.com/thumbnail_200x200/image1/M00/00/BB/Cgo8PFTUYDuAXoUYAAAav1V75Pk815.jpg";
+        return completion(userInfo);
+    }
+    else if ([userId isEqualToString:@"lqf0001"]) {
+        RCUserInfo *userInfo = [[RCUserInfo alloc] init];
+        userInfo.userId = userId;
+        userInfo.name = @"Clone";
+        userInfo.portraitUri = @"https://static.lagou.com/thumbnail_300x300/image1/M00/00/08/Cgo8PFTUWBCAcSJHAAB-yfiYxHM640.png";
+        return completion(userInfo);
+    }
+    return completion(nil);
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -80,9 +80,19 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "RongCloudIM/RongCloudIM/RongCloud.bundle"
+  install_resource "RongCloudIM/RongCloudIM/en.lproj"
+  install_resource "RongCloudIM/RongCloudIM/zh-Hans.lproj"
+  install_resource "RongCloudIM/RongCloudIM/Emoji.plist"
+  install_resource "RongCloudIM/RongCloudIM/RCConfig.plist"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "RongCloudIM/RongCloudIM/RongCloud.bundle"
+  install_resource "RongCloudIM/RongCloudIM/en.lproj"
+  install_resource "RongCloudIM/RongCloudIM/zh-Hans.lproj"
+  install_resource "RongCloudIM/RongCloudIM/Emoji.plist"
+  install_resource "RongCloudIM/RongCloudIM/RCConfig.plist"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
 fi
 

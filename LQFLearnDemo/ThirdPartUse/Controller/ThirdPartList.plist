@@ -31,5 +31,26 @@
 		<key>Cell</key>
 		<array/>
 	</dict>
+	<dict>
+		<key>Title</key>
+		<string>融云</string>
+		<key>VCName</key>
+		<string></string>
+		<key>Cell</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Demo</string>
+				<key>VCName</key>
+				<string>LQFChatListViewVC</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>笔记(SDK2.8.15)</string>
+				<key>VCName</key>
+				<string>LQFRCloudNoteVC</string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>

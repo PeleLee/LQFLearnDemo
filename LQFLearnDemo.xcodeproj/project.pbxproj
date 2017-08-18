@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DB1B61781F3AFAF900FE0A19 /* LQFProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1B61771F3AFAF900FE0A19 /* LQFProgressView.m */; };
+		DB216C561F46984A00BE9D49 /* LQFRCloudNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB216C551F46984A00BE9D49 /* LQFRCloudNoteVC.m */; };
+		DB216C591F46CD5300BE9D49 /* LQFChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB216C581F46CD5300BE9D49 /* LQFChatVC.m */; };
 		DB2C7DCE1F1867C000D90634 /* LQFLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C7DCD1F1867C000D90634 /* LQFLineModel.m */; };
 		DB2C7DD11F18B71E00D90634 /* LQFTecnnicalView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C7DD01F18B71E00D90634 /* LQFTecnnicalView.m */; };
 		DB2C7DD51F18BEBC00D90634 /* UIColor+LQF.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C7DD41F18BEBC00D90634 /* UIColor+LQF.m */; };
@@ -43,6 +45,7 @@
 		DB356C851F3C50530056B6BD /* AnimationList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB356C841F3C50530056B6BD /* AnimationList.plist */; };
 		DB356C881F3C508C0056B6BD /* LoadAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C871F3C508C0056B6BD /* LoadAnimationVC.m */; };
 		DB37D7571F43ED0D000EEF79 /* WriteDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB37D7561F43ED0D000EEF79 /* WriteDateVC.m */; };
+		DB37D76A1F443CAD000EEF79 /* LQFChatListViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB37D7691F443CAD000EEF79 /* LQFChatListViewVC.m */; };
 		DB4538CA1F20B1B60037C1A8 /* CandleCorssScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4538C91F20B1B60037C1A8 /* CandleCorssScreenVC.m */; };
 		DB4538CD1F20B31C0037C1A8 /* LQFCrossPriceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4538CC1F20B31C0037C1A8 /* LQFCrossPriceView.m */; };
 		DB4B0CE91F258EEA0006CCBF /* LQFPopOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0CE81F258EEA0006CCBF /* LQFPopOutView.m */; };
@@ -274,6 +277,10 @@
 		ACB04A7764BA14A414C18CB7 /* libPods-LQFLearnDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LQFLearnDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1B61761F3AFAF900FE0A19 /* LQFProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFProgressView.h; sourceTree = "<group>"; };
 		DB1B61771F3AFAF900FE0A19 /* LQFProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFProgressView.m; sourceTree = "<group>"; };
+		DB216C541F46984A00BE9D49 /* LQFRCloudNoteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFRCloudNoteVC.h; sourceTree = "<group>"; };
+		DB216C551F46984A00BE9D49 /* LQFRCloudNoteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFRCloudNoteVC.m; sourceTree = "<group>"; };
+		DB216C571F46CD5300BE9D49 /* LQFChatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFChatVC.h; sourceTree = "<group>"; };
+		DB216C581F46CD5300BE9D49 /* LQFChatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFChatVC.m; sourceTree = "<group>"; };
 		DB2C7DCC1F1867C000D90634 /* LQFLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFLineModel.h; sourceTree = "<group>"; };
 		DB2C7DCD1F1867C000D90634 /* LQFLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFLineModel.m; sourceTree = "<group>"; };
 		DB2C7DCF1F18B71E00D90634 /* LQFTecnnicalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFTecnnicalView.h; sourceTree = "<group>"; };
@@ -337,6 +344,8 @@
 		DB356C871F3C508C0056B6BD /* LoadAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadAnimationVC.m; sourceTree = "<group>"; };
 		DB37D7551F43ED0D000EEF79 /* WriteDateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteDateVC.h; sourceTree = "<group>"; };
 		DB37D7561F43ED0D000EEF79 /* WriteDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteDateVC.m; sourceTree = "<group>"; };
+		DB37D7681F443CAD000EEF79 /* LQFChatListViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFChatListViewVC.h; sourceTree = "<group>"; };
+		DB37D7691F443CAD000EEF79 /* LQFChatListViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFChatListViewVC.m; sourceTree = "<group>"; };
 		DB4538C81F20B1B60037C1A8 /* CandleCorssScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandleCorssScreenVC.h; sourceTree = "<group>"; };
 		DB4538C91F20B1B60037C1A8 /* CandleCorssScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandleCorssScreenVC.m; sourceTree = "<group>"; };
 		DB4538CB1F20B31C0037C1A8 /* LQFCrossPriceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFCrossPriceView.h; sourceTree = "<group>"; };
@@ -783,6 +792,12 @@
 				DB356C821F3C4EBD0056B6BD /* MasonryVC.m */,
 				DBD138311F41934A003F2848 /* SVProgressHUDVC.h */,
 				DBD138321F41934A003F2848 /* SVProgressHUDVC.m */,
+				DB37D7681F443CAD000EEF79 /* LQFChatListViewVC.h */,
+				DB37D7691F443CAD000EEF79 /* LQFChatListViewVC.m */,
+				DB216C571F46CD5300BE9D49 /* LQFChatVC.h */,
+				DB216C581F46CD5300BE9D49 /* LQFChatVC.m */,
+				DB216C541F46984A00BE9D49 /* LQFRCloudNoteVC.h */,
+				DB216C551F46984A00BE9D49 /* LQFRCloudNoteVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1519,6 +1534,7 @@
 				DB6FEF411F1775D30009702E /* ta_CDL3LINESTRIKE.c in Sources */,
 				DB356C631F3C2BBF0056B6BD /* RegexVC.m in Sources */,
 				DB356C5C1F3C2BBF0056B6BD /* KillWarnVC.m in Sources */,
+				DB216C591F46CD5300BE9D49 /* LQFChatVC.m in Sources */,
 				DB6FEF931F1775D30009702E /* ta_MA.c in Sources */,
 				DB356C6C1F3C2BBF0056B6BD /* MultiThreadView.m in Sources */,
 				DB6FEF3D1F1775D30009702E /* ta_CCI.c in Sources */,
@@ -1599,6 +1615,7 @@
 				DB2F7A271F29D3C2000DECD8 /* LQFSegmentScroll.m in Sources */,
 				DB6FEFBF1F1775D30009702E /* ta_T3.c in Sources */,
 				DB6FEF4D1F1775D30009702E /* ta_CDLDOJI.c in Sources */,
+				DB37D76A1F443CAD000EEF79 /* LQFChatListViewVC.m in Sources */,
 				DB356C691F3C2BBF0056B6BD /* SectionModel.m in Sources */,
 				DB6FEFC31F1775D30009702E /* ta_TRANGE.c in Sources */,
 				DB6FEF9A1F1775D30009702E /* ta_MAXINDEX.c in Sources */,
@@ -1655,6 +1672,7 @@
 				DB55EE341F1C543500C7B787 /* LQFMacdView.m in Sources */,
 				DB6FEF801F1775D30009702E /* ta_DEMA.c in Sources */,
 				DB356C621F3C2BBF0056B6BD /* MultiThreadVC.m in Sources */,
+				DB216C561F46984A00BE9D49 /* LQFRCloudNoteVC.m in Sources */,
 				DB6FEFB81F1775D30009702E /* ta_SQRT.c in Sources */,
 				DB6FEFA61F1775D30009702E /* ta_MULT.c in Sources */,
 				DB6FEF6C1F1775D30009702E /* ta_CDLRICKSHAWMAN.c in Sources */,

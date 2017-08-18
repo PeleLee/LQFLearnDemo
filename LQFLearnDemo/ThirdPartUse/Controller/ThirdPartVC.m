@@ -10,6 +10,7 @@
 #import "SectionView.h"
 #import "SectionModel.h"
 #import "CellModel.h"
+#import "LQFChatListViewVC.h"
 
 @interface ThirdPartVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -118,11 +119,14 @@
     view.skipBlock = ^{
         NSString *vcName = model.VCName;
         if (vcName && vcName.length > 0) {
-            BaseViewController *vc = [[NSClassFromString(vcName) alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
-        }
-        else {
-            //其他方式跳转
+            if ([vcName isEqualToString:@"LQFChatListViewVC"]) {
+                LQFChatListViewVC *vc = [[LQFChatListViewVC alloc] init];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            else {
+                BaseViewController *vc = [[NSClassFromString(vcName) alloc] init];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
         }
     };
     
@@ -136,7 +140,6 @@
     UITableViewCell *cell = [_listTV dequeueReusableCellWithIdentifier:@"cellID"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellID"];
-//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.textLabel.font = [UIFont systemFontOfSize:12];
     }
     
@@ -144,6 +147,16 @@
     NSArray *cellArr = model.cellArray;
     CellModel *cellModel = cellArr[indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"     %@",cellModel.Title];
+    
+    NSString *vcname = cellModel.VCName;
+    if (vcname && vcname.length > 0) {
+        cell.textLabel.textColor = MyBlue;
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+    else {
+        cell.textLabel.textColor = [UIColor blackColor];
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
     
     return cell;
 }
@@ -154,8 +167,14 @@
     CellModel *cellModel = cellArr[indexPath.row];
     NSString *VCClassName = cellModel.VCName;
     if (VCClassName && VCClassName.length > 0) {
-        BaseViewController *vc = [[NSClassFromString(VCClassName) alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
+        if ([VCClassName isEqualToString:@"LQFChatListViewVC"]) {
+            LQFChatListViewVC *vc = [[LQFChatListViewVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        else {
+            BaseViewController *vc = [[NSClassFromString(VCClassName) alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
     }
 }
 
