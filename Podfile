@@ -4,4 +4,6 @@ target 'LQFLearnDemo' do
     pod 'KVOController'
     pod 'FHHFPSIndicator'
     pod 'SVProgressHUD'
+    pod 'RongCloudIM/IMLib'
+    pod 'RongCloudIM/IMKit'
 end

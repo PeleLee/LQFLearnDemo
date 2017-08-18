@@ -43,8 +43,13 @@
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
     self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     
-    self.navigationController.navigationBarHidden = YES;
     [self customNavigationBar];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBarHidden = YES;
 }
 
 #pragma mark - 自定义导航栏

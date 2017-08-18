@@ -30,6 +30,7 @@
     NSMutableAttributedString *aStr = [[NSMutableAttributedString alloc] initWithString:needStr];
     
     [aStr addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:15] range:NSMakeRange(0, title.length)];
+    [aStr addAttribute:NSForegroundColorAttributeName value:MyBlue range:NSMakeRange(0, title.length)];
     
     [_note appendAttributedString:aStr];
 }
