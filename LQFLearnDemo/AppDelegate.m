@@ -20,6 +20,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [self connectRCloud];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    return YES;
+}
+
+#pragma mark - 融云
+- (void)connectRCloud {
     //融云初始化
     [[RCIM sharedRCIM] initWithAppKey:@"c9kqb3rdcxkrj"];
     
@@ -36,9 +44,6 @@
     } tokenIncorrect:^{
         NSLog(@"token错误");
     }];
-    
-    self.window.backgroundColor = [UIColor whiteColor];
-    return YES;
 }
 
 - (void)getUserInfoWithUserId:(NSString *)userId
@@ -60,6 +65,8 @@
     }
     return completion(nil);
 }
+
+#pragma mark -
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

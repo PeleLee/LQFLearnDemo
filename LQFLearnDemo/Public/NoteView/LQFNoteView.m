@@ -38,7 +38,10 @@
 - (void)addContent:(NSString *)content {
     NSString *needStr = [NSString stringWithFormat:@"%@\n\n",content];
     NSMutableAttributedString *aStr = [[NSMutableAttributedString alloc] initWithString:needStr];
-    [aStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:13] range:NSMakeRange(0, content.length)];
+    
+    if (content.length > 0) {
+        [aStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:13] range:NSMakeRange(0, content.length)];
+    }
     
     [_note appendAttributedString:aStr];
 }
