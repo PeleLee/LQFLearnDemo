@@ -160,6 +160,28 @@
     [_noteView addNounText:@"文件消息"];
     [_noteView addContent:@""];
     
+    [_noteView addTitle:@"消息接收监听"];
+    [_noteView addNounText:@"RCIMReceiveMessageDelegate"];
+    [_noteView addContent:@"代理设置给AppDelegate"];
+    [_noteView addNounText:@"接收消息"];
+    [_noteView addContent:@""];
+    [_noteView addContent:@"onRCIMReceiveMessage:left: 在前台和后台活动状态时收到任何消息都会执行。在此之前消息已经被存入了 SDK 内置数据库中。"];
+    
+    [_noteView addNounText:@"关闭某个会话"];
+    [_noteView addContent:@""];
+    
+    [_noteView addNounText:@"按时间段关闭某个会话"];
+    [_noteView addContent:@""];
+    [_noteView addContent:@"设置屏蔽、删除屏蔽、查询屏蔽"];
+    
+    [_noteView addNounText:@"关闭所有前台提示音"];
+    [_noteView addContent:@""];
+    
+    [_noteView addNounText:@"关闭某个(类)消息的提示音"];
+    [_noteView addContent:@""];
+    
+    [_noteView addNounText:@"关闭后台本地通知"];
+    
     [_noteView endEdit];
 }
 

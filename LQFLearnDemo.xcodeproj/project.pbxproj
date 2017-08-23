@@ -249,6 +249,9 @@
 		DB89089A1F3D993B00F36624 /* CADisplayLinkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8908991F3D993B00F36624 /* CADisplayLinkVC.m */; };
 		DB89089D1F3D9E5C00F36624 /* CoreGraphicsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB89089C1F3D9E5C00F36624 /* CoreGraphicsVC.m */; };
 		DB8908A11F3DA58300F36624 /* LQFNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8908A01F3DA58300F36624 /* LQFNoteView.m */; };
+		DB9D56E31F4BD12600455209 /* iOS10VC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9D56E21F4BD12600455209 /* iOS10VC.m */; };
+		DB9D56E61F4BF98900455209 /* CustomButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9D56E51F4BF98900455209 /* CustomButtonVC.m */; };
+		DB9D56EC1F4C03D900455209 /* LQFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9D56EB1F4C03D900455209 /* LQFButton.m */; };
 		DBC6F4E51F381A2C00277DBF /* NSString+LQF.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC6F4E41F381A2C00277DBF /* NSString+LQF.m */; };
 		DBD138331F41934A003F2848 /* SVProgressHUDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD138321F41934A003F2848 /* SVProgressHUDVC.m */; };
 		FA9890C2F6C38525334513A3 /* libPods-LQFLearnDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB04A7764BA14A414C18CB7 /* libPods-LQFLearnDemo.a */; };
@@ -598,6 +601,12 @@
 		DB89089C1F3D9E5C00F36624 /* CoreGraphicsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsVC.m; sourceTree = "<group>"; };
 		DB89089F1F3DA58300F36624 /* LQFNoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFNoteView.h; sourceTree = "<group>"; };
 		DB8908A01F3DA58300F36624 /* LQFNoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFNoteView.m; sourceTree = "<group>"; };
+		DB9D56E11F4BD12600455209 /* iOS10VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS10VC.h; sourceTree = "<group>"; };
+		DB9D56E21F4BD12600455209 /* iOS10VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOS10VC.m; sourceTree = "<group>"; };
+		DB9D56E41F4BF98900455209 /* CustomButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButtonVC.h; sourceTree = "<group>"; };
+		DB9D56E51F4BF98900455209 /* CustomButtonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButtonVC.m; sourceTree = "<group>"; };
+		DB9D56EA1F4C03D900455209 /* LQFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFButton.h; sourceTree = "<group>"; };
+		DB9D56EB1F4C03D900455209 /* LQFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFButton.m; sourceTree = "<group>"; };
 		DBC6F4E31F381A2C00277DBF /* NSString+LQF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LQF.h"; sourceTree = "<group>"; };
 		DBC6F4E41F381A2C00277DBF /* NSString+LQF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LQF.m"; sourceTree = "<group>"; };
 		DBD138311F41934A003F2848 /* SVProgressHUDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUDVC.h; sourceTree = "<group>"; };
@@ -697,6 +706,10 @@
 				DB356C461F3C2BBF0056B6BD /* XibAndSBVC.m */,
 				DB37D7551F43ED0D000EEF79 /* WriteDateVC.h */,
 				DB37D7561F43ED0D000EEF79 /* WriteDateVC.m */,
+				DB9D56E11F4BD12600455209 /* iOS10VC.h */,
+				DB9D56E21F4BD12600455209 /* iOS10VC.m */,
+				DB9D56E41F4BF98900455209 /* CustomButtonVC.h */,
+				DB9D56E51F4BF98900455209 /* CustomButtonVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -728,6 +741,8 @@
 				DB356C571F3C2BBF0056B6BD /* NSThreadView.xib */,
 				DB356C581F3C2BBF0056B6BD /* SectionView.h */,
 				DB356C591F3C2BBF0056B6BD /* SectionView.m */,
+				DB9D56EA1F4C03D900455209 /* LQFButton.h */,
+				DB9D56EB1F4C03D900455209 /* LQFButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1493,6 +1508,7 @@
 				DB6FEFC41F1775D30009702E /* ta_TRIMA.c in Sources */,
 				DB6FEFAB1F1775D30009702E /* ta_PLUS_DM.c in Sources */,
 				DB6FEF8B1F1775D30009702E /* ta_HT_TRENDMODE.c in Sources */,
+				DB9D56EC1F4C03D900455209 /* LQFButton.m in Sources */,
 				DB6FEF401F1775D30009702E /* ta_CDL3INSIDE.c in Sources */,
 				DB356C881F3C508C0056B6BD /* LoadAnimationVC.m in Sources */,
 				DB6FEF3B1F1775D30009702E /* ta_BETA.c in Sources */,
@@ -1565,6 +1581,7 @@
 				DB6FEFC81F1775D30009702E /* ta_ULTOSC.c in Sources */,
 				DB2F7A2A1F29D8B7000DECD8 /* LQFSegmentManager.m in Sources */,
 				DB6FEFB91F1775D30009702E /* ta_STDDEV.c in Sources */,
+				DB9D56E61F4BF98900455209 /* CustomButtonVC.m in Sources */,
 				DB6FEF721F1775D30009702E /* ta_CDLSTALLEDPATTERN.c in Sources */,
 				DB4B0CE91F258EEA0006CCBF /* LQFPopOutView.m in Sources */,
 				DB6FEF981F1775D30009702E /* ta_MAVP.c in Sources */,
@@ -1573,6 +1590,7 @@
 				DB323F0F1F1DA19400D31925 /* UIBezierPath+Draw.m in Sources */,
 				DB6FEFC71F1775D30009702E /* ta_TYPPRICE.c in Sources */,
 				DB6FEF661F1775D30009702E /* ta_CDLMATCHINGLOW.c in Sources */,
+				DB9D56E31F4BD12600455209 /* iOS10VC.m in Sources */,
 				DB6FEE731F1775C70009702E /* LQFCalcuteUntil.m in Sources */,
 				DB6FEF471F1775D30009702E /* ta_CDLBELTHOLD.c in Sources */,
 				DB6FEF521F1775D30009702E /* ta_CDLEVENINGSTAR.c in Sources */,

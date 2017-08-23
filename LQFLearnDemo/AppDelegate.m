@@ -10,8 +10,9 @@
 #import "FHHFPSIndicator.h"
 #import "ViewController.h"
 #import <RongIMKit/RongIMKit.h>
+#import <UserNotifications/UserNotifications.h>
 
-@interface AppDelegate () <RCIMUserInfoDataSource>
+@interface AppDelegate () <RCIMUserInfoDataSource,RCIMReceiveMessageDelegate,UNUserNotificationCenterDelegate>
 
 @end
 
@@ -20,10 +21,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [self setLocalNotification];
+    
     [self connectRCloud];
     
     self.window.backgroundColor = [UIColor whiteColor];
     return YES;
+}
+
+#pragma mark - iOS 10本地通知
+- (void)setLocalNotification {
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10) {
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        center.delegate = self;
+        [center requestAuthorizationWithOptions:(UNAuthorizationOptionBadge | UNAuthorizationOptionSound | UNAuthorizationOptionAlert) completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            if (error) {
+                [SVProgressHUD showErrorWithStatus:@"本地通知设置失败"];
+            }
+        }];
+    }
 }
 
 #pragma mark - 融云
@@ -39,12 +55,21 @@
         //用户信息
         [[RCIM sharedRCIM] setUserInfoDataSource:self];
         
+        //屏蔽前台提示音
+//        [[RCIM sharedRCIM] setDisableMessageAlertSound:YES];
+        
+        
+        
+        [[RCIM sharedRCIM] setReceiveMessageDelegate:self];
+        
     } error:^(RCConnectErrorCode status) {
         NSLog(@"登录的错误码为:%ld",(long)status);
     } tokenIncorrect:^{
         NSLog(@"token错误");
     }];
 }
+
+#pragma mark - RCIMUserInfoDataSource
 
 - (void)getUserInfoWithUserId:(NSString *)userId
                    completion:(void (^)(RCUserInfo *userInfo))completion {
@@ -64,6 +89,18 @@
         return completion(userInfo);
     }
     return completion(nil);
+}
+
+#pragma mark - RCIMReceiveMessageDelegate
+- (void)onRCIMReceiveMessage:(RCMessage *)message left:(int)left {
+    NSLog(@"收到消息");
+}
+
+- (BOOL)onRCIMCustomAlertSound:(RCMessage *)message {
+    if (message.conversationType == ConversationType_PRIVATE) {
+        return YES;
+    }
+    return NO;
 }
 
 #pragma mark -

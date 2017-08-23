@@ -155,9 +155,15 @@
     NSArray *cellArr = sectionModel.cellArray;
     CellModel *cellModel = cellArr[indexPath.row];
     NSString *segID = cellModel.SegID;
+    NSString *vcName = cellModel.VCName;
     
     if (segID && segID.length > 0) {
         [self presentWithTitle:segID];
+    }
+    else if (vcName && vcName.length > 0) {
+        //代码push跳转
+        BaseViewController *vc = [[NSClassFromString(vcName) alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
     else {
     }
