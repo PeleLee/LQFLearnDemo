@@ -26,5 +26,11 @@
 		<key>Cell</key>
 		<array/>
 	</dict>
+	<dict>
+		<key>Title</key>
+		<string>背景偏移动画</string>
+		<key>VCName</key>
+		<string>ExcursionVC</string>
+	</dict>
 </array>
 </plist>

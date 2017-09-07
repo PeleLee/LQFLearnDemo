@@ -8,6 +8,7 @@
 
 #import "WriteDateVC.h"
 #import "NSString+LQF.h"
+#import "SandboxVC.h"
 
 @interface WriteDateVC ()
 
@@ -88,6 +89,7 @@
 }
 
 - (void)show {
+    /*
     NSString *filePath = [NSString stringWithFormat:@"%@/%@",_dirPath,@"/file"];
     
     if (![_fileManager fileExistsAtPath:filePath]) {
@@ -106,6 +108,10 @@
         
         _showLabel.text = str;
     }
+     */
+    
+    SandboxVC *sanboxVC = [[SandboxVC alloc] init];
+    [self.navigationController pushViewController:sanboxVC animated:YES];
 }
 
 #pragma mark - UI

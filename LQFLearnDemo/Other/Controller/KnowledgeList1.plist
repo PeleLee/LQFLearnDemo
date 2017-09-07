@@ -37,7 +37,20 @@
 		<key>SegID</key>
 		<string>MultiThread</string>
 		<key>Sub</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>多线程</string>
+				<key>SegID</key>
+				<string>MultiThread</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Demo</string>
+				<key>VCName</key>
+				<string>ThreadTestVC</string>
+			</dict>
+		</array>
 	</dict>
 	<dict>
 		<key>Title</key>

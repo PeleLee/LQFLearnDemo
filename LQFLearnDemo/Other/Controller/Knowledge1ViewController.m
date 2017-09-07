@@ -11,6 +11,7 @@
 #import "SectionModel.h"
 #import "CellModel.h"
 #import "SectionView.h"
+#import "ThreadTestVC.h"
 
 @interface Knowledge1ViewController () <UITableViewDataSource,UITableViewDelegate> {
     NSArray *_listArr;

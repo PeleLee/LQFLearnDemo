@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB1519731F564D290052BE7A /* SandboxVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1519721F564D290052BE7A /* SandboxVC.m */; };
+		DB1519761F565D170052BE7A /* SanboxLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1519751F565D170052BE7A /* SanboxLevelView.m */; };
+		DB1519801F56685F0052BE7A /* UIControl+SandBoxPath.m in Sources */ = {isa = PBXBuildFile; fileRef = DB15197F1F56685F0052BE7A /* UIControl+SandBoxPath.m */; };
 		DB1B61781F3AFAF900FE0A19 /* LQFProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1B61771F3AFAF900FE0A19 /* LQFProgressView.m */; };
 		DB216C561F46984A00BE9D49 /* LQFRCloudNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB216C551F46984A00BE9D49 /* LQFRCloudNoteVC.m */; };
 		DB216C591F46CD5300BE9D49 /* LQFChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB216C581F46CD5300BE9D49 /* LQFChatVC.m */; };
@@ -46,6 +49,8 @@
 		DB356C881F3C508C0056B6BD /* LoadAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C871F3C508C0056B6BD /* LoadAnimationVC.m */; };
 		DB37D7571F43ED0D000EEF79 /* WriteDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB37D7561F43ED0D000EEF79 /* WriteDateVC.m */; };
 		DB37D76A1F443CAD000EEF79 /* LQFChatListViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB37D7691F443CAD000EEF79 /* LQFChatListViewVC.m */; };
+		DB4418631F5971C000C34023 /* ThreadTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4418621F5971C000C34023 /* ThreadTestView.m */; };
+		DB4418661F59751200C34023 /* ThreadTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4418651F59751200C34023 /* ThreadTestVC.m */; };
 		DB4538CA1F20B1B60037C1A8 /* CandleCorssScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4538C91F20B1B60037C1A8 /* CandleCorssScreenVC.m */; };
 		DB4538CD1F20B31C0037C1A8 /* LQFCrossPriceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4538CC1F20B31C0037C1A8 /* LQFCrossPriceView.m */; };
 		DB4B0CE91F258EEA0006CCBF /* LQFPopOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0CE81F258EEA0006CCBF /* LQFPopOutView.m */; };
@@ -254,6 +259,8 @@
 		DB9D56EC1F4C03D900455209 /* LQFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9D56EB1F4C03D900455209 /* LQFButton.m */; };
 		DBC6F4E51F381A2C00277DBF /* NSString+LQF.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC6F4E41F381A2C00277DBF /* NSString+LQF.m */; };
 		DBD138331F41934A003F2848 /* SVProgressHUDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD138321F41934A003F2848 /* SVProgressHUDVC.m */; };
+		DBED0E741F5F9CE700120F48 /* ExcursionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DBED0E731F5F9CE700120F48 /* ExcursionVC.m */; };
+		DBED0E7A1F5F9DA100120F48 /* ExcursionAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBED0E791F5F9DA100120F48 /* ExcursionAnimationView.m */; };
 		FA9890C2F6C38525334513A3 /* libPods-LQFLearnDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB04A7764BA14A414C18CB7 /* libPods-LQFLearnDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -278,6 +285,12 @@
 		14E23D6ACD41336261BCA39C /* Pods-LQFLearnDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQFLearnDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LQFLearnDemo/Pods-LQFLearnDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6E86A419F43B117196202772 /* Pods-LQFLearnDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQFLearnDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LQFLearnDemo/Pods-LQFLearnDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		ACB04A7764BA14A414C18CB7 /* libPods-LQFLearnDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LQFLearnDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB1519711F564D290052BE7A /* SandboxVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandboxVC.h; sourceTree = "<group>"; };
+		DB1519721F564D290052BE7A /* SandboxVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandboxVC.m; sourceTree = "<group>"; };
+		DB1519741F565D170052BE7A /* SanboxLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanboxLevelView.h; sourceTree = "<group>"; };
+		DB1519751F565D170052BE7A /* SanboxLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanboxLevelView.m; sourceTree = "<group>"; };
+		DB15197E1F56685F0052BE7A /* UIControl+SandBoxPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+SandBoxPath.h"; sourceTree = "<group>"; };
+		DB15197F1F56685F0052BE7A /* UIControl+SandBoxPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+SandBoxPath.m"; sourceTree = "<group>"; };
 		DB1B61761F3AFAF900FE0A19 /* LQFProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFProgressView.h; sourceTree = "<group>"; };
 		DB1B61771F3AFAF900FE0A19 /* LQFProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFProgressView.m; sourceTree = "<group>"; };
 		DB216C541F46984A00BE9D49 /* LQFRCloudNoteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFRCloudNoteVC.h; sourceTree = "<group>"; };
@@ -349,6 +362,10 @@
 		DB37D7561F43ED0D000EEF79 /* WriteDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteDateVC.m; sourceTree = "<group>"; };
 		DB37D7681F443CAD000EEF79 /* LQFChatListViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFChatListViewVC.h; sourceTree = "<group>"; };
 		DB37D7691F443CAD000EEF79 /* LQFChatListViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFChatListViewVC.m; sourceTree = "<group>"; };
+		DB4418611F5971C000C34023 /* ThreadTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadTestView.h; sourceTree = "<group>"; };
+		DB4418621F5971C000C34023 /* ThreadTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadTestView.m; sourceTree = "<group>"; };
+		DB4418641F59751200C34023 /* ThreadTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadTestVC.h; sourceTree = "<group>"; };
+		DB4418651F59751200C34023 /* ThreadTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadTestVC.m; sourceTree = "<group>"; };
 		DB4538C81F20B1B60037C1A8 /* CandleCorssScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandleCorssScreenVC.h; sourceTree = "<group>"; };
 		DB4538C91F20B1B60037C1A8 /* CandleCorssScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandleCorssScreenVC.m; sourceTree = "<group>"; };
 		DB4538CB1F20B31C0037C1A8 /* LQFCrossPriceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFCrossPriceView.h; sourceTree = "<group>"; };
@@ -611,6 +628,10 @@
 		DBC6F4E41F381A2C00277DBF /* NSString+LQF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LQF.m"; sourceTree = "<group>"; };
 		DBD138311F41934A003F2848 /* SVProgressHUDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUDVC.h; sourceTree = "<group>"; };
 		DBD138321F41934A003F2848 /* SVProgressHUDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUDVC.m; sourceTree = "<group>"; };
+		DBED0E721F5F9CE700120F48 /* ExcursionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcursionVC.h; sourceTree = "<group>"; };
+		DBED0E731F5F9CE700120F48 /* ExcursionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcursionVC.m; sourceTree = "<group>"; };
+		DBED0E781F5F9DA100120F48 /* ExcursionAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcursionAnimationView.h; sourceTree = "<group>"; };
+		DBED0E791F5F9DA100120F48 /* ExcursionAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcursionAnimationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -710,6 +731,10 @@
 				DB9D56E21F4BD12600455209 /* iOS10VC.m */,
 				DB9D56E41F4BF98900455209 /* CustomButtonVC.h */,
 				DB9D56E51F4BF98900455209 /* CustomButtonVC.m */,
+				DB1519711F564D290052BE7A /* SandboxVC.h */,
+				DB1519721F564D290052BE7A /* SandboxVC.m */,
+				DB4418641F59751200C34023 /* ThreadTestVC.h */,
+				DB4418651F59751200C34023 /* ThreadTestVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -743,6 +768,12 @@
 				DB356C591F3C2BBF0056B6BD /* SectionView.m */,
 				DB9D56EA1F4C03D900455209 /* LQFButton.h */,
 				DB9D56EB1F4C03D900455209 /* LQFButton.m */,
+				DB1519741F565D170052BE7A /* SanboxLevelView.h */,
+				DB1519751F565D170052BE7A /* SanboxLevelView.m */,
+				DB15197E1F56685F0052BE7A /* UIControl+SandBoxPath.h */,
+				DB15197F1F56685F0052BE7A /* UIControl+SandBoxPath.m */,
+				DB4418611F5971C000C34023 /* ThreadTestView.h */,
+				DB4418621F5971C000C34023 /* ThreadTestView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -779,6 +810,8 @@
 				DB8908991F3D993B00F36624 /* CADisplayLinkVC.m */,
 				DB89089B1F3D9E5C00F36624 /* CoreGraphicsVC.h */,
 				DB89089C1F3D9E5C00F36624 /* CoreGraphicsVC.m */,
+				DBED0E721F5F9CE700120F48 /* ExcursionVC.h */,
+				DBED0E731F5F9CE700120F48 /* ExcursionVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -793,6 +826,8 @@
 		DB356C751F3C42330056B6BD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DBED0E781F5F9DA100120F48 /* ExcursionAnimationView.h */,
+				DBED0E791F5F9DA100120F48 /* ExcursionAnimationView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1501,6 +1536,7 @@
 				DB6FEF7B1F1775D30009702E /* ta_CEIL.c in Sources */,
 				DB356C681F3C2BBF0056B6BD /* Person.m in Sources */,
 				DB6FEE5A1F1770670009702E /* LQFCandleModel.m in Sources */,
+				DB4418631F5971C000C34023 /* ThreadTestView.m in Sources */,
 				DB6FEFB61F1775D30009702E /* ta_SINH.c in Sources */,
 				DB6FEF771F1775D30009702E /* ta_CDLTRISTAR.c in Sources */,
 				DB6FEFA31F1775D30009702E /* ta_MINUS_DI.c in Sources */,
@@ -1513,6 +1549,7 @@
 				DB356C881F3C508C0056B6BD /* LoadAnimationVC.m in Sources */,
 				DB6FEF3B1F1775D30009702E /* ta_BETA.c in Sources */,
 				DB6FEF781F1775D30009702E /* ta_CDLUNIQUE3RIVER.c in Sources */,
+				DB1519761F565D170052BE7A /* SanboxLevelView.m in Sources */,
 				DB8908A11F3DA58300F36624 /* LQFNoteView.m in Sources */,
 				DB6FEF861F1775D30009702E /* ta_HT_DCPERIOD.c in Sources */,
 				DB6FEF701F1775D30009702E /* ta_CDLSHORTLINE.c in Sources */,
@@ -1544,6 +1581,7 @@
 				DB6FEF501F1775D30009702E /* ta_CDLENGULFING.c in Sources */,
 				DB6FEF851F1775D30009702E /* ta_FLOOR.c in Sources */,
 				DB6FEFCC1F1775D30009702E /* ta_WILLR.c in Sources */,
+				DB1519801F56685F0052BE7A /* UIControl+SandBoxPath.m in Sources */,
 				DB6FEF691F1775D30009702E /* ta_CDLMORNINGSTAR.c in Sources */,
 				DB6FEF991F1775D30009702E /* ta_MAX.c in Sources */,
 				DB6FEF7D1F1775D30009702E /* ta_CORREL.c in Sources */,
@@ -1608,6 +1646,7 @@
 				DB6FEF3C1F1775D30009702E /* ta_BOP.c in Sources */,
 				DB6FEE5C1F1770670009702E /* LQFLineUntil.m in Sources */,
 				DB6FEF611F1775D30009702E /* ta_CDLKICKINGBYLENGTH.c in Sources */,
+				DB4418661F59751200C34023 /* ThreadTestVC.m in Sources */,
 				DB6FEF881F1775D30009702E /* ta_HT_PHASOR.c in Sources */,
 				DB55EE371F1C559200C7B787 /* LQFMacdPositionModel.m in Sources */,
 				DB6FEF3A1F1775D30009702E /* ta_BBANDS.c in Sources */,
@@ -1643,6 +1682,8 @@
 				DB6FEFBB1F1775D30009702E /* ta_STOCHF.c in Sources */,
 				DB6FEF821F1775D30009702E /* ta_DX.c in Sources */,
 				DB6FEFA81F1775D30009702E /* ta_NVI.c in Sources */,
+				DBED0E7A1F5F9DA100120F48 /* ExcursionAnimationView.m in Sources */,
+				DB1519731F564D290052BE7A /* SandboxVC.m in Sources */,
 				DB6FEE331F1722BA0009702E /* BaseViewController.m in Sources */,
 				DB6FEF8C1F1775D30009702E /* ta_KAMA.c in Sources */,
 				DB6FEF3F1F1775D30009702E /* ta_CDL3BLACKCROWS.c in Sources */,
@@ -1720,6 +1761,7 @@
 				DB5D651B1F17176200FEC2BA /* main.m in Sources */,
 				DB6FEFAF1F1775D30009702E /* ta_ROCP.c in Sources */,
 				DB6FEF2A1F1775D30009702E /* ta_retcode.c in Sources */,
+				DBED0E741F5F9CE700120F48 /* ExcursionVC.m in Sources */,
 				DB89089D1F3D9E5C00F36624 /* CoreGraphicsVC.m in Sources */,
 				DB5D65271F17176200FEC2BA /* LQFLearnDemo.xcdatamodeld in Sources */,
 			);

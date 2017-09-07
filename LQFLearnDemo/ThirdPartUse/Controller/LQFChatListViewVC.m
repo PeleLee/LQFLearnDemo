@@ -34,19 +34,24 @@
         
         //设置需要将哪些类型的会话在会话列表中聚合显示
         [self setCollectionConversationType:@[@(ConversationType_DISCUSSION),
-                                              @(ConversationType_GROUP),
-                                              @(ConversationType_PRIVATE)]];
+                                              @(ConversationType_GROUP)]];
     }
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden = NO;
-    self.navigationItem.title = @"会话列表";
-//    [self customNavigationBar];
-//    _titleLabel.text = @"融云";
+    self.navigationController.navigationBarHidden = YES;
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
+    [self customNavigationBar];
+    _titleLabel.text = @"融云";
+    
+    CGRect tvRect = self.conversationListTableView.frame;
+    tvRect = CGRectMake(0, 64, DEVICE_WIDTH, DEVICE_HEIGHT - 64);
+    [self.conversationListTableView setFrame:tvRect];
+    
+    [self setConversationAvatarStyle:RC_USER_AVATAR_CYCLE];
 }
 
 - (void)willDisplayConversationTableCell:(RCConversationBaseCell *)cell atIndexPath:(NSIndexPath *)indexPath {
@@ -96,6 +101,30 @@
         [self.navigationController pushViewController:converSationVC animated:YES];
     }
     
+}
+
+- (void)didTapCellPortrait:(RCConversationModel *)model {
+    [super didTapCellPortrait:model];
+}
+
+#pragma mark - 自定义UI
+/*
+- (NSMutableArray *)willReloadTableData:(NSMutableArray *)dataSource {
+
+}
+
+- (RCConversationBaseCell *)rcConversationListTableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+}
+
+- (CGFloat)rcConversationListTableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+}
+*/
+
+#pragma mark - TableView
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 0.1;
 }
 
 #pragma mark - 自定义导航栏
