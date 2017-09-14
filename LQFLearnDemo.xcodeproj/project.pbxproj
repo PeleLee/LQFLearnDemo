@@ -51,6 +51,11 @@
 		DB37D76A1F443CAD000EEF79 /* LQFChatListViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB37D7691F443CAD000EEF79 /* LQFChatListViewVC.m */; };
 		DB4418631F5971C000C34023 /* ThreadTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4418621F5971C000C34023 /* ThreadTestView.m */; };
 		DB4418661F59751200C34023 /* ThreadTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4418651F59751200C34023 /* ThreadTestVC.m */; };
+		DB4529371F6A5E4600F88AF6 /* RuntimeListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4529361F6A5E4600F88AF6 /* RuntimeListVC.m */; };
+		DB45293A1F6A5EB200F88AF6 /* RuntimeVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4529391F6A5EB200F88AF6 /* RuntimeVC1.m */; };
+		DB45293E1F6A612700F88AF6 /* Person_Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = DB45293D1F6A612700F88AF6 /* Person_Runtime.m */; };
+		DB4529411F6A75A000F88AF6 /* UIImage+PrintResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4529401F6A75A000F88AF6 /* UIImage+PrintResult.m */; };
+		DB4529441F6A7CF900F88AF6 /* NSObject+name.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4529431F6A7CF900F88AF6 /* NSObject+name.m */; };
 		DB4538CA1F20B1B60037C1A8 /* CandleCorssScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4538C91F20B1B60037C1A8 /* CandleCorssScreenVC.m */; };
 		DB4538CD1F20B31C0037C1A8 /* LQFCrossPriceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4538CC1F20B31C0037C1A8 /* LQFCrossPriceView.m */; };
 		DB4B0CE91F258EEA0006CCBF /* LQFPopOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0CE81F258EEA0006CCBF /* LQFPopOutView.m */; };
@@ -366,6 +371,16 @@
 		DB4418621F5971C000C34023 /* ThreadTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadTestView.m; sourceTree = "<group>"; };
 		DB4418641F59751200C34023 /* ThreadTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadTestVC.h; sourceTree = "<group>"; };
 		DB4418651F59751200C34023 /* ThreadTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadTestVC.m; sourceTree = "<group>"; };
+		DB4529351F6A5E4600F88AF6 /* RuntimeListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeListVC.h; sourceTree = "<group>"; };
+		DB4529361F6A5E4600F88AF6 /* RuntimeListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeListVC.m; sourceTree = "<group>"; };
+		DB4529381F6A5EB200F88AF6 /* RuntimeVC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeVC1.h; sourceTree = "<group>"; };
+		DB4529391F6A5EB200F88AF6 /* RuntimeVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeVC1.m; sourceTree = "<group>"; };
+		DB45293C1F6A612700F88AF6 /* Person_Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person_Runtime.h; sourceTree = "<group>"; };
+		DB45293D1F6A612700F88AF6 /* Person_Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person_Runtime.m; sourceTree = "<group>"; };
+		DB45293F1F6A75A000F88AF6 /* UIImage+PrintResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PrintResult.h"; sourceTree = "<group>"; };
+		DB4529401F6A75A000F88AF6 /* UIImage+PrintResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PrintResult.m"; sourceTree = "<group>"; };
+		DB4529421F6A7CF900F88AF6 /* NSObject+name.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+name.h"; sourceTree = "<group>"; };
+		DB4529431F6A7CF900F88AF6 /* NSObject+name.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+name.m"; sourceTree = "<group>"; };
 		DB4538C81F20B1B60037C1A8 /* CandleCorssScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandleCorssScreenVC.h; sourceTree = "<group>"; };
 		DB4538C91F20B1B60037C1A8 /* CandleCorssScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandleCorssScreenVC.m; sourceTree = "<group>"; };
 		DB4538CB1F20B31C0037C1A8 /* LQFCrossPriceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFCrossPriceView.h; sourceTree = "<group>"; };
@@ -866,6 +881,37 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DB4529301F6A354700F88AF6 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				DB45293B1F6A611200F88AF6 /* Model */,
+				DB4529311F6A356B00F88AF6 /* ViewController */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		DB4529311F6A356B00F88AF6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DB4529351F6A5E4600F88AF6 /* RuntimeListVC.h */,
+				DB4529361F6A5E4600F88AF6 /* RuntimeListVC.m */,
+				DB4529381F6A5EB200F88AF6 /* RuntimeVC1.h */,
+				DB4529391F6A5EB200F88AF6 /* RuntimeVC1.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DB45293B1F6A611200F88AF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB45293C1F6A612700F88AF6 /* Person_Runtime.h */,
+				DB45293D1F6A612700F88AF6 /* Person_Runtime.m */,
+				DB4529421F6A7CF900F88AF6 /* NSObject+name.h */,
+				DB4529431F6A7CF900F88AF6 /* NSObject+name.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DB4B0CE51F258E940006CCBF /* Public */ = {
 			isa = PBXGroup;
 			children = (
@@ -913,8 +959,9 @@
 		DB5D65181F17176200FEC2BA /* LQFLearnDemo */ = {
 			isa = PBXGroup;
 			children = (
-				DB356C721F3C41CA0056B6BD /* Animation */,
+				DB4529301F6A354700F88AF6 /* Runtime */,
 				DB356C711F3C41AF0056B6BD /* ThirdPartUse */,
+				DB356C721F3C41CA0056B6BD /* Animation */,
 				DB356C2F1F3C2BBF0056B6BD /* Other */,
 				DB6FEE501F1770240009702E /* Kline */,
 				DB6FEE461F1763E10009702E /* Category */,
@@ -989,6 +1036,8 @@
 				DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */,
 				DBC6F4E31F381A2C00277DBF /* NSString+LQF.h */,
 				DBC6F4E41F381A2C00277DBF /* NSString+LQF.m */,
+				DB45293F1F6A75A000F88AF6 /* UIImage+PrintResult.h */,
+				DB4529401F6A75A000F88AF6 /* UIImage+PrintResult.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1529,6 +1578,7 @@
 				DB6FEF641F1775D30009702E /* ta_CDLLONGLINE.c in Sources */,
 				DB6FEF5F1F1775D30009702E /* ta_CDLINVERTEDHAMMER.c in Sources */,
 				DB6FEF5C1F1775D30009702E /* ta_CDLHOMINGPIGEON.c in Sources */,
+				DB45293A1F6A5EB200F88AF6 /* RuntimeVC1.m in Sources */,
 				DB1B61781F3AFAF900FE0A19 /* LQFProgressView.m in Sources */,
 				DB6FEF371F1775D30009702E /* ta_ATAN.c in Sources */,
 				DB6FEFC91F1775D30009702E /* ta_utility.c in Sources */,
@@ -1647,6 +1697,7 @@
 				DB6FEE5C1F1770670009702E /* LQFLineUntil.m in Sources */,
 				DB6FEF611F1775D30009702E /* ta_CDLKICKINGBYLENGTH.c in Sources */,
 				DB4418661F59751200C34023 /* ThreadTestVC.m in Sources */,
+				DB45293E1F6A612700F88AF6 /* Person_Runtime.m in Sources */,
 				DB6FEF881F1775D30009702E /* ta_HT_PHASOR.c in Sources */,
 				DB55EE371F1C559200C7B787 /* LQFMacdPositionModel.m in Sources */,
 				DB6FEF3A1F1775D30009702E /* ta_BBANDS.c in Sources */,
@@ -1666,11 +1717,13 @@
 				DB6FEF831F1775D30009702E /* ta_EMA.c in Sources */,
 				DB6FEF961F1775D30009702E /* ta_MACDFIX.c in Sources */,
 				DB6FEFAE1F1775D30009702E /* ta_ROC.c in Sources */,
+				DB4529411F6A75A000F88AF6 /* UIImage+PrintResult.m in Sources */,
 				DB6FEF6A1F1775D30009702E /* ta_CDLONNECK.c in Sources */,
 				DB6FEF341F1775D30009702E /* ta_AROON.c in Sources */,
 				DB6FEF451F1775D30009702E /* ta_CDLABANDONEDBABY.c in Sources */,
 				DB2F7A271F29D3C2000DECD8 /* LQFSegmentScroll.m in Sources */,
 				DB6FEFBF1F1775D30009702E /* ta_T3.c in Sources */,
+				DB4529441F6A7CF900F88AF6 /* NSObject+name.m in Sources */,
 				DB6FEF4D1F1775D30009702E /* ta_CDLDOJI.c in Sources */,
 				DB37D76A1F443CAD000EEF79 /* LQFChatListViewVC.m in Sources */,
 				DB356C691F3C2BBF0056B6BD /* SectionModel.m in Sources */,
@@ -1738,6 +1791,7 @@
 				DB6FEF951F1775D30009702E /* ta_MACDEXT.c in Sources */,
 				DBD138331F41934A003F2848 /* SVProgressHUDVC.m in Sources */,
 				DB6FEF7F1F1775D30009702E /* ta_COSH.c in Sources */,
+				DB4529371F6A5E4600F88AF6 /* RuntimeListVC.m in Sources */,
 				DB356C641F3C2BBF0056B6BD /* XcodeGitVC.m in Sources */,
 				DB744BD81F3D4E7D001AC492 /* WaveModel.m in Sources */,
 				DB6FEF8F1F1775D30009702E /* ta_LINEARREG_INTERCEPT.c in Sources */,
@@ -1843,7 +1897,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1896,7 +1950,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

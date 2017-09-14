@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ThirdPartVC.h"
 #import "AnimationVC.h"
+#import "RuntimeListVC.h"
 
 static NSString *cellID = @"CELLID";
 
@@ -31,7 +32,8 @@ static NSString *cellID = @"CELLID";
     
     _funcList = @[@[@"Other",
                     @"第三方库",
-                    @"动画"],
+                    @"动画",
+                    @"Runtime"],
                   @[@"K线图"]];
     
     _sectionList = @[@"Knowledge",
@@ -126,6 +128,10 @@ static NSString *cellID = @"CELLID";
         else if (indexPath.row == 2) {
             AnimationVC *animationVC = [[AnimationVC alloc] init];
             [self.navigationController pushViewController:animationVC animated:YES];
+        }
+        else if (indexPath.row == 3) {
+            RuntimeListVC *runtimeVC = [[RuntimeListVC alloc] init];
+            [self.navigationController pushViewController:runtimeVC animated:YES];
         }
     }
     else if (indexPath.section == 1) {
