@@ -268,6 +268,9 @@
 		DBD138331F41934A003F2848 /* SVProgressHUDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD138321F41934A003F2848 /* SVProgressHUDVC.m */; };
 		DBED0E741F5F9CE700120F48 /* ExcursionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DBED0E731F5F9CE700120F48 /* ExcursionVC.m */; };
 		DBED0E7A1F5F9DA100120F48 /* ExcursionAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBED0E791F5F9DA100120F48 /* ExcursionAnimationView.m */; };
+		DBF16D491F6F7A1400A40E0F /* Runtime_Array.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF16D481F6F7A1400A40E0F /* Runtime_Array.m */; };
+		DBF16D4F1F6FA59200A40E0F /* Runtime_Archiving.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF16D4E1F6FA59200A40E0F /* Runtime_Archiving.m */; };
+		DBF16D521F6FA7A100A40E0F /* Runtime_Archiving2.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF16D511F6FA7A100A40E0F /* Runtime_Archiving2.m */; };
 		FA9890C2F6C38525334513A3 /* libPods-LQFLearnDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB04A7764BA14A414C18CB7 /* libPods-LQFLearnDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -652,6 +655,12 @@
 		DBED0E731F5F9CE700120F48 /* ExcursionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcursionVC.m; sourceTree = "<group>"; };
 		DBED0E781F5F9DA100120F48 /* ExcursionAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcursionAnimationView.h; sourceTree = "<group>"; };
 		DBED0E791F5F9DA100120F48 /* ExcursionAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcursionAnimationView.m; sourceTree = "<group>"; };
+		DBF16D471F6F7A1400A40E0F /* Runtime_Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime_Array.h; sourceTree = "<group>"; };
+		DBF16D481F6F7A1400A40E0F /* Runtime_Array.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime_Array.m; sourceTree = "<group>"; };
+		DBF16D4D1F6FA59200A40E0F /* Runtime_Archiving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime_Archiving.h; sourceTree = "<group>"; };
+		DBF16D4E1F6FA59200A40E0F /* Runtime_Archiving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime_Archiving.m; sourceTree = "<group>"; };
+		DBF16D501F6FA7A100A40E0F /* Runtime_Archiving2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime_Archiving2.h; sourceTree = "<group>"; };
+		DBF16D511F6FA7A100A40E0F /* Runtime_Archiving2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime_Archiving2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -916,6 +925,12 @@
 				DB4529431F6A7CF900F88AF6 /* NSObject+name.m */,
 				DB75FF421F6BC24F0088E6A4 /* Runtime_User.h */,
 				DB75FF431F6BC24F0088E6A4 /* Runtime_User.m */,
+				DBF16D471F6F7A1400A40E0F /* Runtime_Array.h */,
+				DBF16D481F6F7A1400A40E0F /* Runtime_Array.m */,
+				DBF16D4D1F6FA59200A40E0F /* Runtime_Archiving.h */,
+				DBF16D4E1F6FA59200A40E0F /* Runtime_Archiving.m */,
+				DBF16D501F6FA7A100A40E0F /* Runtime_Archiving2.h */,
+				DBF16D511F6FA7A100A40E0F /* Runtime_Archiving2.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1701,6 +1716,7 @@
 				DB6FEFAC1F1775D30009702E /* ta_PPO.c in Sources */,
 				DB6FEF7A1F1775D30009702E /* ta_CDLXSIDEGAP3METHODS.c in Sources */,
 				DB6FEF4C1F1775D30009702E /* ta_CDLDARKCLOUDCOVER.c in Sources */,
+				DBF16D491F6F7A1400A40E0F /* Runtime_Array.m in Sources */,
 				DB6FEF591F1775D30009702E /* ta_CDLHIGHWAVE.c in Sources */,
 				DB6FEF3C1F1775D30009702E /* ta_BOP.c in Sources */,
 				DB6FEE5C1F1770670009702E /* LQFLineUntil.m in Sources */,
@@ -1728,6 +1744,7 @@
 				DB6FEFAE1F1775D30009702E /* ta_ROC.c in Sources */,
 				DB4529411F6A75A000F88AF6 /* UIImage+PrintResult.m in Sources */,
 				DB6FEF6A1F1775D30009702E /* ta_CDLONNECK.c in Sources */,
+				DBF16D521F6FA7A100A40E0F /* Runtime_Archiving2.m in Sources */,
 				DB6FEF341F1775D30009702E /* ta_AROON.c in Sources */,
 				DB6FEF451F1775D30009702E /* ta_CDLABANDONEDBABY.c in Sources */,
 				DB2F7A271F29D3C2000DECD8 /* LQFSegmentScroll.m in Sources */,
@@ -1769,6 +1786,7 @@
 				DB6FEF2F1F1775D30009702E /* ta_ADD.c in Sources */,
 				DB6FEF351F1775D30009702E /* ta_AROONOSC.c in Sources */,
 				DB6FEFA21F1775D30009702E /* ta_MINMAXINDEX.c in Sources */,
+				DBF16D4F1F6FA59200A40E0F /* Runtime_Archiving.m in Sources */,
 				DB6FEF891F1775D30009702E /* ta_HT_SINE.c in Sources */,
 				DB6FEF9E1F1775D30009702E /* ta_MIDPRICE.c in Sources */,
 				DB6FEFA01F1775D30009702E /* ta_MININDEX.c in Sources */,

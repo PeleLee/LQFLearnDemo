@@ -19,5 +19,20 @@
 		<key>profile_image_url</key>
 		<string>http://upload.jianshu.io/users/upload_avatars/412654/ff173e207a19.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240</string>
 	</dict>
+	<key>pic_urls</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Tom</string>
+			<key>Book</key>
+			<string>素颜</string>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Janes</string>
+			<key>Book</key>
+			<string>大笨钟</string>
+		</dict>
+	</array>
 </dict>
 </plist>
