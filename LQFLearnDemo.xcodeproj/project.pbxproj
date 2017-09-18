@@ -255,6 +255,8 @@
 		DB6FEFCC1F1775D30009702E /* ta_WILLR.c in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEF271F1775D30009702E /* ta_WILLR.c */; };
 		DB6FEFCD1F1775D30009702E /* ta_WMA.c in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEF281F1775D30009702E /* ta_WMA.c */; };
 		DB744BD81F3D4E7D001AC492 /* WaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB744BD71F3D4E7D001AC492 /* WaveModel.m */; };
+		DB75FF411F6BBA060088E6A4 /* Runtime_model.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB75FF401F6BBA060088E6A4 /* Runtime_model.plist */; };
+		DB75FF441F6BC24F0088E6A4 /* Runtime_User.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75FF431F6BC24F0088E6A4 /* Runtime_User.m */; };
 		DB7948701F2F08BA00E74C93 /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */; };
 		DB89089A1F3D993B00F36624 /* CADisplayLinkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8908991F3D993B00F36624 /* CADisplayLinkVC.m */; };
 		DB89089D1F3D9E5C00F36624 /* CoreGraphicsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB89089C1F3D9E5C00F36624 /* CoreGraphicsVC.m */; };
@@ -625,6 +627,9 @@
 		DB6FEF281F1775D30009702E /* ta_WMA.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ta_WMA.c; sourceTree = "<group>"; };
 		DB744BD61F3D4E7D001AC492 /* WaveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveModel.h; sourceTree = "<group>"; };
 		DB744BD71F3D4E7D001AC492 /* WaveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveModel.m; sourceTree = "<group>"; };
+		DB75FF401F6BBA060088E6A4 /* Runtime_model.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Runtime_model.plist; sourceTree = "<group>"; };
+		DB75FF421F6BC24F0088E6A4 /* Runtime_User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime_User.h; sourceTree = "<group>"; };
+		DB75FF431F6BC24F0088E6A4 /* Runtime_User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime_User.m; sourceTree = "<group>"; };
 		DB79486E1F2F08BA00E74C93 /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
 		DB79486F1F2F08BA00E74C93 /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 		DB8908981F3D993B00F36624 /* CADisplayLinkVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLinkVC.h; sourceTree = "<group>"; };
@@ -897,6 +902,7 @@
 				DB4529361F6A5E4600F88AF6 /* RuntimeListVC.m */,
 				DB4529381F6A5EB200F88AF6 /* RuntimeVC1.h */,
 				DB4529391F6A5EB200F88AF6 /* RuntimeVC1.m */,
+				DB75FF401F6BBA060088E6A4 /* Runtime_model.plist */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -908,6 +914,8 @@
 				DB45293D1F6A612700F88AF6 /* Person_Runtime.m */,
 				DB4529421F6A7CF900F88AF6 /* NSObject+name.h */,
 				DB4529431F6A7CF900F88AF6 /* NSObject+name.m */,
+				DB75FF421F6BC24F0088E6A4 /* Runtime_User.h */,
+				DB75FF431F6BC24F0088E6A4 /* Runtime_User.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1497,6 +1505,7 @@
 				DB55EE421F1C8DE200C7B787 /* N225.xml in Resources */,
 				DB356C5F1F3C2BBF0056B6BD /* KnowledgeList1.plist in Resources */,
 				DB356C5E1F3C2BBF0056B6BD /* Knowledge1ViewController.xib in Resources */,
+				DB75FF411F6BBA060088E6A4 /* Runtime_model.plist in Resources */,
 				DB6FEF2B1F1775D30009702E /* ta_retcode.csv in Resources */,
 				DB356C851F3C50530056B6BD /* AnimationList.plist in Resources */,
 				DB5D65241F17176200FEC2BA /* Main.storyboard in Resources */,
@@ -1752,6 +1761,7 @@
 				DB6FEF321F1775D30009702E /* ta_ADXR.c in Sources */,
 				DB55EE3A1F1C683400C7B787 /* LQFKdjLineView.m in Sources */,
 				DB6FEFC21F1775D30009702E /* ta_TEMA.c in Sources */,
+				DB75FF441F6BC24F0088E6A4 /* Runtime_User.m in Sources */,
 				DB6FEF791F1775D30009702E /* ta_CDLUPSIDEGAP2CROWS.c in Sources */,
 				DB6FEFBC1F1775D30009702E /* ta_STOCHRSI.c in Sources */,
 				DB4538CA1F20B1B60037C1A8 /* CandleCorssScreenVC.m in Sources */,

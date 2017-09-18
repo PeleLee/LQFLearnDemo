@@ -33,6 +33,7 @@
     [self msgSend];
     [self exchangeMethod];
     [self addProperty];
+    [self dictToModel];
 }
 
 #pragma mark - 消息机制
@@ -71,6 +72,17 @@
     NSLog(@"runtime动态添加属性name=%@",propertyObj.name);
 }
 
+#pragma mark - 字典转model
+- (void)dictToModel {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Runtime_model.plist" ofType:nil];
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    Person_Runtime *model = [Person_Runtime modelWithDict:dict];
+    
+    NSLog(@"%@",model.attitudes_count);
+    NSLog(@"%@",model.idstr);
+}
+
 #pragma mark -
 
 - (LQFNoteView *)noteView {
@@ -107,6 +119,10 @@
     [self.noteView addContent:@"交换方法地址"];
     [self.noteView addNounText:[NSString stringWithFormat:@"%@\n%@:",@"objc_setAssociatedObject",@"objc_getAssociatedObject"]];
     [self.noteView addContent:@"将某个值跟某个对象关联起来，将某个值存储到某个对象中"];
+    [self.noteView addNounText:@"class_copyIvarList:"];
+    [self.noteView addContent:@"获取类中的所有成员变量"];
+    [self.noteView addNounText:@"ivar_getName:"];
+    [self.noteView addContent:@"获取变量名字,通过[NSString stringWithUTF8String:ivar_getName(ivar)]转化为字符串"];
     [self.noteView endEdit];
 }
 
