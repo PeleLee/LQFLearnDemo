@@ -210,7 +210,7 @@
         NSLog(@"property--->%@",[NSString stringWithUTF8String:propertyName]);
     }
     
-    NSLog(@"-----获取方法列表");
+    NSLog(@"-----获取方法列表-----");
     unsigned int methodCount = 0;
     Method *methodList = class_copyMethodList([self class], &methodCount);
     for (unsigned int i = 0; i < methodCount; i++) {
@@ -218,7 +218,7 @@
         NSLog(@"method--->%@",NSStringFromSelector(method_getName(method)));
     }
     
-    NSLog(@"-----获取成员变量列表");
+    NSLog(@"-----获取成员变量列表-----");
     unsigned int ivarCount = 0;
     Ivar *ivarList = class_copyIvarList([self class], &ivarCount);
     for (unsigned int i = 0; i < count; i++) {
@@ -226,6 +226,29 @@
         const char *ivarName = ivar_getName(myIvar);
         NSLog(@"Ivar-->%@",[NSString stringWithUTF8String:ivarName]);
     }
+    
+    NSLog(@"-----获取协议列表-----");
+    unsigned int protocolCount = 0;
+    __unsafe_unretained Protocol **protocolList = class_copyProtocolList([self class], &protocolCount);
+    for (unsigned int i = 0; i < protocolCount; i++) {
+        Protocol *myProtocol = protocolList[i];
+        const char *protocolName = protocol_getName(myProtocol);
+        NSLog(@"protocol---->%@",[NSString stringWithUTF8String:protocolName]);
+    }
+    
+    /*待考证
+    NSLog(@"-----获取类方法-----");
+    Class personClass = object_getClass([Person_Runtime class]);
+    SEL oriSEL = @selector(modelWithDict:);
+    Method oriMethod = class_getClassMethod(personClass, oriSEL);
+    const char *oriMethodName = method_getName(oriMethod);
+    NSString *methodName = [NSString stringWithUTF8String:oriMethodName];
+    NSLog(@"类方法%@",methodName);*/
+ 
+    NSLog(@"-----得到实例变量的ivar指针并修改值-----");
+    Ivar oneIvar = class_getInstanceVariable([Person_Runtime class], "_name");
+    object_setIvar(self.xiaoli, oneIvar, @"李商隐");
+    NSLog(@"%@",self.xiaoli.name);
 }
 
 #pragma mark -
@@ -268,8 +291,16 @@
     [self.noteView addContent:@"获取类中的所有成员变量"];
     [self.noteView addNounText:@"ivar_getName:"];
     [self.noteView addContent:@"获取变量名字,通过[NSString stringWithUTF8String:ivar_getName(ivar)]转化为字符串"];
-    [self.noteView addTitle:@"object_setIvar:"];
+    [self.noteView addNounText:@"object_setIvar:"];
     [self.noteView addContent:@"修改对应的字段的值"];
+    [self.noteView addNounText:@"class_copyPropertyList:"];
+    [self.noteView addContent:@"获取类中所有属性列表"];
+    [self.noteView addNounText:@"class_copyMethodList:"];
+    [self.noteView addContent:@"获取方法列表"];
+    [self.noteView addNounText:@"class_copyProtocolList:"];
+    [self.noteView addContent:@"获取类协议列表"];
+    [self.noteView addNounText:@"class_getInstanceVariable:"];
+    [self.noteView addContent:@"得到某个变量指针"];
     [self.noteView endEdit];
 }
 

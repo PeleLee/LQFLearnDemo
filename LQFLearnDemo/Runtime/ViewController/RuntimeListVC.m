@@ -26,7 +26,7 @@
 #pragma mark - set/get
 - (NSArray *)cellContents {
     if (!_cellContents) {
-        _cellContents = @[@"2017.9.14"];
+        _cellContents = @[@"基础及常用"];
     }
     return _cellContents;
 }
