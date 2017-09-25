@@ -8,6 +8,7 @@
 
 #import "RuntimeListVC.h"
 #import "RuntimeVC1.h"
+#import "RuntimeNavBarSetVC.h"
 
 @interface RuntimeListVC () <UITableViewDelegate,UITableViewDataSource>
 
@@ -26,14 +27,16 @@
 #pragma mark - set/get
 - (NSArray *)cellContents {
     if (!_cellContents) {
-        _cellContents = @[@"基础及常用"];
+        _cellContents = @[@"基础及常用",
+                          @"导航栏样式"];
     }
     return _cellContents;
 }
 
 - (NSArray *)selectContents {
     if (!_selectContents) {
-        _selectContents = @[@"RuntimeVC1"];
+        _selectContents = @[@"RuntimeVC1",
+                            @"RuntimeNavBarSetVC"];
     }
     return _selectContents;
 }
@@ -67,6 +70,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+        cell.textLabel.font = [UIFont systemFontOfSize:13.0f];
     }
     
     cell.textLabel.text = _cellContents[indexPath.row];
@@ -79,6 +83,10 @@
     
     if ([className isEqualToString:@"RuntimeVC1"]) {
         RuntimeVC1 *vc = [[RuntimeVC1 alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if ([className isEqualToString:@"RuntimeNavBarSetVC"]) {
+        RuntimeNavBarSetVC *vc = [[RuntimeNavBarSetVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

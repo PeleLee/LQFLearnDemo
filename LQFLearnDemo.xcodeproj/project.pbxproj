@@ -13,6 +13,7 @@
 		DB1B61781F3AFAF900FE0A19 /* LQFProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1B61771F3AFAF900FE0A19 /* LQFProgressView.m */; };
 		DB216C561F46984A00BE9D49 /* LQFRCloudNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB216C551F46984A00BE9D49 /* LQFRCloudNoteVC.m */; };
 		DB216C591F46CD5300BE9D49 /* LQFChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB216C581F46CD5300BE9D49 /* LQFChatVC.m */; };
+		DB28FC831F7364A300FF8D2F /* RGBPreviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB28FC821F7364A300FF8D2F /* RGBPreviewVC.m */; };
 		DB2C7DCE1F1867C000D90634 /* LQFLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C7DCD1F1867C000D90634 /* LQFLineModel.m */; };
 		DB2C7DD11F18B71E00D90634 /* LQFTecnnicalView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C7DD01F18B71E00D90634 /* LQFTecnnicalView.m */; };
 		DB2C7DD51F18BEBC00D90634 /* UIColor+LQF.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C7DD41F18BEBC00D90634 /* UIColor+LQF.m */; };
@@ -68,6 +69,8 @@
 		DB55EE401F1C898500C7B787 /* LQFPriceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE3F1F1C898500C7B787 /* LQFPriceView.m */; };
 		DB55EE421F1C8DE200C7B787 /* N225.xml in Resources */ = {isa = PBXBuildFile; fileRef = DB55EE411F1C8DE200C7B787 /* N225.xml */; };
 		DB55EE451F1CBD5900C7B787 /* LQFCandlePositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55EE441F1CBD5900C7B787 /* LQFCandlePositionModel.m */; };
+		DB5A2F8E1F72007E00629823 /* RuntimeNavBarSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5A2F8D1F72007E00629823 /* RuntimeNavBarSetVC.m */; };
+		DB5A2F961F721C8000629823 /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5A2F951F721C8000629823 /* WRNavigationBar.m */; };
 		DB5D651B1F17176200FEC2BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D651A1F17176200FEC2BA /* main.m */; };
 		DB5D651E1F17176200FEC2BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D651D1F17176200FEC2BA /* AppDelegate.m */; };
 		DB5D65211F17176200FEC2BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5D65201F17176200FEC2BA /* ViewController.m */; };
@@ -307,6 +310,8 @@
 		DB216C551F46984A00BE9D49 /* LQFRCloudNoteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFRCloudNoteVC.m; sourceTree = "<group>"; };
 		DB216C571F46CD5300BE9D49 /* LQFChatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFChatVC.h; sourceTree = "<group>"; };
 		DB216C581F46CD5300BE9D49 /* LQFChatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFChatVC.m; sourceTree = "<group>"; };
+		DB28FC811F7364A300FF8D2F /* RGBPreviewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGBPreviewVC.h; sourceTree = "<group>"; };
+		DB28FC821F7364A300FF8D2F /* RGBPreviewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGBPreviewVC.m; sourceTree = "<group>"; };
 		DB2C7DCC1F1867C000D90634 /* LQFLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFLineModel.h; sourceTree = "<group>"; };
 		DB2C7DCD1F1867C000D90634 /* LQFLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFLineModel.m; sourceTree = "<group>"; };
 		DB2C7DCF1F18B71E00D90634 /* LQFTecnnicalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFTecnnicalView.h; sourceTree = "<group>"; };
@@ -409,6 +414,10 @@
 		DB55EE411F1C8DE200C7B787 /* N225.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = N225.xml; sourceTree = "<group>"; };
 		DB55EE431F1CBD5900C7B787 /* LQFCandlePositionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFCandlePositionModel.h; sourceTree = "<group>"; };
 		DB55EE441F1CBD5900C7B787 /* LQFCandlePositionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFCandlePositionModel.m; sourceTree = "<group>"; };
+		DB5A2F8C1F72007E00629823 /* RuntimeNavBarSetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeNavBarSetVC.h; sourceTree = "<group>"; };
+		DB5A2F8D1F72007E00629823 /* RuntimeNavBarSetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeNavBarSetVC.m; sourceTree = "<group>"; };
+		DB5A2F941F721C8000629823 /* WRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRNavigationBar.h; sourceTree = "<group>"; };
+		DB5A2F951F721C8000629823 /* WRNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRNavigationBar.m; sourceTree = "<group>"; };
 		DB5D65161F17176200FEC2BA /* LQFLearnDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQFLearnDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5D651A1F17176200FEC2BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DB5D651C1F17176200FEC2BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -764,6 +773,8 @@
 				DB1519721F564D290052BE7A /* SandboxVC.m */,
 				DB4418641F59751200C34023 /* ThreadTestVC.h */,
 				DB4418651F59751200C34023 /* ThreadTestVC.m */,
+				DB28FC811F7364A300FF8D2F /* RGBPreviewVC.h */,
+				DB28FC821F7364A300FF8D2F /* RGBPreviewVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -898,6 +909,7 @@
 		DB4529301F6A354700F88AF6 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				DB5A2F931F721C8000629823 /* WRNavigationBar */,
 				DB45293B1F6A611200F88AF6 /* Model */,
 				DB4529311F6A356B00F88AF6 /* ViewController */,
 			);
@@ -912,6 +924,8 @@
 				DB4529381F6A5EB200F88AF6 /* RuntimeVC1.h */,
 				DB4529391F6A5EB200F88AF6 /* RuntimeVC1.m */,
 				DB75FF401F6BBA060088E6A4 /* Runtime_model.plist */,
+				DB5A2F8C1F72007E00629823 /* RuntimeNavBarSetVC.h */,
+				DB5A2F8D1F72007E00629823 /* RuntimeNavBarSetVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -955,6 +969,15 @@
 				DB4B0CEB1F2594390006CCBF /* LQFPopTool.m */,
 			);
 			path = PopView;
+			sourceTree = "<group>";
+		};
+		DB5A2F931F721C8000629823 /* WRNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				DB5A2F941F721C8000629823 /* WRNavigationBar.h */,
+				DB5A2F951F721C8000629823 /* WRNavigationBar.m */,
+			);
+			path = WRNavigationBar;
 			sourceTree = "<group>";
 		};
 		DB5D650D1F17176200FEC2BA = {
@@ -1668,6 +1691,7 @@
 				DB6FEF3D1F1775D30009702E /* ta_CCI.c in Sources */,
 				DB6FEF741F1775D30009702E /* ta_CDLTAKURI.c in Sources */,
 				DB6FEFB11F1775D30009702E /* ta_ROCR100.c in Sources */,
+				DB28FC831F7364A300FF8D2F /* RGBPreviewVC.m in Sources */,
 				DB6FEF621F1775D30009702E /* ta_CDLLADDERBOTTOM.c in Sources */,
 				DB6FEE5D1F1770670009702E /* LQFMacdModel.m in Sources */,
 				DB6FEF5B1F1775D30009702E /* ta_CDLHIKKAKEMOD.c in Sources */,
@@ -1715,6 +1739,7 @@
 				DB6FEFBE1F1775D30009702E /* ta_SUM.c in Sources */,
 				DB6FEFAC1F1775D30009702E /* ta_PPO.c in Sources */,
 				DB6FEF7A1F1775D30009702E /* ta_CDLXSIDEGAP3METHODS.c in Sources */,
+				DB5A2F8E1F72007E00629823 /* RuntimeNavBarSetVC.m in Sources */,
 				DB6FEF4C1F1775D30009702E /* ta_CDLDARKCLOUDCOVER.c in Sources */,
 				DBF16D491F6F7A1400A40E0F /* Runtime_Array.m in Sources */,
 				DB6FEF591F1775D30009702E /* ta_CDLHIGHWAVE.c in Sources */,
@@ -1776,6 +1801,7 @@
 				DB6FEF311F1775D30009702E /* ta_ADX.c in Sources */,
 				DB2C7DCE1F1867C000D90634 /* LQFLineModel.m in Sources */,
 				DB6FEF321F1775D30009702E /* ta_ADXR.c in Sources */,
+				DB5A2F961F721C8000629823 /* WRNavigationBar.m in Sources */,
 				DB55EE3A1F1C683400C7B787 /* LQFKdjLineView.m in Sources */,
 				DB6FEFC21F1775D30009702E /* ta_TEMA.c in Sources */,
 				DB75FF441F6BC24F0088E6A4 /* Runtime_User.m in Sources */,

@@ -109,5 +109,11 @@
 		<key>Sub</key>
 		<array/>
 	</dict>
+	<dict>
+		<key>Title</key>
+		<string>试色器</string>
+		<key>SegID</key>
+		<string>RGBPreview</string>
+	</dict>
 </array>
 </plist>

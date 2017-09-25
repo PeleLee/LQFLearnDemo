@@ -20,6 +20,19 @@
 
 @implementation BaseViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    //侧滑返回
+    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    self.navigationController.navigationBarHidden = YES;
+    
+    [self customNavigationBar];
+}
+
 #pragma mark - set
 - (void)setHiddenBackBtn:(BOOL)hiddenBackBtn {
     _hiddenBackBtn = hiddenBackBtn;
@@ -34,22 +47,8 @@
     _titleLabel.text = navTitle;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor whiteColor];
-    
-    //侧滑返回
-    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
-    
-    [self customNavigationBar];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    self.navigationController.navigationBarHidden = YES;
+- (void)setCustemBarHidden:(BOOL)custemBarHidden {
+    _customNavbar.hidden = custemBarHidden;
 }
 
 #pragma mark - 自定义导航栏

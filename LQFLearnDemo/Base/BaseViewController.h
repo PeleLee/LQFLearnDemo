@@ -28,4 +28,6 @@
 
 @property (nonatomic, strong) NSString *showUrl;
 
+@property (nonatomic, assign) BOOL custemBarHidden;
+
 @end

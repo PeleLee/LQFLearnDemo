@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #import <RongIMKit/RongIMKit.h>
 #import <UserNotifications/UserNotifications.h>
+#import "WRNavigationBar.h"
 
 @interface AppDelegate () <RCIMUserInfoDataSource,RCIMReceiveMessageDelegate,UNUserNotificationCenterDelegate>
 
@@ -20,6 +21,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self setNavgationStyle];
     
     [self setLocalNotification];
     
@@ -27,6 +29,16 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     return YES;
+}
+
+- (void)setNavgationStyle {
+    //统一设置导航栏样式
+    //！导入第三方WRNavigationBar会导致失效
+    /*
+    [[UINavigationBar appearance] setBackgroundImage:ImageNamed(@"Sun") forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setTintColor:[UIColor greenColor]];*/
+    [UIColor wr_setDefaultNavBarTintColor:[UIColor randomColor]];
+    [UIColor wr_setDefaultNavBarBarTintColor:[UIColor randomColor]];
 }
 
 #pragma mark - iOS 10本地通知
