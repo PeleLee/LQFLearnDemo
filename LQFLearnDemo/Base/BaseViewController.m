@@ -10,7 +10,6 @@
 
 @interface BaseViewController () <UIWebViewDelegate>
 
-@property (nonatomic, strong) LQFPopOutView *popOutView;
 @property (nonatomic, strong) UIView *customNavbar;
 @property (nonatomic, strong) UIButton *backButton;
 @property (nonatomic, strong) UILabel *titleLabel;

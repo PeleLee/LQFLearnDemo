@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class LQFPopOutView;
 
 @interface BaseViewController : UIViewController
 
@@ -29,5 +30,7 @@
 @property (nonatomic, strong) NSString *showUrl;
 
 @property (nonatomic, assign) BOOL custemBarHidden;
+
+@property (nonatomic, strong) LQFPopOutView *popOutView;
 
 @end

@@ -47,7 +47,7 @@
 }
 
 - (void)addNounText:(NSString *)noun {
-    NSMutableAttributedString *aStr = [[NSMutableAttributedString alloc] initWithString:noun];
+    NSMutableAttributedString *aStr = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@\n",noun]];
     [aStr addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, noun.length)];
     [aStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:13] range:NSMakeRange(0, noun.length)];
     

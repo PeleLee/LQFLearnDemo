@@ -50,6 +50,7 @@
 		DB356C881F3C508C0056B6BD /* LoadAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB356C871F3C508C0056B6BD /* LoadAnimationVC.m */; };
 		DB37D7571F43ED0D000EEF79 /* WriteDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB37D7561F43ED0D000EEF79 /* WriteDateVC.m */; };
 		DB37D76A1F443CAD000EEF79 /* LQFChatListViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB37D7691F443CAD000EEF79 /* LQFChatListViewVC.m */; };
+		DB43A3361F79E617006C4596 /* iOS11VC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB43A3351F79E617006C4596 /* iOS11VC.m */; };
 		DB4418631F5971C000C34023 /* ThreadTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4418621F5971C000C34023 /* ThreadTestView.m */; };
 		DB4418661F59751200C34023 /* ThreadTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4418651F59751200C34023 /* ThreadTestVC.m */; };
 		DB4529371F6A5E4600F88AF6 /* RuntimeListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4529361F6A5E4600F88AF6 /* RuntimeListVC.m */; };
@@ -377,6 +378,8 @@
 		DB37D7561F43ED0D000EEF79 /* WriteDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteDateVC.m; sourceTree = "<group>"; };
 		DB37D7681F443CAD000EEF79 /* LQFChatListViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFChatListViewVC.h; sourceTree = "<group>"; };
 		DB37D7691F443CAD000EEF79 /* LQFChatListViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFChatListViewVC.m; sourceTree = "<group>"; };
+		DB43A3341F79E617006C4596 /* iOS11VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS11VC.h; sourceTree = "<group>"; };
+		DB43A3351F79E617006C4596 /* iOS11VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOS11VC.m; sourceTree = "<group>"; };
 		DB4418611F5971C000C34023 /* ThreadTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadTestView.h; sourceTree = "<group>"; };
 		DB4418621F5971C000C34023 /* ThreadTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadTestView.m; sourceTree = "<group>"; };
 		DB4418641F59751200C34023 /* ThreadTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadTestVC.h; sourceTree = "<group>"; };
@@ -767,6 +770,8 @@
 				DB37D7561F43ED0D000EEF79 /* WriteDateVC.m */,
 				DB9D56E11F4BD12600455209 /* iOS10VC.h */,
 				DB9D56E21F4BD12600455209 /* iOS10VC.m */,
+				DB43A3341F79E617006C4596 /* iOS11VC.h */,
+				DB43A3351F79E617006C4596 /* iOS11VC.m */,
 				DB9D56E41F4BF98900455209 /* CustomButtonVC.h */,
 				DB9D56E51F4BF98900455209 /* CustomButtonVC.m */,
 				DB1519711F564D290052BE7A /* SandboxVC.h */,
@@ -1762,6 +1767,7 @@
 				DB6FEF3E1F1775D30009702E /* ta_CDL2CROWS.c in Sources */,
 				DB6FEF571F1775D30009702E /* ta_CDLHARAMI.c in Sources */,
 				DB6FEFC01F1775D30009702E /* ta_TAN.c in Sources */,
+				DB43A3361F79E617006C4596 /* iOS11VC.m in Sources */,
 				DB6FEF6B1F1775D30009702E /* ta_CDLPIERCING.c in Sources */,
 				DB6FEF2E1F1775D30009702E /* ta_AD.c in Sources */,
 				DB6FEF831F1775D30009702E /* ta_EMA.c in Sources */,

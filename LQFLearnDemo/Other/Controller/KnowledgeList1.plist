@@ -81,6 +81,12 @@
 				<key>VCName</key>
 				<string>iOS10VC</string>
 			</dict>
+			<dict>
+				<key>Title</key>
+				<string>iOS 11</string>
+				<key>VCName</key>
+				<string>iOS11VC</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
